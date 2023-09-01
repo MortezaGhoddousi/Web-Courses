@@ -1,0 +1,82 @@
+/* p{
+    background-color: red;
+    border: 2px solid black;
+}
+
+b{
+    background-color: yellow;
+    border: 2px dashed blue;
+    display: block;
+} */
+
+/* .main{
+    height: 400px;
+    background-color: yellow;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+section{
+    background-color: red;
+    border: 2px solid green;
+    height: 100px;
+    margin: 20px;
+}
+
+.box1{
+    flex: 4;
+}
+
+.box2{
+    flex: 2;
+}
+
+.box3{
+    flex: 8;
+} */
+
+
+
+/* .main{
+    background-color: red;
+    border: 2px solid black;
+}
+
+section{
+    background-color: yellow;
+    border: 1px dashed green;
+    margin: 10px;
+} */
+
+/* .box2{
+    position: relative;
+    top: 250px;
+} */
+
+/* .box1{
+    position: fixed;
+} */
+
+/* .box3{
+    position: absolute;
+} */
+
+div{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    /* transition: background-color .5s ease; */
+    transition: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+div:hover{
+    /* background-color: red */
+    width: 250px;
+}
+

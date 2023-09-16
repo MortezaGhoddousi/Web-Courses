@@ -5,6 +5,10 @@
     --fontcolor: #E8BCB9;
     --additional-color: #662549;
     --secadd-color: #AE445A;
+    --background: #D8E3FA;
+    --gray: #EAEAEC;
+    --primary: #29283F;
+    --primary-violet: #7370F4;
 }
 
 *{
@@ -197,7 +201,7 @@ section {
 
 .home {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -206,6 +210,121 @@ section {
     text-transform: uppercase;
     position: relative;
     left: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    background-image: linear-gradient(to right,var(--secbgcolor), var(--secadd-color));
+    cursor: pointer;
+    overflow: hidden;
+    max-width: clamp(220px, 50vw, 720px);
+    /* max-width: 320px; */
+    min-height: 180px;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.background {
+    flex: 1 1 250px;
+    overflow: hidden;
+}
+
+.background img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s;
+}
+
+.background:hover img {
+    transform: scale(1.2);
+}
+
+.content {
+    flex: 3 1 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 16px;
+}
+
+.content > h2 {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 700;
+    margin-bottom: clamp(.35rem, 2vw, .55rem);
+}
+
+.content > p {
+    font-size: clamp(1rem, 1.75vw, 1.1rem);
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.content a {
+    color: var(--primary-violet);
+}
+
+.chips {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 12px 0px 16px 0px;
+}
+
+.chip {
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: inherit;
+    transition: all .3s;
+    font-weight: 500;
+}
+
+.chip:hover {
+    background-color: var(--primary-violet);
+    color: var(--gray);
+}
+
+.action-buttons {
+    border-top: 1px solid var(--gray);
+    padding-top: 16px;
+    gap: 12px;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+}
+
+.action-buttons a {
+    background-color: var(--primary);
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    flex: 1 0 200px;
+    max-width: 100%;
+}
+
+.action-buttons a:hover {
+    text-decoration: underline;
+}
+
+.action-buttons a.secondary {
+    background-color: inherit;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    flex: 1 0 80px;
 }
 
 .experience {

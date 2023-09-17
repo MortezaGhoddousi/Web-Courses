@@ -1,0 +1,113 @@
+/* .main {
+    height: 100px;
+    width: 100px;
+    background-color: green; */
+    /* transform: translate(100px, 50px); */
+    /* transform: scale(0.5); */
+    /* transform: rotate(35deg); */
+    /* transform: skew(35deg); */
+    /* transition: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in; */
+    /* transition: background-color 1s ease-in;
+} */
+
+/* .main:hover { */
+    /* transform: rotate(45deg); */
+    /* width: 200px; */
+    /* background-color: red;
+} */
+
+.main {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* animation-name: changing-color;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: changing-color 2s ease 3s infinite alternate;
+}
+
+@keyframes changing-color {
+    0% {background-color: green;}
+    25% {background-color: yellow;}
+    50% {background-color: orange;}
+    75% {background-color: red;}
+    100% {background-color: purple;}
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer ul li {
+    border: 2px solid yellowgreen;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: greenyellow;
+    color: blue;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: antiquewhite;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header span {
+    display: none;
+}
+
+@media (max-width: 360px){
+    header {
+        background-color: green;
+    }
+    
+}
+
+@media (max-width: 560px){
+    body {
+        background-color: beige;
+    }
+
+    header nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 5px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .main-but {
+        display: block;
+    }
+
+    header .main-but .alt {
+        display: block;
+    }
+}

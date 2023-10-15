@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    height: 45vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+#zero {
+    width: 80px;
+    border-radius: 20px;
+}
+
+.gray {
+    color: black;
+    background-color: rgb(170, 170, 170);
+}
+
+.black {
+    color: white;
+    background-color: rgb(82, 81, 81);
+}
+
+.orange {
+    color: white;
+    background-color: rgba(255, 166, 0, 0.89);
+}
+
+.display {
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+}

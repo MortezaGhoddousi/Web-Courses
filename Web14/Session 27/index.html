@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="header-heading">Morteza</h1>
+        <p class="header-job">Telecommunication Engineer</p>
+        <div class="header-button">
+            <button class="header-link-button"><i id="header-menu" class='bx bx-menu'></i></button>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-li"><a href="#home" class="active">Home</a></li>
+                <li class="navbar-li"><a href="#experience">Experience</a></li>
+                <li class="navbar-li"><a href="#skills">Skills</a></li>
+                <li class="navbar-li"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="togglebtn">
+            <input type="checkbox" id="switch">
+            <label for="switch">Toggle</label>
+        </div>
+    </header>
+
+    <article class="main">
+        <section class="home" id="home">
+            <aside class="home-main">
+                <h3 class="home-summary"><i>Summary</i></h3>
+                <p class="home-content">Although I am a Telecommunication engineer, 
+                    I have been known as a programmer among 
+                    most of my firends.
+                    BTW, I have some skills on many programming languages 
+                    such as <b>Python</b>, <b>Matlab</b>, 
+                    <b>C</b>, <b>JavaScript</b>,
+                    <b>HTML</b>, <b>CSS</b> and etc.
+                </p>
+            </aside>            
+            
+
+            <div class="container">
+                <article class="card">
+                    <div class="background">
+                        <img src="IMG_7921.JPG" alt=""/>
+                    </div>
+                    <div class="content">
+                        <h2>Morteza Ghoddousi</h2>
+                        <p>Senior tutor at <a href="">Technical and Professional organization of the country</a></p>
+                        <p>Helping with:</p>
+                        <ul class="chips">
+                            <li class="chip">HTML</li>
+                            <li class="chip">CSS</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">PHP</li>
+                            <li class="chip">Node.js</li>
+                            <li class="chip">jquery</li>
+                            <li class="chip">Python</li>
+                        </ul>
+                        <div class="action-buttons">
+                            <a href="">Book a lector</a>
+                            <a href="" class="secondary">Learn More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="experience" id="experience">
+            <h3 class="experience-heading"><i>Experience</i></h3>
+                <ul>
+                    <li><b>Senior engineer in traffic's control department</b> | 2018 - 2020</li> <br>
+                    <li><b>Expert Python developer</b> | 2016 - present</li> <br>
+                    <li><b>Senior AI programmer</b> | 2017 - present
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, rem?</p></li> <br>
+                </ul>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3 class="skills-heading"><i>Skills</i></h3>
+            <table class="skill-table">
+                <tr>
+                    <th>Skill</th>
+                    <td>Python</td>
+                    <td>JavaScript</td>
+                    <td>C</td>
+                    <td>Matlab</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                </tr>
+                <tr>
+                    <th>Level</th>
+                    <td>Advance</td>
+                    <td>Intermediat</td>
+                    <td>Intermediat</td>
+                    <td>Advance</td>
+                    <td>Advance</td>
+                    <td>Advance</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contact" id="contact">
+            <h3 class="contact-heading"><i>Write me a message</i></h3>
+            <form class="contact-form" action="#">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="" placeholder="John Smith"> <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="" placeholder="JohnSmith@domain.com"> <br>
+                <label for="message">Your Message: </label>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea> <br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </article>
+
+    <footer id="copyright">
+        <div class="contacts-container">
+            <h3 class="contacts-heading"><i>Contact us</i></h3>
+            <ul class="contacts-list">
+                <a href="#" style="--i:6;"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:7;"><i class='bx bxl-twitter'></i></a>
+                <a href="#" style="--i:8;"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9;"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:10;"><i class='bx bxl-github'></i></a>
+            </ul>
+        </div>
+        <p class="footer-content">Copyright &copy Morteza</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

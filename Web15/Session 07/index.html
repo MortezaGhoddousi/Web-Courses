@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 07</title>
+    <!-- <style>
+        p {
+            color: blue;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <form action="">
+            <label for="username">
+                Username: 
+                <input type="text" name="username"><br>
+            </label>
+            <label for="email" id="email">
+                Email: 
+                <input type="email" name="email"><br>
+            </label>
+            <label for="password" class="password">
+                Password: 
+                <input type="password" name="password"><br>
+            </label>
+            <label for="">
+                <input type="submit" name="submit" value="signup">
+            </label>
+        </form>
+    </section>
+
+    <br><br>
+    <section>
+        <form action="">
+            <label for="username">
+                <input type="text" name="username" placeholder="Username:" autofocus required><br>
+            </label>
+            <label for="email">
+                <input type="email" name="email" placeholder="Email:" required><br>
+            </label>
+            <label for="password">
+                <input type="password" name="password" placeholder="Password:" required><br>
+            </label>
+            <label for="color">
+                <input type="text" name="color" placeholder="Color:" required list="Color"><br>
+                <datalist id="Color">
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Red">Red</option>
+                </datalist>
+            </label>
+            <label for="submit">
+                <input type="submit" name="submit" value="signup">
+            </label>
+        </form>
+    </section>
+
+    <section id="paragraphs">
+        <!-- <p style="color: red;">first</p> -->
+        <p class="password">first</p>
+        <p>second</p>
+    </section>
+</body>
+
+</html>

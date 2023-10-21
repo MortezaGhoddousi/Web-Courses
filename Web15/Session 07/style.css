@@ -1,0 +1,65 @@
+/*
+
+CSS syntax
+
+selector{
+    property: value;
+    property: value;
+    property: value;
+    ...
+}
+
+*/
+
+
+/* Selecting by tag name */
+
+p {
+    color: green;
+}
+
+label {
+    color: blue;
+}
+
+
+/* Selecting by id */
+
+#email {
+    color: brown;
+}
+
+
+/* Selecting by class */
+
+.password {
+    color: blueviolet;
+}
+
+
+/* Selecting by location */
+
+#paragraphs .password {
+    color: cadetblue;
+}
+
+
+/* Selecting by attribute */
+
+input[name="username"] {
+    border: 2px solid green;
+}
+
+[type="text"] {
+    border: 3px solid red;
+}
+
+
+/* Selecting multiple elements */
+
+input[name="email"],
+input[name="password"],
+#paragraphs .password {
+    border: 2px dashed;
+    border-radius: 10px;
+}

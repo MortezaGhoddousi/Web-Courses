@@ -1,0 +1,91 @@
+.first {
+    color: red;
+    font-size: 28px;
+    font-style: italic;
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-shadow: 5px 5px 2px blue;
+    /* text-shadow: horizontal-offset vertical offset blur color; */
+    text-align: center;
+}
+
+body {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+    direction: rtl;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.second {
+    font-size: .5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    box-shadow: 5px -5px 2px red, -5px 5px 2px blue;
+}
+
+.third {
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 12px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid red;
+}
+
+.main {
+    border: 2px solid green;
+    border-radius: 15px 10px 20px;
+    height: 130px;
+    /* border: line-width line-style color; */
+    /* width: 200px; */
+    /* padding: padding-top padding-right padding-bottom padding-left; */
+    padding: 5px 10px 15px 20px;
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+    /* padding: padding-top padding-right&padding-left padding-bottom; */
+    /* padding: 5px 10px 20px; */
+    /* padding: 10px 20px; */
+    /* padding: padding-top&padding-bottom padding-right&padding-left; */
+    /* padding: 20px; */
+    /* padding: padding-top&padding-bottom&padding-right&padding-left; */
+    margin: 5px 10px 15px 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    background: rgb(79, 77, 77);
+    /* width: 100px; */
+    height: 100px;
+    /* margin: margin-top margin-right margin-bottom margin-left; */
+    /* margin: 5px 10px 15px 20px; */
+    /* margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px; */
+    /* margin: margin-top margin-right&margin-left margin-bottom; */
+    /* margin: 5px 10px 20px; */
+    /* margin: 10px 20px; */
+    /* margin: margin-top&margin-bottom margin-right&margin-left; */
+    /* margin: 20px; */
+    /* margin: margin-top&margin-bottom&margin-right&margin-left; */
+}
+
+.image {
+    background-image: url(./IMG_7921.JPG);
+    height: 150px;
+    width: 100px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.second-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

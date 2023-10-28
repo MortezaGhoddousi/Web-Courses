@@ -1,0 +1,150 @@
+/* ul { */
+
+
+/* list-style-type: none; */
+
+
+/* list-style-type: square; */
+
+
+/* list-style-type: circle; */
+
+
+/* list-style-type: lower-alpha; */
+
+
+/* list-style-type: lower-roman; */
+
+
+/* list-style-type: lower-greek;
+    list-style-position: inside;
+    list-style-image: none; */
+
+
+/* list-style: type position image; */
+
+
+/* list-style: none inside none; */
+
+
+/* } */
+
+
+/* a {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+} */
+
+
+/* header li {
+    display: inline;
+    padding: 10px;
+    border: none;
+    background: #9abe4b;
+    border-radius: 10px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header li:hover {
+    text-decoration: underline;
+    background: gray;
+    box-shadow: 0 0 1rem gray;
+} */
+
+
+/* td,
+th {
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+} */
+
+
+/* th {
+    color: white;
+    background: gray;
+} */
+
+
+/* tr:nth-child(odd) {
+    background: #ccc;
+} */
+
+form input,
+form label {
+    display: block;
+}
+
+h1 {
+    color: green;
+}
+
+form input {
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+    box-shadow: 0 0 .3rem green;
+    width: 40vw;
+}
+
+form input::placeholder {
+    color: green;
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    background: green;
+    color: white;
+    box-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 10vw;
+}
+
+form input[type="submit"]:hover {
+    color: green;
+    background: white;
+    box-shadow: 0 0 .3rem green;
+}
+
+.main {
+    border: .5px solid gray;
+    box-shadow: 0 0 .2rem gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    background: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}

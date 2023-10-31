@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Session 05</title>
+</head>
+<body>
+    <audio controls loop autoplay>
+        <source src="" type="">
+        <source src="" type="">
+        Audio file cannot be loaded
+    </audio>
+
+    <video controls loop autoplay>
+        <source src="" type="">
+        <source src="" type="">
+        Video file cannot be loaded
+    </video>
+
+    <h1>Skills</h1>
+    <span>Reading skill: </span> <progress min="0" max="100" value="90"></progress><br>
+    <span>Writing skill: </span> <progress min="0" max="100" value="70"></progress><br>
+    <span>Speaking skill: </span> <progress min="0" max="100" value="60"></progress><br>
+    <span>Listening skill: </span> <progress min="0" max="100" value="750"></progress><br>
+    <form action="" method="">
+        <label for="user">
+            <input type="text" name="user" placeholder="Username:" autofocus required><br>
+        </label>
+        <label for="pass">
+            <input type="password" name="pass" placeholder="Password:" required><br>
+        </label>
+        <label for="email">
+            <input type="email" name="email" placeholder="Email:" required><br>
+        </label>
+        <label for="color">
+            <input type="text" name="color" placeholder="Color:" list="color"><br>
+            <datalist id="color">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Green"></option>
+            </datalist>
+        </label>
+        <label for="radio">
+            Gender:
+            <input type="radio" name="gender" value="male"> <span>Male</span>
+            <input type="radio" name="gender" value="female"> <span>Female</span> <br>
+        </label>
+        <label for="checkbox">
+            Interests:
+            <input type="checkbox" name="interest" value="sports"> <span>Sports</span>
+            <input type="checkbox" name="interest" value="art"> <span>Art</span>
+            <input type="checkbox" name="interest" value="study"> <span>Study</span>
+            <input type="checkbox" name="interest" value="music"> <span>Music</span> <br>
+        </label>
+        <label for="submit">
+            <input type="submit" name="submit" value="Signup"><br>
+        </label>
+    </form>
+    <script>
+        var progress = document.querySelector("progress");
+        i = 0;
+        var t = setInterval (()=>{
+                progress.value = i;
+                i++;
+                if (i==100){
+                    clearInterval(t);
+                }
+        }, 50);
+    </script>
+</body>
+</html>

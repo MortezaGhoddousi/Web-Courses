@@ -1,0 +1,46 @@
+.parent {
+    background: green;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* padding: padding-top padding-right padding-bottom padding-left; */
+    /* padding: 5px 10px 15px 20px; */
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+
+    /* padding: padding-top padding-right&padding-left padding-bottom ; */
+    /* padding: 5px 10px 20px; */
+
+    /* padding: padding-top&padding-bottom padding-right&padding-left; */
+    /* padding: 10px 20px; */
+
+    /* padding: padding-top&padding-bottom&padding-right&padding-left; */
+    /* padding: 20px; */
+}
+
+.child {
+    /* background: red; */
+    background-image: url('./0.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px dashed yellow;
+    border-radius: 10px;
+    /* margin: margin-top margin-right margin-bottom margin-left; */
+    /* margin: 5px 10px 15px 20px; */
+    /* margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px; */
+
+    /* margin: margin-top margin-right&margin-left margin-bottom ; */
+    /* margin: 5px 10px 20px; */
+
+    /* margin: margin-top&margin-bottom margin-right&margin-left; */
+    /* margin: 10px 20px; */
+
+    /* margin: margin-top&margin-bottom&margin-right&margin-left; */
+    /* margin: 20px; */
+}
+

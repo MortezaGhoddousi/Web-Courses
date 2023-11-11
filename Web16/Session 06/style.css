@@ -1,0 +1,75 @@
+/* Selection using tag name */
+p {
+    color: red;
+    font-size: 28px;
+}
+
+h1 {
+    color: green;
+}
+
+/* Selection using id */
+
+/* p {
+    color: blue;
+} */
+
+#first {
+    color: blue;
+}
+
+/* Selection using class */
+
+.second {
+    text-transform: uppercase;
+}
+
+/* Selection using location */
+
+section p {
+    color: aquamarine;
+}
+
+.main p {
+    text-decoration: line-through;
+}
+
+/* Multiple Selection */
+
+/* h2 {
+    color: yellow;
+}
+
+h3 {
+    color: yellow;
+} */
+
+h2, h3{
+    color: yellow;
+}
+
+/* font family, font style, font weight, text transform, text align, text shadow*/
+
+#first {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 5px 15px 5px red;
+    box-shadow: 5px 15px 5px green;
+    border: 2px solid black;
+}
+
+/* body {
+    direction: rtl;
+} */
+
+/* line height, word spacing, letter spacing  */
+
+.text {
+    line-height: 1.8;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}

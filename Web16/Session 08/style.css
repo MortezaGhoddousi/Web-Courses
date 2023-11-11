@@ -1,0 +1,67 @@
+a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+th {
+    background: gray;
+}
+
+td:nth-child(2) {
+    background: rgb(212, 209, 209);
+}
+
+td:nth-child(even){
+    background: rgb(212, 100, 209);
+}
+
+td:nth-child(odd){
+    background: rgb(255, 200, 209);
+}
+
+input {
+    border: 2px solid green;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+input[type='submit']{
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 .7rem green;
+    border: none;
+    text-transform: uppercase;
+}
+
+input[type='submit']:hover {
+    background: white;
+    color: green;
+    box-shadow: none;
+    border: 2px solid green;
+}
+
+input::placeholder {
+    color: green;
+    font-weight: bold;
+}

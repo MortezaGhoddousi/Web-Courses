@@ -1,0 +1,50 @@
+section {
+    height: 100px;
+    /* width: 100px; */
+    background: green;
+    border: 2px solid black;
+    /* display: inline; */
+}
+
+/* article {
+    background: red;
+    border: 2px dashed black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    /* gap: 20px;
+}
+
+.first {
+    flex: 4;
+}
+
+.second {
+    flex: 2;
+}
+
+.third {
+    flex: 2;
+} */
+
+/* .second {
+    position: relative;
+    top: 50px;
+    left: 20px;
+} */
+
+/* .second {
+    background: red;
+    position: fixed;
+    top: 50px;
+    left: 100px;
+} */
+
+/* .second {
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+} */

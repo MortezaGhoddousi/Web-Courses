@@ -1,0 +1,8 @@
+#first {
+    color: blue;
+}
+
+#firstfromJS {
+    color: red;
+    display: none;
+}

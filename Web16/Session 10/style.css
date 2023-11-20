@@ -1,0 +1,86 @@
+section {
+    background: green;
+    border: 2px solid black;
+    width: 1200px;
+    /* width: clamp(40vw, 60vw, 80vw); */
+    padding: 15px;
+    margin: 30px; 
+    /* transition: width;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out; */
+    animation-name: changebg;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* section:hover { */
+    /* transform: rotate(10deg); */
+    /* transform: scale(1.05); */
+    /* transform: translate(10px, 10px); */
+    /* transform: skew(20deg); */
+    /* background: red; */
+    /* width: 500px; */
+/* } */
+
+@keyframes changebg {
+    0% {background: green;}
+    25% {background: yellow;}
+    50% {background: orange;}
+    75% {background: red;}
+    90% {background: purple;}
+    100% {background: blue;}
+}
+
+button {
+    border: 2px solid green;
+    background: gray;
+    color: black;
+    box-shadow: 0 0 .5rem green;
+    transition: transform .2s ease;
+    border-radius: 20px;
+}
+
+button:hover {
+    box-shadow: none;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+input {
+    border: 3px solid black;
+    transition: border 2s ease;
+}
+
+input:hover {
+    border: 3px solid red;
+}
+
+/* @keyframes changeborder {
+    0% {border: 3px solid black;}
+    100% {border: 3px solid red;}
+} */
+
+@media (max-width: 500px){
+    section {
+        /* display: none; */
+        width: 300px;
+    }
+}
+
+@media (max-width: 720px){
+    section {
+        /* display: none; */
+        width: 500px;
+    }
+}
+
+@media (max-width: 900px){
+    section {
+        /* display: none; */
+        width: 700px;
+    }
+}
+

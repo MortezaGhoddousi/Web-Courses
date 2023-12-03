@@ -1,0 +1,29 @@
+tr, td {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.white {
+    background: #fffeee;
+}
+
+.black {
+    background: #000333;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.tic-tac-toe tr, 
+.tic-tac-toe td{
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    margin: 0;
+    border: 1px solid black;
+}

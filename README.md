@@ -9,4 +9,4 @@ In order to be sync with the class I strongly suggest you to use these tools for
 3. github (https://github.com)
 4. XAMPP (Download link: https://www.apachefriends.org/download.html)
 
-project: https://qa0pyxaasxawza45hprm0a.on.drv.tw/www.morteza-ghoddousi-cv.com/?#services
+project: https://qa0pyxaasxawza45hprm0a.on.drv.tw/www.morteza-ghoddousi-cv.com/

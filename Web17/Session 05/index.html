@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 5</title>
+</head>
+
+<body>
+
+    <audio controls loop autoplay>
+        <source src="1.mp3" type="audio/mpeg">
+        <source src="1.ogg" type="audio/ogg">
+        This file cannot be loaded
+    </audio>
+
+    <video controls loop autoplay>
+        <source src="1.mp4" type="video/mp4">
+        <source src="1.ogg" type="video/ogg">
+        This file cannot be loaded
+    </video>
+
+    <span>skill: </span> <progress min="0" max="10" value="4"></progress>
+
+    <form action="">
+        <input type="text" list="names">
+        <datalist id="names">
+            <option value="morteza">Morteza</option>
+            <option value="Amir">Amir</option>
+            <option value="Iman">Iman</option>
+            <option value="Saeed">Saeed</option>
+        </datalist>
+    </form>
+
+    <script>
+        var p = document.querySelector('progress');
+        var i = 0
+        var t = setInterval(() => {
+            p.value = i;
+            i++;
+            if (t > 10) {
+                clearInterval(t);
+            }
+        }, 500);
+    </script>
+</body>
+
+</html>

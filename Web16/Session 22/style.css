@@ -1,0 +1,79 @@
+body {
+    scroll-behavior: smooth;
+    background: #222222;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #eee;
+    padding: 20px;
+    padding-bottom: 40px;
+    background: #000985;
+    color: white;
+}
+
+.Password,
+.range,
+.upper,
+.lower,
+.number,
+.symbol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3743eb;
+    border-radius: 9px;
+    padding: 10px;
+    background: #414bce;
+    width:  90%;
+}
+
+#submit {
+    background-image: linear-gradient(to right, #0dc5f3, #f3b302);
+    padding: 10px;
+    border: 2px solid #3743eb;
+    border-radius: 9px;
+    width: 40vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, #c9f30d, #c59309);
+}
+
+#range {
+    width: 30vw;
+}
+
+.upper label,
+.lower label,
+.number label,
+.symbol label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15vw;
+}
+
+.length {
+    position: relative;
+    top: 2vh;
+    right: 15vw;
+}
+
+
+
+
+

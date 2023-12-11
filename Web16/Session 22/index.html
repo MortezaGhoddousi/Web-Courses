@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1 class="header">Password Generator</h1>
+        <section class="Password">
+            <span>Click Generate</span>
+        </section>
+        <span class="length">Length: <span class="l"></span></span>
+        <section class="range">
+            <label for="range">
+                <input type="range" name="range" min="4" max="32" id="range">
+            </label>
+        </section>
+        <section class="upper">
+            <label for="upper">
+                <span>Include Uppercase</span>
+                <input type="checkbox" name="upper" id="upper">
+            </label>
+        </section>
+        <section class="lower">
+            <label for="lower">
+                <span>Include Lowercase</span>
+                <input type="checkbox" name="lower" id="lower">
+            </label>
+        </section>
+        <section class="number">
+            <label for="number">
+                <span>Include Numbers</span>
+                <input type="checkbox" name="number" id="number">
+            </label>
+        </section>
+        <section class="symbol">
+            <label for="symbol">
+                <span>Include Symbols</span>
+                <input type="checkbox" name="symbol" id="symbol">
+            </label>
+        </section>
+        <section class="submit">
+            <label for="submit">
+                <input type="submit" name="submit" id="submit" value="Generate Password">
+            </label>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

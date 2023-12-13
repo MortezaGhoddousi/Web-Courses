@@ -1,0 +1,60 @@
+/* Selection by tag name */
+
+p {
+    color: blue;
+}
+
+
+/* Selection by ID */
+
+#p1 {
+    font-size: 28px;
+}
+
+
+/* Selection by Class */
+
+.p2 {
+    text-decoration: line-through;
+}
+
+
+/* Selection by location */
+
+div p {
+    text-transform: uppercase;
+}
+
+
+/* Mutual Selection */
+
+
+/* 
+#p3 {
+    font-weight: bold;
+}
+
+.p4 {
+    font-weight: bold;
+}
+
+div p {
+    font-weight: bold;
+} */
+
+#p3,
+.p4,
+div p {
+    font-weight: bold;
+}
+
+
+/* Selection by Attribute */
+
+[type="text"] {
+    border: 2px solid green;
+}
+
+h1[class='p2'] {
+    color: red;
+}

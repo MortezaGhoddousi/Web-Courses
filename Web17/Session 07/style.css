@@ -1,0 +1,66 @@
+.intro {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    box-shadow: 2px 2px 2px red;
+    text-align: center;
+    line-height: 1.8;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid orange;
+    border-right: 2px solid orange;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-shadow: 2px 5px 10px green;
+}
+
+.container {
+    background: green;
+    border: 2px solid black;
+    /* width: 200px;
+    height: 200px; */
+    /* padding: padding-top padding-right padding-bottom padding-left; */
+    /* padding: 5px 10px 15px 20px; */
+    /* padding: padding-top padding-right&padding-left padding-bottom; */
+    /* padding: 5px 10px 20px; */
+    /* padding: padding-top&padding-bottom padding-right&padding-left; */
+    /* padding: 5px 20px; */
+    /* padding: padding-top&padding-bottom&padding-right&padding-left; */
+    /* padding: 20px; */
+}
+
+.child {
+    background: red;
+    border: 2px dashed yellow;
+    border-bottom: 5px dotted orange;
+    /* width: 100px; */
+    height: 200px;
+    /* margin: margin-top margin-right margin-bottom margin-left; */
+    /* margin: 5px 10px 15px 20px; */
+    /* margin: margin-top margin-right&margin-left margin-bottom; */
+    /* margin: 5px 10px 20px; */
+    /* margin: margin-top&margin-bottom margin-right&margin-left; */
+    /* margin: 5px 20px; */
+    /* margin: margin-top&margin-bottom&margin-right&margin-left; */
+    /* margin: 20px; */
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+p {
+    width: 200px;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+}

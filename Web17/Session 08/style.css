@@ -1,0 +1,72 @@
+.box1 {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.box2 {
+    border: 2px solid black;
+    background-image: url('./1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 200px;
+    height: 200px;
+}
+
+.box3 ul {
+    list-style-type: armenian;
+}
+
+.box4 ul {
+    list-style-type: circle;
+}
+
+.box5 ul {
+    list-style-type: decimal;
+}
+
+.box6 ul {
+    list-style-type: decimal-leading-zero;
+}
+
+.box7 ul {
+    list-style-type: disc;
+}
+
+.box8 ul {
+    list-style-type: georgian;
+}
+
+.box9 ul {
+    list-style-type: lower-alpha;
+}
+
+.box10 ul {
+    list-style-type: lower-greek;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+    box-shadow: 0 0 5em aquamarine;
+    border-radius: 15px;
+}
+
+a:hover {
+    box-shadow: none;
+    text-decoration: underline;
+    background: white;
+    color: aquamarine;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

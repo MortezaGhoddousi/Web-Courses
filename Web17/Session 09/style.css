@@ -1,0 +1,91 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.first {
+    background-color: gray;
+}
+
+tr:nth-child(odd) {
+    background-color: gray;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(199, 195, 195);
+}
+
+td:nth-child(1) {
+    font-weight: bold;
+}
+
+main {
+    border: 2px solid black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main h1 {
+    text-align: center;
+    color: green;
+    text-transform: uppercase;
+}
+
+main form label {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+
+main form label input {
+    width: 80vw;
+}
+
+main form label input[name='submit'] {
+    width: 20vw;
+    background: green;
+    border: none;
+    box-shadow: 0 0 .5rem green;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+main form label input[name='submit']:hover {
+    background-color: white;
+    color: green;
+    box-shadow: none;
+    border: 2px solid green;
+}
+
+main form label input[name='user'],
+main form label input[name='password'],
+main form label input[name='email'] {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main form label input[name='user']::placeholder,
+main form label input[name='password']::placeholder,
+main form label input[name='email']::placeholder {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}

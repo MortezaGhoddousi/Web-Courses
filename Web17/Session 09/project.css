@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --bgcolor: #1f242d;
+    --secbgcolor: #323946;
+    --textcolor: #eee;
+    --maincolor: #0ef;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bgcolor);
+    color: var(--textcolor);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+#job {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.summary-content {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+section,
+footer {
+    padding: 2px 10px;
+}
+
+ul {
+    margin: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: var(--textcolor);
+    margin-left: 1rem;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--maincolor);
+}
+
+h3 {
+    color: var(--maincolor);
+    border-bottom: 2px solid var(--maincolor);
+    padding-bottom: 2px;
+}
+
+header,
+footer {
+    text-align: center;
+    background: var(--bgcolor);
+}
+
+header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+table {
+    border: 1px solid var(--secbgcolor);
+    background: linear-gradient(to right, var(--bgcolor), var(--secbgcolor));
+}
+
+th {
+    background: transparent;
+    margin: 0;
+    color: var(--maincolor);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#contact form textarea {
+    resize: none;
+}
+
+.contactme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.contactme span {
+    color: var(--maincolor);
+}
+
+#contact form input,
+#contact form textarea {
+    width: clamp(40vw, 45vw, 50vw);
+    padding: 7px;
+    background: var(--secbgcolor);
+    border: none;
+    border-radius: 7px;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contact form input[name='submit'] {
+    width: clamp(12vw, 50px, 15vw);
+    font-weight: bold;
+    background-color: var(--maincolor);
+    border-radius: 20px;
+    box-shadow: 0 0 .3rem var(--maincolor);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+#contact form input[name='submit']:hover {
+    box-shadow: none;
+}

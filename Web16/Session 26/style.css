@@ -1,0 +1,48 @@
+header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, gray, rgb(54, 54, 54));
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    color: white;
+}
+
+ul .active a{
+    color: aqua;
+}
+
+ul li:hover a{
+    color: aqua;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    border: 2px solid gray;
+    background: linear-gradient(to right, gray, rgb(54, 54, 54));
+}

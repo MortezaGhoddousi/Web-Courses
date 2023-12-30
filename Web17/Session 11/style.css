@@ -1,0 +1,54 @@
+.main {
+    height: 100px;
+    /* height: 200px; */
+    width: 100px;
+    background: green;
+    border: 2px solid black;
+    /* transform: translate(100px, 100px); */
+    /* transition: transform .5s ease-out; */
+    animation: changebgwidth 5s ease-out 2s infinite alternate;
+    animation-name: changebgwidth;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* .main:hover { */
+
+
+/* width: 200px; */
+
+
+/* transform: rotate(15deg); */
+
+
+/* transform: scale(1.1); */
+
+
+/* } */
+
+@keyframes changebgwidth {
+    0% {
+        background: green;
+        width: 100px;
+    }
+    25% {
+        background: yellow;
+        width: 125px;
+    }
+    50% {
+        background: orange;
+        width: 150px;
+    }
+    75% {
+        background: red;
+        width: 175px;
+    }
+    100% {
+        background: purple;
+        width: 200px;
+    }
+}

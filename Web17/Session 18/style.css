@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #111111;
+    background: linear-gradient(#f8853e, #feeeab);
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 300px;
+    background: inherit;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul a {
+    color: #111111;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: blue;
+}
+
+.signup form {
+    padding: 100px;
+    border: 2px solid black;
+    /* width: 60vw; */
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.signup form h3 {
+    font-size: 30px;
+}
+
+.signup form label input {
+    width: 30vw;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.signup form label input[type="submit"] {
+    width: 7vw;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #f8853e;
+    box-shadow: 0 0 .5rem #f8853e;
+}
+
+.signup form label input[type="submit"]:hover {
+    background: #feeeab;
+    box-shadow: none;
+}
+
+.error p {
+    color: red;
+    font-size: 13px;
+}
+
+.main {
+    margin-top: 400px;
+}

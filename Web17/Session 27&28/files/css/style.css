@@ -1,0 +1,26 @@
+#reg {
+    margin-left: 5px;
+}
+
+.item img {
+    width: 100%;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#container {
+    padding-bottom: 60px;
+    margin-top: 60px;
+}
+
+#register{
+    margin-left: 10px;
+}
+
+#badge {
+    background: #d9534f;
+}

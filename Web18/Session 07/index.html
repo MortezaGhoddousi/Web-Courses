@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <audio controls autoplay loop>
+            <source src="" type="audio/mpeg">
+            <source src="" type="audio/ogg">
+            This file cannot be loaded
+        </audio>
+    </div>
+
+    <div>
+        <video controls autoplay loop>
+            <source src="" type="video/mp4">
+            <source src="" type="video/ogg">
+            This file cannot be loaded
+        </video>
+    </div>
+
+    <div>
+        <h1>loading</h1>
+        <p>0 %</p>
+        <progress min="0" max="100" value="40"></progress>
+    </div>
+
+    <div>
+        <svg width="500px" heigth="500">
+            <circle cx="100px" cy="100px" r="50px" fill="blue"></circle>
+        </svg>
+    </div>
+
+    <div>
+        <form action="#">
+            <label for="name">             
+                <input type="text" name="user" placeholder="Username" autofocus required>
+            </label>
+
+            <label for="name">             
+                <input type="range" name="user" placeholder="Username" autofocus required>
+            </label>
+
+            <label for="name">             
+                <input type="text" name="user" placeholder="Your Favorite Color" autofocus required list="myColor">
+                <datalist id="myColor">
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Yellow">Yellow</option>
+                </datalist>
+            </label>
+            <label for="submit">             
+                <input type="submit" name="submit" value="submit">
+            </label>
+        </form>
+    </div>
+
+    <script>
+        var p = document.querySelector('div p');
+        var progress = document.querySelector('progress');
+
+        var dl = 0;
+        p.innerHTML = dl+' %';
+        var t = setInterval(()=>{
+            dl++;
+            p.innerHTML = dl+' %';
+            progress.value = dl;
+            if (dl == 100) {
+                clearInterval(t);
+            }
+        }, 50);
+
+    </script>
+</body>
+</html>

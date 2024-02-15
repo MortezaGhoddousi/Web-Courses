@@ -1,0 +1,40 @@
+/* How to select element using CSS */
+
+/* 1- Selecting by Tag Name */
+
+p {
+    color: red;
+    font-size: 18px;
+}
+
+/* 2- Selecting by Class */
+
+.heading {
+    color: green;
+}
+
+/* 3- Selecting by ID */
+
+#nextH1 {
+    color: blueviolet;
+}
+
+/* 4- Multiple Selection */
+
+#nextH2,
+.heading {
+    text-decoration: underline;
+}
+
+/* 5- Selecting by Position */
+
+#parent .heading {
+    color: aquamarine;
+}
+
+/* 6- Selecting by Attribute */
+
+input[type="text"] {
+    border: 2px solid green;
+    border-radius: 10px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+        <audio controls loop autoplay>
+            <source src="./1.mp3" type="audio/mpeg">
+            <source src="./1.ogg" type="audio/OGG">
+            This file cannot be loaded
+        </audio>
+    </section>
+
+    <section>
+        <video controls loop autoplay>
+            <source src="./1.mp4" type="video/mp4">
+            <source src="./1.ogg" type="video/OGG">
+            This file cannot be loaded
+        </video>
+    </section>
+
+    <section>
+        <p></p>
+        <progress min="0" max="100" value="0"></progress>
+    </section>
+
+    <section>
+        <form action="">
+            <label for="">
+                <input type="text" list="name">
+                <datalist id="name">
+                    <option value="">Morteza</option>
+                    <option value="">Mahdi</option>
+                    <option value="">Mohammad</option>
+                    <option value="">Kiarash</option>
+                    <option value="">Maedeh</option>
+                    <option value="">Fatemeh</option>
+                </datalist>
+            </label>
+            <label for="">
+                <input type="submit" value="send">
+            </label>
+        </form>
+    </section>
+
+    <script>
+        var progressbar = document.querySelector('section progress');
+        var count = 0;
+        var p = document.querySelector('p');
+        progressbar.value = count;
+        p.innerHTML = count + '%';
+        var t = setInterval(() => {
+            count++;
+            if (count >= 100) {
+                clearInterval(t);
+            }
+            progressbar.value = count;
+            p.innerHTML = count + '%';
+
+        }, 10);
+    </script>
+
+</body>
+
+</html>

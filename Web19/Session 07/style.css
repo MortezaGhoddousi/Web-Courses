@@ -1,0 +1,89 @@
+:root {
+    --bgcolor: #1D1A39;
+    --maincolor: #F39F5A;
+    --secbgcolor: #451952;
+    --textcolor: #E8BCB9;
+}
+
+
+/* selectors {
+    declerations
+    property1: value1;
+    property2: value2;
+} */
+
+
+/* Selectors */
+
+
+/* Selection by tagname */
+
+body {
+    background: var(--bgcolor);
+    color: var(--textcolor);
+}
+
+p {
+    color: green;
+}
+
+
+/* Selection by id */
+
+#morteza {
+    color: red;
+}
+
+
+/* Selection by class */
+
+.third {
+    color: blue;
+}
+
+
+/* Multiple Selection */
+
+
+/* #morteza {
+    font-size: 18px;
+}
+
+.third {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 18px;
+} */
+
+#morteza,
+.third,
+h2 {
+    font-size: 18px;
+}
+
+
+/* Selection by position(location) */
+
+
+/* h2 {
+    text-decoration: line-through;
+} */
+
+.parent .child h2 {
+    text-decoration: line-through;
+    font-size: 0.8em;
+}
+
+
+/* Selection by attribute */
+
+input[type='password'] {
+    border: 2px solid green;
+    border-radius: 15px;
+}
+
+.child {
+    font-size: 20px;
+}

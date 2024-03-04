@@ -1,0 +1,72 @@
+:root {
+    --secbg: #f0f0f0;
+    --bg: #ffffff;
+    --main: #3498db;
+    --text: #333333;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    direction: ltr;
+    background: var(--bg);
+    color: var(--text);
+}
+
+p {
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    text-shadow: 2px -5px 5px red;
+    box-shadow: 4px 3px 3px green;
+    text-align: center;
+    line-height: 20px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    padding: 25px;
+}
+
+button {
+    border: 2px solid aqua;
+    box-shadow: 0 0 1rem aqua;
+    padding: 8px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: aqua;
+}
+
+button:hover {
+    box-shadow: none;
+    background: white;
+}
+
+.parent {
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 15px;
+    background: green;
+    /* padding: 10px; */
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+    padding: 5px 10px 15px 20px;
+    /* padding: 5px 10px 15px; */
+    /* padding: 5px 15px; */
+}
+
+.child {
+    /* border-bottom: 4px dashed gold;
+    border-top: 4px dotted blue; */
+    background: red;
+    border: 2px solid blue;
+    /* margin: 20px; */
+}
+
+h1 {
+    text-align: center;
+}

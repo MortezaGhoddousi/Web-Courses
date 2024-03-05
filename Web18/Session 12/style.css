@@ -1,0 +1,83 @@
+/* input {
+    border: 2px solid green;
+    display: block;
+    width: 90%;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0 0 0.7rem green;
+}
+
+input::placeholder {
+    color: green;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: green;
+    text-align: center;
+    display: block;
+}
+
+input[name="submit"] {
+    background: green;
+    color: white;
+    width: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[name="submit"]:hover {
+    box-shadow: none;
+    color: green;
+    background-color: #eee;
+} */
+
+.main {
+    background-image: url("./1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+input,
+label {
+    padding: 8px;
+    margin: 5px;
+    width: 80%;
+}
+
+input {
+    border-radius: 15px;
+}
+
+input[name="submit"] {
+    width: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+}

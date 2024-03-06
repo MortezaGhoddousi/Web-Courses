@@ -1,0 +1,60 @@
+/* .main {
+    height: 400px;
+    width: 400px; */
+
+
+/* background: linear-gradient(to right, red, blue); */
+
+
+/* border: 2px solid black;
+    background-image: url(./1.jpg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 300px;
+    height: 300px;
+    background-image: url('1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: circle;
+    text-align: right;
+    list-style-position: inside;
+}
+
+.parent {
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.parent ul li {
+    display: inline;
+    padding: 10px;
+}

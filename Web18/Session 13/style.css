@@ -1,0 +1,46 @@
+/* p {
+    background-color: red;
+    border: 2px solid black;
+}
+
+b {
+    background: yellow;
+    border: 1px dashed green;
+    display: block;
+} */
+
+section {
+    background-color: red;
+    border: 2px solid black;
+}
+
+.parent {
+    height: 100px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px; */
+    background-color: green;
+    border: 2px solid black;
+}
+
+/* .nav {
+    flex: 3;
+}
+
+.name {
+    flex: 2;
+}
+
+.job {
+    flex: 1;
+} */
+
+
+.job {
+    position: fixed;
+    top: 15px;
+    left: 40px;
+    background-color: blue;
+}

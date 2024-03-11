@@ -1,0 +1,63 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td,
+th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+tr:first-child {
+    background: gray;
+}
+
+tr:last-child {
+    background: red;
+}
+
+tr:nth-child(even) {
+    background: yellow;
+}
+
+tr:nth-child(odd) {
+    background: green;
+}
+
+/* input {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 7px;
+    display: block;
+    margin: 4px;
+}
+
+input[name="submit"] {
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 0.9rem green;
+}
+
+input[name="submit"]:hover {
+    box-shadow: none;
+    background: white;
+    color: green;
+}
+
+.form h1 {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.45;
+} */

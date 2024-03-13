@@ -1,19 +1,3 @@
-.parent {
-    background: green;
-    border: 2px solid black;
-    height: 150px;
-    width: 150px;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 50px; */
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0; */
-    /* z-index: 100; */
-}
 
 /* section {
     background: red;
@@ -41,6 +25,134 @@ img {
     z-index: 100;
 } */
 
-.parent:hover {
-    transform: scale(0.8);
+/* .parent:hover { */
+    /* transform: scale(0.8); */
+    /* transform: rotate(-15deg); */
+    /* transform: translate(15px, 50px); */
+    /* transform: skewY(15deg); */
+    /* width: 300px; */
+/* } */
+
+/* button {
+    border: 2px solid green;
+    border-radius: 15px;
+    padding: 10px;
+    background: green;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px;
+    box-shadow: 0 0 1rem green;
+    transition: transform .3s ease-in;
 }
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: none;
+    background: white;
+    color: green;
+} */
+
+
+.parent {
+    background: green;
+    border: 2px solid black;
+    height: 150px;
+    width: 400px;
+    transition: animation;
+    /* transition: transform 1s ease-in-out; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 50px; */
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; */
+    /* z-index: 100; */
+    
+}
+
+/* .parent:hover {
+    animation-name: changebgwidth;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+} */
+
+@keyframes changebgwidth{
+    0% {
+        background: green;
+        width: 150px;
+        border: 1px solid black;
+    }
+
+    25% {
+        background: yellow;
+        width: 200px;
+        border: 2px solid black;
+    }
+
+    50% {
+        background: orange;
+        width: 250px;
+        border: 3px solid black;
+    }
+
+    75% {
+        background: red;
+        width: 300px;
+        border: 4px solid black;
+    }
+
+    100% {
+        background: purple;
+        width: 350px;
+        border: 5px solid black;
+    }
+}
+
+section {
+    background: red;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+
+
+}
+
+
+@media (max-width: 460px){
+    .parent {
+        width: 100px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px){
+    .parent {
+        width: 100px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    font-size: 50px;
+    color: red;
+}
+
+li {
+    size: 18px;
+}
+

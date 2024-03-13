@@ -1,0 +1,46 @@
+.parent {
+    background: green;
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px; */
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; */
+    /* z-index: 100; */
+}
+
+/* section {
+    background: red;
+    border: 2px solid black;
+} */
+
+/* .child2 {
+    background: blue; */
+/* position: relative; */
+/* top: 90px;
+    left: 15px; */
+/* position: fixed;
+    top: 40px;
+    left: 70px; */
+/* position: absolute;
+    top: 40px;
+    left: 70px; */
+/* z-index: 1; */
+/* } */
+/* .child3 {
+    z-index: 3;
+}
+
+img {
+    z-index: 100;
+} */
+
+.parent:hover {
+    transform: scale(0.8);
+}

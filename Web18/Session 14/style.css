@@ -1,0 +1,110 @@
+.main {
+    height: 100px;
+    width: 100px;
+    background: green;
+    /* transform: rotate(90deg); */
+    /* transform: skew(15deg); */
+
+    /* transform: translate(40px, 80px); */
+    transition: background 2s ease-in-out;
+    
+}
+
+.main:hover {
+    /* transform: scale(0.9); */
+    background: red;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #5a3000;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 .7rem #5a3000;
+    position: relative;
+    left: 280px;
+    top: 100px;
+    
+    /* transition: transform 10s ease-in; */
+
+}
+
+
+button:hover {
+    /* background: white;
+    color: #5a3000;
+    border: 2px solid #5a3000; */
+    box-shadow: none;
+    cursor: pointer;
+    /* animation: morteza 10s ease-in; */
+    animation-name: morteza;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /* transform: scale(1.1); */
+} 
+
+@keyframes morteza {
+    0% {
+        background: #5a3000;
+        color: white;
+        box-shadow: 0 0 .7rem #5a3000;
+    }
+
+    25% {
+        background: #f38c17;
+        color: rgb(189, 184, 184);
+        box-shadow: 0 0 .7rem #f38c17;
+    }
+
+    50% {
+        background: #f33817;
+        color: rgb(187, 149, 146);
+        box-shadow: 0 0 .7rem #f33817;
+        border: 1px solid rgb(187, 149, 146);
+    }
+
+    75% {
+        background: #ee0808;
+        color: rgb(143, 136, 185);
+        box-shadow: 0 0 .7rem #ee0808;
+        border: 1px solid rgb(143, 136, 185);
+
+    }
+
+    100% {
+        background: #640101;
+        color: rgb(32, 0, 211);
+        box-shadow: 0 0 .7rem #640101;
+        border: 2px solid rgb(32, 0, 211);
+    }
+}
+
+
+
+@media (max-width: 320px ){
+    button{
+        left: 100px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 321px){
+    button{
+        left: 200px;
+        top: 100px;
+    }
+}
+
+@media (max-width: 720px) and (min-width: 481px){
+    button{
+        left: 300px;
+        top: 100px;
+    }
+}

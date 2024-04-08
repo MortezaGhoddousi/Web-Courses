@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+:root {
+    --bgcolor: #1f242d;
+    --secbgcolor: #323946;
+    --textcolor: #eee;
+    --maincolor: #0ef;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bgcolor);
+    color: var(--textcolor);
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 0.8rem;
+}
+
+header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+#job {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.summary-content {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+h3 {
+    color: var(--maincolor);
+    font-size: 20px;
+    border-bottom: 2px solid var(--maincolor);
+    padding-bottom: 2px;
+}
+
+header,
+footer {
+    text-align: center;
+    background: var(--secbgcolor);
+}
+
+section,
+footer {
+    padding: 2px 10px;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+header {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    color: var(--maincolor);
+}
+
+section ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: var(--textcolor);
+    text-decoration: none;
+}
+
+header a:hover {
+    transition: 0.8s ease;
+    color: var(--maincolor);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 2px solid var(--maincolor);
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    color: var(--maincolor);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 1px solid var(--maincolor);
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: var(--secbgcolor);
+}
+
+textarea {
+    border: 1px solid var(--maincolor);
+    width: 203px;
+    padding: 5px;
+    margin-bottom: 5px;
+    resize: none;
+    background: var(--secbgcolor);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--maincolor);
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    border: 2px solid var(--maincolor);
+    border-radius: 7px;
+    color: var(--maincolor);
+    background: var(--secbgcolor);
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+}
+
+#summary .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

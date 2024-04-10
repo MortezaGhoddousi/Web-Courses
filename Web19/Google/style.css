@@ -1,0 +1,302 @@
+body {
+    background: rgb(255, 255, 255);
+    font-family: sans-serif;
+    max-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 20px;
+    margin: 0;
+}
+
+a {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+}
+
+header .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    margin-right: 25px;
+}
+
+.left {
+    font-size: 0.95rem;
+}
+
+.left ul,
+.right ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+}
+
+header .right li:nth-child(3) a {
+    font-size: 1.4rem;
+    color: rgb(95, 99, 104);
+    position: relative;
+    top: 0.7vh;
+    padding: 9px;
+}
+
+header .right li:nth-child(4) a {
+    font-size: 2.6rem;
+    color: rgb(95, 99, 104);
+    position: relative;
+    top: 1vh;
+}
+
+header .right li:nth-child(3) a:hover {
+    background: rgb(242, 242, 242);
+    border-radius: 50%;
+}
+
+article {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 45vw;
+    padding: 18px;
+    border-radius: 30px;
+    border: 1px solid rgb(228, 229, 230);
+}
+
+#input label {
+    color: rgb(157, 158, 160);
+    font-size: 1.25rem;
+    position: relative;
+    left: 3vw;
+    top: 0.7vh;
+}
+
+.first-image {
+    height: 35px;
+}
+
+#input img {
+    position: relative;
+    top: 2vh;
+    right: 6.5vw;
+}
+
+.btn {
+    background: rgb(248, 249, 250);
+    padding: 13px 25px 13px 25px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(248, 249, 250);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    border: 1px solid rgb(172, 172, 172);
+}
+
+#btn {
+    margin-top: 5vh;
+}
+
+input {
+    padding-left: 50px;
+}
+
+input:focus {
+    text-indent: 2em;
+}
+
+input:active {
+    border-color: rgb(248, 249, 250);
+}
+
+footer .left,
+footer .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    header {
+        font-size: 0.7rem;
+    }
+    #input label {
+        position: relative;
+        left: 13vw;
+    }
+
+    #input img {
+        position: relative;
+        top: 2vh;
+        right: 22.5vw;
+    }
+
+    #btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn button {
+        width: 50vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 530px) and (min-width: 361px) {
+    #input label {
+        position: relative;
+        left: 10vw;
+    }
+
+    #input img {
+        position: relative;
+        top: 2vh;
+        right: 15.5vw;
+    }
+
+    #btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn button {
+        width: 50vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 724px) and (min-width: 531px) {
+    #input label {
+        position: relative;
+        left: 6vw;
+    }
+
+    #input img {
+        position: relative;
+        top: 2vh;
+        right: 11.5vw;
+    }
+
+    #btn {
+        display: inline;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 725px) {
+    #input label {
+        position: relative;
+        left: 4.5vw;
+    }
+
+    #input img {
+        position: relative;
+        top: 2vh;
+        right: 8.5vw;
+    }
+
+    #btn {
+        display: inline;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1300px) and (min-width: 1025px) {
+    #input label {
+        position: relative;
+        left: 4.5vw;
+    }
+
+    #input img {
+        position: relative;
+        top: 2vh;
+        right: 8.5vw;
+    }
+
+    #btn {
+        display: inline;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

@@ -1,0 +1,38 @@
+body {
+    background-color: #1f242d;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #323946;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0ef;
+    color: #eee;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

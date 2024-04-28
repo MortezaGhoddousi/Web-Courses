@@ -1,0 +1,13 @@
+header,
+footer {
+    background: #3e3111;
+    color: #eee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+article h1 {
+    color: brown;
+}

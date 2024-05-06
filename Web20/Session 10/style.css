@@ -1,0 +1,25 @@
+p {
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* color: green; */
+}
+
+#p1 {
+    color: green;
+}
+
+.c1 {
+    color: blue;
+}
+
+article h1 {
+    color: brown;
+}
+
+article h1,
+#p1,
+#p2,
+.c1 {
+    font-size: 52px;
+}

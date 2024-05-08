@@ -1,0 +1,30 @@
+article h1 {
+    color: green;
+    font-size: 1em;
+    font-style: italic;
+}
+
+article {
+    font-size: 28px;
+}
+
+article p {
+    font-weight: 900;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-shadow: 2px 8px 5px red;
+    box-shadow: -5px -10px 10px blue;
+    text-align: center;
+}
+
+body {
+    direction: ltr;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.c1 {
+    line-height: 85px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,52 @@
+:root {
+    --color1: #eee;
+    --color2: #222;
+}
+
+article {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    height: 400px;
+    /* background-color: red; */
+    background-image: url(./0.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    border: 2px solid black;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+ul,
+li {
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+    /* padding: 5px; */
+}
+
+li::marker {
+    color: blue;
+    font-weight: bold;
+}
+
+a {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}

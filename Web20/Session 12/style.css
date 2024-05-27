@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article {
+    border-radius: 50px;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 100px;
+    padding-bottom: 150px;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+article.top {
+    border: 2px dashed blue;
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 150px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,95 @@
+/* table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.first {
+    background: #777;
+}
+
+tr:nth-child(1) {
+    background: #777;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 65vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+}
+
+form label {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 2px solid green;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px green;
+    width: 30vw;
+} */
+
+input:not(input[type="submit"]) {
+    border: 2px solid green;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px green;
+    width: 30vw;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+input[type="submit"] {
+    border: 2px solid green;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px green;
+    background: green;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: white;
+    color: green;
+    box-shadow: none;
+}

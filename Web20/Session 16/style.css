@@ -1,0 +1,79 @@
+article {
+    height: 100px;
+    width: 100px;
+    background: green;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    /* transform: translate(-50px, -100px); */
+    /* transform: scale(1.4); */
+    /* transform: translateX(-100%); */
+
+    /* transition: width;
+    transition-duration: 10s;
+    transition-timing-function: ease; */
+    /* transition-delay: 3s; */
+
+    /* animation: scaleUp;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: moveRight 1s ease 0s 1 normal;
+}
+
+article:hover {
+    /* transform: scale(1.1); */
+    /* background: red; */
+    /* width: 200px; */
+    /* transform: skew(45deg); */
+}
+
+@keyframes scaleUp {
+    0% {
+        background: green;
+        width: 100px;
+    }
+    25% {
+        background: orange;
+        width: 125px;
+    }
+    50% {
+        background: red;
+        width: 150px;
+    }
+    75% {
+        background: purple;
+        width: 175px;
+    }
+    100% {
+        background: blue;
+        width: 200px;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 600px) {
+    article {
+        background: blue;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+    article {
+        background: red;
+    }
+}

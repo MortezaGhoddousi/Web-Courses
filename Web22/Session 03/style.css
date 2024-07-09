@@ -1,0 +1,14 @@
+p {
+    border: 2px solid black;
+    background: red;
+}
+
+div {
+    width: 50%;
+    border: 2px solid blue;
+}
+
+b {
+    border: 4px solid green;
+    background: yellow;
+}

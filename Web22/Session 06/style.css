@@ -1,0 +1,92 @@
+/* selector {
+    declaration
+    property1: value1;
+    property2: value2;
+} */
+
+/* Selection by tag name */
+
+p {
+    color: red;
+}
+
+/* Selection by id */
+
+#paragraph01 {
+    color: green;
+}
+
+/* Selection by class name */
+
+.paragraph03 {
+    color: blue;
+}
+
+/* Selection by position */
+
+header h1 {
+    color: brown;
+}
+
+header .paragraph03 {
+    color: aqua;
+}
+
+/* Multiple selection */
+
+/* #paragraph01 {
+    font-size: 28px;
+}
+.paragraph03 {
+    font-size: 28px;
+}
+
+header h1 {
+    font-size: 28px;
+} */
+
+#paragraph01,
+.paragraph03,
+header h1 {
+    font-size: 28px;
+}
+
+/* Selection by attribute */
+
+input[type="password"] {
+    border: 2px solid green;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* header {
+    font-size: 40px;
+} */
+
+html {
+    font-size: 20px;
+}
+
+#job {
+    font-size: 0.5em;
+}
+
+#job {
+    font-size: 0.5rem;
+}
+
+#text-style {
+    font-family: "Times New Roman", Times, serif, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 2px 10px 10px green;
+    text-align: center;
+    line-height: 35px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

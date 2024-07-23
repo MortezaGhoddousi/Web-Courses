@@ -1,0 +1,72 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+article {
+    /* margin: 5px; */
+    border: 2px solid black;
+    border-radius: 15px;
+    /* padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px; */
+
+    /* padding: 5px 10px 15px 20px; */
+    /* padding: 5px 15px 20px; */
+    /* padding: 5px 20px; */
+    /* padding: 5px; */
+    padding: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+p {
+    border: 2px dashed red;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: skyblue;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 0.5rem skyblue;
+    cursor: pointer;
+}
+
+
+html {
+    font-size: 20px;
+}
+
+/* body {
+    scroll-behavior: smooth;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("./3.jpg");
+    background-size: cover auto;
+    background-position-x: center;
+    background-position-y: center;
+    backdrop-filter: brightness(50%);
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+ul {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+

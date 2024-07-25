@@ -1,0 +1,90 @@
+/* p {
+    color: green;
+    font-size: 28px;
+} */
+
+/* selector {
+    property1: value1;
+    property2: value2;
+} */
+
+/* Selectors */
+
+/* selection by tag name */
+
+p {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+
+/* selection by id */
+
+#paragraph01 {
+    color: brown;
+}
+
+/* selection by class */
+
+.paragraph03 {
+    color: yellow;
+}
+
+/* selection by attribute */
+
+input[name="password"] {
+    border: 2px solid blue;
+}
+
+/* selection by position */
+
+div .paragraph03 {
+    color: aqua;
+}
+
+/* selection by children */
+
+ul li:nth-child(odd) {
+    color: burlywood;
+}
+
+ul li:last-child {
+    color: green;
+}
+
+
+/* multiple selection */
+
+/* #paragraph01 {
+    font-size: 26px;
+}
+
+#paragraph02 {
+    font-size: 26px;
+}
+
+div p {
+    font-size: 26px;
+}
+
+div .paragraph03 {
+    font-size: 26px;
+} */
+
+#paragraph01, #paragraph02, div p, div .paragraph03 {
+    font-size: 28px;
+}
+
+div p{
+    font-size: 3em;
+}
+
+html {
+    font-size: 10px;
+}
+
+div .paragraph03 {
+    font-size: 3rem;
+}

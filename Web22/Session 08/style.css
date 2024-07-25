@@ -1,0 +1,188 @@
+/* a {
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border: 1px solid skyblue;
+    padding: 5px;
+    border-radius: 7px;
+    margin: 5px;
+    background: skyblue;
+    box-shadow: 0 0 1rem skyblue;
+}
+
+a:hover {
+    background: rgb(10, 175, 240);
+    color: #ddd;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+table:not(form table) {
+    margin-top: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table:not(form table) td {
+    border: 2px solid black;
+}
+
+table:not(form table) tr:nth-child(even) {
+    background: gray;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table:not(form table) tr:nth-child(odd) {
+    background: rgb(211, 209, 209);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table:not(form table) tr:nth-child(2) {
+    background: rgb(32, 32, 32);
+    color: #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: 50px;
+}
+
+form table {
+    text-align: left;
+    padding: 5px;
+    width: 700px;
+    box-sizing: border-box;
+}
+
+form label {
+    color: green;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* form input[name="username"],
+form input[name="password"],
+form input[name="email"] {
+    border: 2px solid green;
+} */
+
+/* form input:not(input[name="submit"]) {
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 9px;
+    width: 200px;
+}
+
+form input::placeholder {
+    color: green;
+    opacity: 0.5;
+}
+
+input[name="submit"] {
+    background: green;
+    color: #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 9px;
+    border: none;
+    width: 70px;
+    box-shadow: 0 0 1rem green;
+}
+
+input[name="submit"]:hover {
+    background: #ccc;
+    color: green;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+p {
+    background: red;
+    padding: 3px;
+    border: 2px solid black;
+    display: inline;
+}
+
+b {
+    background: yellow;
+    border: 2px dashed green;
+    display: inline;
+}  */
+
+/* article {
+    background: red;
+    border: 2px solid black;
+    padding: 5px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+section {
+    background: blue;
+    border: 2px solid green;
+    color: white;
+    flex-basis: 200px;
+} */
+
+header ul li {
+    display: inline;
+}
+
+header {
+    background: skyblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1,
+header p {
+    flex-basis: 200px;
+}
+
+header nav {
+    flex-basis: 300px;
+}
+
+main {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+article {
+    flex-grow: 3;
+    background: green;
+    height: 250px;
+}
+
+aside {
+    flex-grow: 1;
+    background: yellow;
+    height: 250px;
+}
+
+
+footer {
+    background: black;
+    color: white;
+}

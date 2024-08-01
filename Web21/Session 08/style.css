@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+form label {
+    display: block;
+}
+
+article {
+    margin: 50px;
+}
+
+form {
+    margin-top: 20px;
+    width: 500px;
+}
+
+form input {
+    border: 2px solid skyblue;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 8px;
+} */
+
+/* form input[name="username"],
+form input[name="password"],
+form input[name="email"] {
+    width: 480px;
+} */
+
+/* form input:not(input[name="submit"]) {
+    width: 480px;
+}
+
+form input::placeholder {
+    color: skyblue;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+form input[name="submit"] {
+    background: skyblue;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 16px skyblue;
+}
+
+form input[name="submit"]:hover {
+    box-shadow: none;
+    background: white;
+    color: skyblue;
+    cursor: pointer;
+}
+
+b {
+    display: block;
+}
+
+p {
+    display: inline;
+} */
+
+/* header nav ul li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/* article {
+    margin: 50px;
+    height: 300px;
+    padding: 10px;
+    background: blue;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section {
+    background: red;
+    border: 2px solid yellow;
+    color: white;
+    padding: 5px;
+    flex-basis: 100px;
+} */
+
+/* .second {
+    background: green;
+    flex-basis: 200px; */
+
+/* position: relative;
+    top: 90px;
+    right: 30px; */
+
+/* position: fixed;
+    top: 50px;
+    left: 50px; */
+
+/* position: absolute;
+    top: 50px;
+    left: 50px; */
+/* } */
+
+/* header {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+} */
+
+header {
+    display: grid;
+    grid-template-areas: "header p nav";
+    /* "nav nav"; */
+    align-items: center;
+    column-gap: 50px;
+}
+
+header ul {
+    display: grid;
+    grid-template-areas: "li li li li";
+    list-style: none;
+}
+
+header h1 {
+    grid-column: 1/3;
+}
+
+header p {
+    grid-column: 3/3;
+}
+
+header nav {
+    grid-column: 2/3;
+}

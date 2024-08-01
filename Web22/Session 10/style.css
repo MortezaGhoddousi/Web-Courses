@@ -1,0 +1,212 @@
+/* article p { */
+/* transition: transform 2s ease-in; */
+/* animation-name: moveRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; */
+/* animation-delay: 5s; */
+/* animation-iteration-count: infinite; */
+/* animation-direction: reverse;*/
+/* animation: moveRight 1s ease-in-out 0s 1;
+    font-size: 20px; */
+/* } */
+
+/* article {
+    background: red;
+    animation: changeBackground 5s ease 0s infinite alternate-reverse;
+} */
+
+/* article p:hover {
+    transform: translate(50px);
+} */
+
+/* @keyframes moveDown {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes changeBackground {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: purple;
+    }
+
+    50% {
+        background: blue;
+    }
+
+    75% {
+        background: green;
+    }
+
+    100% {
+        background: orange;
+    }
+} */
+
+/* @media (max-width: 400px) {
+    article p {
+        animation: moveDown 1s ease-in-out 0s 1;
+        font-size: 40px;
+    }
+} */
+
+:root {
+    --main: #91ac9a;
+    --bg: #cedfdf;
+    --secbg: #b7d1d3;
+    --text: #8fb8ca;
+    --mainSize: 16px;
+    --largeSize: 20px;
+    --xLargeSize: 28px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background: var(--bg);
+    font-size: var(--mainSize);
+    padding: 0px 80px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header div {
+    display: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+header ul a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+}
+
+header p {
+    position: relative;
+    right: 150px;
+}
+
+#summary {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+#summary div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+#summary div img {
+    flex-basis: 400px;
+    flex-grow: 1;
+    width: 400px;
+    border-radius: 15px;
+    border: none;
+}
+
+#summary div p {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+@media (max-width: 460px) {
+    header nav,
+    header p {
+        display: none;
+    }
+
+    header div {
+        display: block;
+        font-size: 30px;
+    }
+
+    header h1 {
+        position: relative;
+        right: 50px;
+    }
+
+    #summary div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+}

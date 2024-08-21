@@ -1,0 +1,56 @@
+/* p {
+    color: red;
+    font-size: 30px;
+} */
+
+/* selector {
+    property1: value1;
+    property2: value2;
+}  */
+
+/* Selection by tag name */
+p {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+/* Selection by id */
+
+.heading1 {
+    color: green;
+}
+
+/* Selection by class name */
+
+#heading2 {
+    color: purple;
+}
+
+/* Multiple selection */
+
+/* .hsize {
+    font-size: 30px;
+}
+
+#hsize {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 30px;
+} */
+
+.hsize,
+#hsize,
+h4 {
+    font-size: 30px;
+}
+
+/* Selection by position */
+
+div h6 {
+    color: red;
+}

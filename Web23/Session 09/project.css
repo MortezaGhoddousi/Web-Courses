@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+header {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+h1, p, nav {
+    justify-self: center;
+    align-self: center;
+}
+

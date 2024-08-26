@@ -1,0 +1,65 @@
+/* input[name="username"],
+input[name="password"] {
+    padding: 7px;
+    margin: 7px;
+    border: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 16px black;
+} */
+
+h1 {
+    display: inline;
+}
+
+input {
+    display: block;
+}
+
+input:not(input[name="submit"]) {
+    outline: none;
+    padding: 7px;
+    margin: 7px;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 6px black;
+    text-indent: 20px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    opacity: 0.4;
+    text-indent: 20px;
+}
+
+input[name="submit"] {
+    padding: 7px;
+    margin: 7px;
+
+    border-radius: 7px;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 0 6px black;
+    cursor: pointer;
+}
+
+input[name="submit"]:hover {
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+
+label {
+    position: relative;
+}
+
+label i {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    opacity: 0.4;
+}

@@ -1,0 +1,39 @@
+article {
+    background-color: red;
+    border: 2px solid black;
+    padding: 20px;
+    display: grid;
+    /* grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px; */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "first third"
+        "second second";
+
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+section {
+    background-color: green;
+    border: 2px solid black;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+section:nth-child(1) {
+    grid-area: first;
+}
+
+section:nth-child(2) {
+    grid-area: second;
+}
+
+
+section:nth-child(3) {
+    grid-area: third;
+}
+

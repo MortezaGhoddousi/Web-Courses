@@ -1,0 +1,55 @@
+article {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: 2px solid;
+    transform: translateY(-50px);
+    opacity: 0;
+    /* animation-name: moveDown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: forwards; */
+    animation: moveDown 1s ease 2s 2 normal forwards;
+    /* transition: 1s ease; */
+}
+
+p {
+    animation: moveRight 1s ease-in;
+}
+
+article:hover {
+    /* transform: translate(50px, 20px); */
+    /* transform: translateX(50px); */
+    /* transform: translateY(50px); */
+    /* transform: rotate(45deg); */
+    transform: scale(1.05);
+    background-color: red;
+    /* width: 400px; */
+    /* transform: scale(0.8); */
+    /* transform: skew(30deg); */
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

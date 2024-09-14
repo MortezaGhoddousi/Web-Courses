@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    background: #eee;
+    padding: 50px 100px;
+    height: 100vh;
+}
+
+header,
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    gap: 20px;
+}
+
+article img {
+    grid-area: first;
+}
+
+.first {
+    grid-area: secfirst;
+    font-size: 30px;
+}
+
+.last {
+    grid-area: seclast;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 10px;
+}
+
+.last button {
+    background-color: orangered;
+    color: #eee;
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 150px;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 50px;
+}
+
+.last h5 {
+    font-size: 16px;
+    color: rgb(71, 71, 71);
+}
+
+article section:last-child {
+    grid-area: last;
+    background-color: #111;
+    padding: 10px;
+}
+
+article section:last-child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+article section:last-child h2 {
+    color: rgb(248, 146, 58);
+}
+
+article section:last-child h4 {
+    color: #eee;
+}
+
+article section:last-child h5 {
+    color: #888;
+    border-bottom: 1px solid #888;
+}
+
+footer {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+footer section img {
+    grid-area: image;
+    width: 120px;
+    height: 190px;
+}
+
+footer section {
+    display: grid;
+    grid-template-rows: 50px 70px 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "image number"
+        "image title"
+        "image conten";
+}
+
+footer section h2 {
+    color: #888;
+    font-size: 26px;
+    grid-area: number;
+}
+
+footer section h3 {
+    font-size: 16px;
+    grid-area: title;
+}
+
+footer section h4 {
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+    grid-area: conten;
+}
+
+@media screen and (min-width: 480px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "first first last"
+            "secfirst seclast last";
+        gap: 10px;
+        padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 480px) {
+    header nav {
+        display: none;
+    }
+
+    article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

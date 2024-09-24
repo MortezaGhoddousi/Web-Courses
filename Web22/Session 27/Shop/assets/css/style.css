@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+article section img {
+    width: 200px;
+    height: 200px;
+}
+
+article section {
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.name {
+    font-size: 26px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}

@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #f0d9b1;
+    font-size: 16px;
+    line-height: 30px;
+    width: 700px;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+header {
+    background-color: #f0d9b1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 7px 7px 7px;
+    font-weight: bolder;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 7px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header .bx {
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 29px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+header .bx:hover {
+    background-color: #ddc7a2;
+}
+
+header div i {
+    font-size: 33px;
+}
+
+header .container {
+    position: relative;
+}
+
+header .dropdown {
+    display: none;
+    border: 1px solid;
+    outline: none;
+    border-radius: 9px;
+    direction: rtl;
+    width: 150px;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    background-color: #f0d9b1;
+    z-index: 99;
+}
+
+header .dropdown ul {
+    padding: 15px;
+    list-style-type: none;
+}
+
+header .dropdown ul li {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+article div {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    margin: 3px;
+    color: #f0f2f6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article div:nth-child(1) {
+    background: rgba(0, 0, 0, 0.7) url(./images/1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(2) {
+    background: rgba(0, 0, 0, 0.7) url(./images/2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(3) {
+    background: rgba(0, 0, 0, 0.7) url(./images/3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(4) {
+    background: rgba(0, 0, 0, 0.7) url(./images/4.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(5) {
+    background: rgba(0, 0, 0, 0.7) url(./images/5.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(6) {
+    background: rgba(0, 0, 0, 0.7) url(./images/6.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(7) {
+    background: rgba(0, 0, 0, 0.7) url(./images/7.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(8) {
+    background: rgba(0, 0, 0, 0.7) url(./images/8.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(9) {
+    background: rgba(0, 0, 0, 0.7) url(./images/9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(10) {
+    background: rgba(0, 0, 0, 0.7) url(./images/10.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(11) {
+    background: rgba(0, 0, 0, 0.7) url(./images/11.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div:nth-child(12) {
+    background: rgba(0, 0, 0, 0.7) url(./images/12.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+article div {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+article .column:hover {
+    background-blend-mode: normal;
+}
+
+footer {
+    background-color: #f0d9b1;
+    box-shadow: 0 4px 20px rgba(240, 217, 177, 1);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    bottom: 10px;
+    transition: 0.5s ease;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .bx {
+    padding: 2px;
+    border-radius: 7px;
+    font-size: 29px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+footer .bx:hover {
+    background-color: #ddc7a2;
+}
+
+footer button {
+    font-family: "Vazirmatn", sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #005b4c;
+    color: #f0f2f6;
+    cursor: pointer;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    body {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 90vw;
+        font-size: 13px;
+    }
+
+    header {
+        font-size: 10px;
+    }
+
+    header div {
+        gap: 3px;
+    }
+
+    header img {
+        width: 40px;
+    }
+
+    header .bx {
+        font-size: 22px;
+    }
+
+    header .bx-list-ul {
+        font-size: 28px;
+    }
+
+    footer {
+        font-size: 11px;
+    }
+
+    footer button {
+        padding: 3px;
+    }
+
+    footer .bx {
+        font-size: 20px;
+    }
+}

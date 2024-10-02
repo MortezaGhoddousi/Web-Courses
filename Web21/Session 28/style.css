@@ -1,0 +1,446 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #eee;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    padding: 20px 70px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: #717275;
+    padding: 5px 0;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+
+header nav ul .active a,
+header nav ul a:hover {
+    color: #ff4400;
+    border-bottom: 1px solid #717275;
+}
+
+header h1 {
+    color: #ff4400;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+header h1 span {
+    color: #000000;
+    transition: color 0.4s ease;
+}
+
+header h1:hover span {
+    color: #ff4400;
+}
+
+header div i {
+    font-size: 24px;
+    padding: 0 12px;
+    color: #717275;
+}
+
+article .carousel {
+    transition: .7s ease;
+    width: 100vw;
+    height: 92vh;
+    background-image: url(./assets/images/slideshow/medium-shot-business-women-high-five.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 70px;
+    box-shadow: inset 0 0 600px rgb(0, 0, 0);
+}
+
+article .carousel div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 40px;
+    width: 50vw;
+}
+
+article .carousel div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+article .carousel div:last-child i {
+    color: rgba(253, 253, 253, 0.61);
+    font-size: 40px;
+    cursor: pointer;
+}
+
+article .carousel div:last-child i#active,
+article .carousel div:last-child i:hover {
+    color: #eee;
+}
+
+article .carousel h1 {
+    font-size: 62px;
+    color: #eee;
+    font-weight: bolder;
+}
+
+article .carousel p {
+    color: #eee;
+    font-size: 20px;
+}
+
+article .carousel button {
+    padding: 20px 35px;
+    background-color: #000000;
+    color: #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+article .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article .main h1 {
+    padding-top: 160px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+article .main h1 b {
+    color: #ff4400;
+    text-transform: capitalize;
+}
+
+article .main .first {
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    gap: 45px;
+}
+
+article .main .first img {
+    width: 40vw;
+    justify-self: center;
+    align-self: center;
+}
+
+article .main .first ul,
+article .main .first div {
+    justify-self: center;
+    align-self: center;
+}
+
+article .main .first div {
+    letter-spacing: 3px;
+}
+
+article .main .first div h2 b {
+    color: #ff4400;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+article .main .first div h2 {
+    padding-bottom: 10px;
+}
+
+article .main .first div p {
+    color: #717275;
+    padding-bottom: 10px;
+}
+
+article .main .first div a {
+    color: #717275;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+article .main .first div a:hover {
+    color: #ff4400;
+}
+
+article .main .first ul li {
+    padding: 10px 5px;
+    font-size: 20px;
+    color: #d0d1d1;
+    border-left: 1px solid;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+article .main .first ul li.active,
+article .main .first ul li:hover {
+    color: #ff4400;
+}
+
+article .main .last {
+    width: 100vw;
+    padding-top: 90px;
+    margin-left: -70px;
+    margin-right: -70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article .main .last img {
+    width: 55vw;
+}
+
+article .main .last div {
+    background-color: #f0f8ff;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+article .main .last div h1 {
+    padding-top: 10px;
+}
+
+article .main .last div p {
+    font-size: 22px;
+    color: #d0d1d1;
+}
+
+article .main .last div a {
+    color: #717275;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+article .products {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+article .products h1 {
+    font-size: 38px;
+}
+
+article .products a {
+    color: #717275;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+article .products .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    height: 372px;
+}
+
+article .products .container img {
+    width: 100%;
+    height: 250px;
+}
+
+article .products .container section {
+    width: 100%;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    height: 372px;
+}
+
+article .products .container section aside {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "h2 span"
+        "p p";
+    gap: 20px;
+}
+
+article .products .container section aside h2,
+article .products .container section aside span,
+article .products .container section aside p {
+    justify-self: start;
+    align-self: center;
+}
+
+article .products .container section aside span {
+    justify-self: end;
+}
+
+article .products .container section aside h2 {
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+article .products .container section aside h2:hover {
+    color: #ff4400;
+}
+
+article .products .container section aside span {
+    color: #717275;
+    font-size: 16px;
+}
+
+article .products .container section aside p {
+    color: #717275;
+    font-size: 16px;
+}
+
+footer {
+    margin-left: -70px;
+    margin-right: -70px;
+    color: #eee;
+    background-color: #000000;
+    margin-top: 75px;
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+    'r1c1 r1c2 . r1c4'
+    'r2c1 r2c2 r2c3 r2c4';
+    column-gap: 50px;
+    row-gap: 10px;
+}
+
+footer h2:not(footer h2 span) {
+    cursor: pointer;
+    color: #717275;
+    transition: 0.4s ease;
+}
+
+footer h2 span {
+    color: #eee;
+}
+
+footer h2:hover {
+    color: #ff4400;
+}
+
+footer h2 {
+    grid-area: r1c1;
+    font-size: 32px;
+}
+
+footer .r2c1 {
+    grid-area: r2c1;
+    color: #717275;
+}
+
+footer .r2c1 p:last-child {
+    margin-top: 10px;
+}
+
+footer .r2c1 p span {
+    color: #b0b1b1;
+    font-weight: bold;
+}
+
+footer .r1c2 {
+    grid-area: r1c2;
+    font-size: 20px;
+}
+
+footer .r2c2,
+footer .r2c3 {
+    grid-area: r2c2;
+    color: #717275;
+}
+
+footer .r2c2 p:not(footer .r2c2 p:first-child),
+footer .r2c3 p:not(footer .r2c3 p:first-child) {
+    margin-top: 10px;
+}
+
+footer .r2c2 p,
+footer .r2c3 p {
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+footer .r2c2 p:hover,
+footer .r2c3 p:hover {
+    color: #f0f8ff;
+}
+
+footer .r2c3 {
+    grid-area: r2c3;
+}
+
+footer .r1c4 {
+    grid-area: r1c4;
+    font-size: 20px;
+
+}
+
+footer .r2c4 {
+    grid-area: r2c4;
+
+}
+
+footer .r2c4 i {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #b0b1b1;
+}
+
+footer .r2c4 i:first-child {
+    margin-left: 0;
+}
+
+

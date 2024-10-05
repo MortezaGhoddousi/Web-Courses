@@ -1,0 +1,179 @@
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    overflow-y: hidden;
+    background: linear-gradient(
+        to right bottom,
+        rgb(1, 2, 6),
+        rgb(61, 39, 224)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+}
+
+#cr {
+    position: relative;
+    top: 35px;
+    color: #eee;
+    font-weight: bold;
+}
+
+.left {
+    border-radius: 10px 0 0 10px;
+    flex: 2;
+    background-image: url(./pexels-minan1398-813269.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+}
+
+.left h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 75px;
+}
+
+.left p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 0.9em;
+    margin-top: 0;
+    position: relative;
+    bottom: 85px;
+}
+
+.right {
+    border-radius: 0 10px 10px 0;
+    flex: 1;
+    background: #eee;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(99, 82, 236);
+}
+
+.right h2 {
+    position: relative;
+    bottom: 20px;
+    font-size: 17px;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.right form label {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.right form input[type="text"],
+.right form input[type="password"],
+.right form input[type="email"] {
+    border: none;
+    background: rgb(234, 230, 255);
+    text-indent: 2em;
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.textError {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+}
+
+.right form input:focus {
+    text-indent: 2em;
+    outline: none;
+}
+
+.right form i {
+    position: relative;
+    left: 25px;
+}
+
+.right form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.right form div a {
+    color: gray;
+    font-size: 10px;
+    text-decoration: none;
+    position: relative;
+    left: 15px;
+}
+
+.right form div i {
+    border: 1px solid rgb(99, 82, 236);
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+
+.right form input[type="submit"] {
+    padding: 7px;
+    color: #eee;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right, rgb(1, 2, 6), rgb(99, 82, 236));
+    width: 70%;
+    cursor: pointer;
+}
+
+
+@media (max-width: 620px) {
+    .left p {
+        font-size: 0.8em;
+        position: relative;
+        top: 20px;
+    }
+    .left h1 {
+        font-size: 0.8em;
+        position: relative;
+        top: 20px;
+    }
+}

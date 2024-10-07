@@ -1,0 +1,29 @@
+/* p {
+    color: red;
+} */
+
+
+/* selector {
+    property1: value1;
+    property2: value2;
+    property3: value3;
+} */
+
+/* selection by tag name */
+
+/* p {
+    color: red;
+    font-size: 20px;
+} */
+
+/* selection by class name */
+
+.paragraph1 {
+    color: blue;
+}
+
+/* selection by id */
+
+#paragraph2 {
+    color: red;
+}

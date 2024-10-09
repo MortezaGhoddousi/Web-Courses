@@ -1,0 +1,105 @@
+/* Selection by position */
+
+body div p {
+    font-style: italic;
+}
+
+/* Multiple selection */
+/* 
+#p1 {
+    color: green;
+    font-size: 28px;
+}
+
+div p {
+    color: green;
+    font-size: 28px;
+} */
+
+#p1,
+div p {
+    color: green;
+    font-size: 28px;
+}
+
+/* selection by attribute */
+
+/* #passInput {
+    border: 2px solid red;
+} */
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+/* Selection by relatives */
+
+/* section p:nth-child(2) {
+    color: blue;
+} */
+
+/* section p:last-child {
+    color: blue;
+} */
+
+/* section p:nth-child(odd) {
+    color: blueviolet;
+} */
+
+/* .paragraphs {
+    font-size: large;
+} */
+
+section p:not(section p:nth-child(5)) {
+    font-size: large;
+}
+
+article p:nth-child(2) {
+    font-style: italic;
+}
+
+article p:nth-child(3) {
+    text-align: center;
+}
+
+article p:nth-child(4) {
+    font-weight: bold;
+}
+
+article p:nth-child(5) {
+    text-decoration: underline;
+}
+
+article p:nth-child(6) {
+    text-decoration: line-through;
+}
+
+article p:nth-child(7) {
+    text-decoration: overline;
+}
+
+article p:nth-child(8) {
+    text-transform: uppercase;
+}
+
+article p:nth-child(9) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article p:nth-child(10) {
+    text-shadow: 5px 15px 5px red;
+}
+
+input[type="password"] {
+    box-shadow: 10px 10px 5px green;
+}
+
+article p:nth-child(11) {
+    line-height: 30px;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+}
+
+
+
+

@@ -1,0 +1,122 @@
+article {
+    border: 2px solid black;
+    height: 400px;
+    width: 400px;
+    /* background-color: red; */
+
+    background-image: url(./images/businesspeople-meeting-office-working.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: repeat; */
+
+    /* backdrop-filter: blur(2px); */
+}
+
+article:hover {
+    background-image: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+p {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    padding: 30px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+table td,
+table th {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table tr:first-child {
+    background-color: gray;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(212, 208, 208);
+}
+
+table tr:nth-child(odd):not(table tr:first-child) {
+    background-color: rgb(53, 53, 53);
+}
+
+section,
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+form {
+    width: 50vw;
+}
+
+form input:not(form input[type="submit"]) {
+    width: 100%;
+    border: 2px solid green;
+    border-radius: 7px;
+    padding: 7px;
+    box-shadow: 0 0 10px green;
+    outline: none;
+}
+
+form input::placeholder {
+    color: green;
+    font-weight: bold;
+    text-transform: capitalize;
+    opacity: 0.5;
+    text-indent: 20px;
+}
+
+form input[type="submit"] {
+    padding: 7px;
+    border-radius: 7px;
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+    color: green;
+    box-shadow: 0 0 10px green;
+}

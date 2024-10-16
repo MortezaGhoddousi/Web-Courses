@@ -1,0 +1,39 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    height: 30vh; /* Full viewport height */
+    background-image: url("your-image-url.jpg");
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    color: white; /* Text color */
+    display: flex; /* Center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 50% opacity */
+    z-index: 1; /* Ensure overlay is above the background */
+}
+
+h1 {
+    position: relative; /* Position relative to the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+}

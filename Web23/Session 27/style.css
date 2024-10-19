@@ -1,0 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
+p {
+    transition: 1s ease;
+}

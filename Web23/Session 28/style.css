@@ -1,0 +1,41 @@
+/* article p {
+    transition: 1s ease;
+    opacity: 0;
+}
+
+article p:hover {
+    opacity: 1;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+section {
+    padding: 50px 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10fr 1fr;
+    gap: 30px;
+    grid-template-areas:
+        "image image"
+        "prev next";
+}
+
+section img {
+    /* width: 500px; */
+    width: calc(100vw - 40vw);
+    height: 300px;
+    grid-area: image;
+}
+
+section #pre {
+    grid-area: prev;
+}
+
+section #next {
+    grid-area: next;
+}

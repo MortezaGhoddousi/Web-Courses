@@ -1,0 +1,204 @@
+:root {
+    --first: rgb(62, 99, 88);
+    --seconde: #fcfdfd;
+    --third: #f5be4a;
+    --paddingRL: 4vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* ******************************************************************************* */
+/* header */
+
+header {
+    padding: 20px var(--paddingRL);
+    background: var(--first);
+    width: 100vw;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "r1c1 r1c2"
+        "r2c1 r234c2"
+        "r3c1 r234c2"
+        "r4c1 r234c2";
+}
+
+header h1 {
+    grid-area: r1c1;
+    cursor: pointer;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+header div:nth-child(2) {
+    grid-area: r1c2;
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+header div:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+header div:nth-child(2) ul:nth-child(2) {
+    font-size: 22px;
+}
+
+header div:nth-child(2) ul a {
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: border 0.1s ease;
+}
+
+header div:nth-child(2) ul a:hover {
+    opacity: 1;
+    border-bottom: 5px solid var(--third);
+}
+
+header h2 {
+    grid-area: r2c1;
+    font-size: 42px;
+}
+
+header p {
+    grid-area: r3c1;
+    opacity: 0.5;
+    line-height: 30px;
+}
+
+header div:nth-child(5) {
+    grid-area: r4c1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+header div:nth-child(5) button {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header div:nth-child(5) button:first-child {
+    background-color: #f5be4a;
+    border: none;
+    color: #111;
+}
+
+header div:nth-child(5) button:last-child {
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.7;
+}
+
+header div:nth-child(5) button:last-child:hover {
+    opacity: 1;
+}
+
+header img {
+    grid-area: r234c2;
+    width: 45vw;
+}
+
+/* ******************************************************************************* */
+/* section 1 */
+
+main section:nth-child(1) {
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+main section:nth-child(1) div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main section:nth-child(1) div:nth-child(1) h2 {
+    font-size: 28px;
+}
+
+main section:nth-child(1) div:nth-child(1) p {
+    opacity: 0.7;
+    line-height: 30px;
+}
+
+main section:nth-child(1) div:nth-child(1) button {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section:nth-child(1) div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+main section:nth-child(1) div:nth-child(2) aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: 0.3s ease;
+    border-radius: 7px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+main section:nth-child(1) div:nth-child(2) aside img {
+    width: 15vw;
+    height: 25vh;
+    transition: 0.3s ease;
+}
+
+main section:nth-child(1) div:nth-child(2) aside p {
+    font-weight: bold;
+}
+
+main section:nth-child(1) div:nth-child(2) aside:hover {
+    background-color: #d6d6d6;
+}
+
+main section:nth-child(1) div:nth-child(2) aside:hover img {
+    transform: translateY(-90px);
+}

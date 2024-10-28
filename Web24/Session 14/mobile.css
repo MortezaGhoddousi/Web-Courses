@@ -1,0 +1,167 @@
+@media (max-width: 684px) {
+    header .menu {
+        display: block;
+    }
+
+    header div:nth-child(2) ul {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto 1fr;
+        gap: 20px;
+        grid-template-areas:
+            "r1c1 r1c2"
+            "r2c1 r2c1"
+            "r3c1 r3c1"
+            "r4c1 ."
+            "r234c2 r234c2";
+    }
+
+    header img {
+        grid-area: r234c2;
+        width: 75vw;
+        justify-self: center;
+    }
+
+    main section:nth-child(1) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(1) div:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(1) div:nth-child(2) aside img {
+        width: 35vw;
+        height: 30vh;
+        transition: 0.3s ease;
+    }
+
+    main section:nth-child(1) div:nth-child(2) aside {
+        width: 50vw;
+        justify-self: center;
+    }
+
+    main section:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(2) div:last-child img {
+        width: 60vw;
+        height: auto;
+        justify-self: center;
+        border-radius: 7px;
+    }
+
+    main section:nth-child(2) div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section:nth-child(3) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(3) div:nth-child(1) {
+        position: relative;
+        width: 50vw;
+        justify-self: center;
+        padding-bottom: 150px;
+    }
+
+    main section:nth-child(3) div:nth-child(1) img:nth-child(1) {
+        width: 30vw;
+        height: 30vh;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    main section:nth-child(3) div:nth-child(1) img:nth-child(2) {
+        width: 16vw;
+        height: 7.5vh;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    main section:nth-child(3) div:nth-child(1) img:nth-child(3) {
+        width: 20vw;
+        height: 25vh;
+        position: absolute;
+        top: 35%;
+        right: 5px;
+    }
+
+    main section:nth-child(4) {
+        grid-template-columns: 1fr;
+    }
+
+    main section:nth-child(4) div img {
+        width: 25vw;
+    }
+
+    main section:nth-child(6) {
+        grid-template-rows: 1fr 4fr 4fr 4fr;
+        grid-template-areas:
+            "r1c1 . r1c3"
+            ". r2c1 ."
+            ". r2c2 ."
+            ". r2c3 .";
+        padding: 0 var(--paddingRL);
+    }
+
+    main section:nth-child(6) div img {
+        width: 55vw;
+    }
+
+    footer {
+        background-color: #fff;
+        padding: 0 var(--paddingRL);
+        margin-top: 100px;
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+        grid-template-areas:
+            "r1c12 r1c12 . . ."
+            "r3c1 . . . ."
+            "r2c12345 r2c12345 r2c12345 r2c12345 r2c12345"
+            "r4c1 . . r4c45 r4c45";
+    }
+
+    footer div:nth-child(3) {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 380px) {
+    main section:nth-child(3) div:nth-child(1) img:nth-child(1) {
+        width: 30vw;
+        height: 30vh;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+
+    main section:nth-child(3) div:nth-child(1) img:nth-child(2) {
+        width: 16vw;
+        height: 7.5vh;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    main section:nth-child(3) div:nth-child(1) img:nth-child(3) {
+        width: 20vw;
+        height: 25vh;
+        position: absolute;
+        top: 35%;
+        right: 5px;
+    }
+}

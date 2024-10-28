@@ -1,0 +1,710 @@
+:root {
+    --first: rgb(62, 99, 88);
+    --seconde: #fcfdfd;
+    --third: #f5be4a;
+    --paddingRL: 4vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+/* ******************************************************************************* */
+/* header */
+
+header {
+    padding: 20px var(--paddingRL);
+    background: var(--first);
+    width: 100vw;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "r1c1 r1c2"
+        "r2c1 r234c2"
+        "r3c1 r234c2"
+        "r4c1 r234c2";
+}
+
+header .menu {
+    display: none;
+    font-size: 28px;
+}
+
+header h1 {
+    grid-area: r1c1;
+    cursor: pointer;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+header div:nth-child(2) {
+    grid-area: r1c2;
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 27px;
+}
+
+header div:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    list-style-type: none;
+}
+
+header div:nth-child(2) ul:nth-child(2) {
+    font-size: 22px;
+}
+
+header div:nth-child(2) ul a {
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: border 0.1s ease;
+}
+
+header div:nth-child(2) ul a:hover {
+    opacity: 1;
+    border-bottom: 5px solid var(--third);
+}
+
+header h2 {
+    grid-area: r2c1;
+    font-size: 42px;
+}
+
+header p {
+    grid-area: r3c1;
+    opacity: 0.5;
+    line-height: 30px;
+}
+
+header div:nth-child(5) {
+    grid-area: r4c1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+header div:nth-child(5) button {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header div:nth-child(5) button:first-child {
+    background-color: #f5be4a;
+    border: none;
+    color: #111;
+}
+
+header div:nth-child(5) button:last-child {
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.7;
+}
+
+header div:nth-child(5) button:last-child:hover {
+    opacity: 1;
+}
+
+header img {
+    grid-area: r234c2;
+    width: 45vw;
+}
+
+/* ******************************************************************************* */
+/* section 1 */
+
+main section:nth-child(1) {
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+main section:nth-child(1) div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main section:nth-child(1) div:nth-child(1) h2 {
+    font-size: 28px;
+}
+
+main section:nth-child(1) div:nth-child(1) p {
+    opacity: 0.7;
+    line-height: 30px;
+}
+
+main section:nth-child(1) div:nth-child(1) button {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main section:nth-child(1) div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+main section:nth-child(1) div:nth-child(2) aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    transition: 0.3s ease;
+    border-radius: 7px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+main section:nth-child(1) div:nth-child(2) aside img {
+    width: 15vw;
+    height: 25vh;
+    transition: 0.3s ease;
+}
+
+main section:nth-child(1) div:nth-child(2) aside p {
+    font-weight: bold;
+}
+
+main section:nth-child(1) div:nth-child(2) aside:hover {
+    background-color: #d6d6d6;
+}
+
+main section:nth-child(1) div:nth-child(2) aside:hover img {
+    transform: translateY(-90px);
+}
+
+/* ******************************************************************************* */
+/* section 2 */
+
+main section:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+}
+
+main section:nth-child(2) div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    grid-template-areas:
+        "r1c12 r1c12"
+        "r2c1 r2c2"
+        "r3c1 r3c2";
+}
+
+main section:nth-child(2) div:first-child aside:nth-child(1) {
+    grid-area: r1c12;
+    align-self: center;
+    justify-self: start;
+}
+
+main section:nth-child(2) div:first-child aside:nth-child(2) {
+    grid-area: r2c1;
+    align-self: center;
+    justify-self: start;
+}
+
+main section:nth-child(2) div:first-child aside:nth-child(3) {
+    grid-area: r2c2;
+    align-self: center;
+    justify-self: start;
+}
+
+main section:nth-child(2) div:first-child aside:nth-child(4) {
+    grid-area: r3c1;
+    align-self: center;
+    justify-self: start;
+}
+
+main section:nth-child(2) div:first-child aside:nth-child(5) {
+    grid-area: r3c2;
+    align-self: center;
+    justify-self: start;
+}
+
+main section:nth-child(2) div:first-child aside {
+    height: 25vh;
+}
+
+main section:nth-child(2) div:first-child aside h3 {
+    margin: 15px 0;
+}
+
+main section:nth-child(2) div:first-child aside p {
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 25px;
+}
+
+main section:nth-child(2) div:first-child aside article {
+    width: 200px;
+    position: relative;
+}
+
+main section:nth-child(2) div:first-child aside article i {
+    font-size: 38px;
+}
+
+main section:nth-child(2) div:first-child aside article span {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+main section:nth-child(2) div:last-child img {
+    width: 40vw;
+    height: calc(75vh + 100px);
+}
+
+/* ******************************************************************************* */
+/* section 3 */
+
+main section:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 var(--paddingRL);
+    margin: 200px 0;
+    height: 80vh;
+}
+
+main section:nth-child(3) div:nth-child(1) {
+    position: relative;
+}
+
+main section:nth-child(3) div:nth-child(1) img:nth-child(1) {
+    width: 30vw;
+    height: 60vh;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+main section:nth-child(3) div:nth-child(1) img:nth-child(2) {
+    width: 10vw;
+    height: 15vh;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+main section:nth-child(3) div:nth-child(1) img:nth-child(3) {
+    width: 20vw;
+    height: 50vh;
+    position: absolute;
+    top: 23%;
+    right: 5px;
+}
+
+main section:nth-child(3) div:nth-child(1) img {
+    border-radius: 10px;
+}
+
+main section:nth-child(3) div:nth-child(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "r1c12 r1c12"
+        "r2c12 r2c12"
+        "r3c1 r3c2"
+        "r4c1 .";
+}
+
+main section:nth-child(3) div:nth-child(2) h2 {
+    grid-area: r1c12;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(3) div:nth-child(2) p {
+    grid-area: r2c12;
+    justify-self: start;
+    align-self: center;
+    font-size: 13px;
+}
+
+main section:nth-child(3) div:nth-child(2) ul:nth-child(3) {
+    grid-area: r3c1;
+    justify-self: start;
+    align-self: center;
+    font-size: 13px;
+    list-style-type: disc;
+}
+
+main section:nth-child(3) div:nth-child(2) ul:nth-child(4) {
+    grid-area: r3c2;
+    justify-self: start;
+    align-self: center;
+    font-size: 13px;
+    list-style-type: disc;
+}
+
+main section:nth-child(3) div:nth-child(2) button {
+    grid-area: r4c1;
+    justify-self: start;
+    align-self: start;
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    border: 2px solid;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ******************************************************************************* */
+/* section 4 */
+
+main section:nth-child(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 0 var(--paddingRL);
+    margin: 0;
+}
+
+main section:nth-child(4) div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    gap: 15px;
+    grid-template-areas:
+        "r123c1 r1c2"
+        "r123c1 r2c2"
+        "r123c1 r3c2";
+}
+
+main section:nth-child(4) div img {
+    grid-area: r123c1;
+    justify-self: center;
+    align-self: start;
+    width: 10vw;
+    height: 120px;
+    border-radius: 10px;
+}
+
+main section:nth-child(4) div h3 {
+    grid-area: r1c2;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(4) div p {
+    grid-area: r2c2;
+    justify-self: start;
+    align-self: center;
+    opacity: 0.7;
+    font-size: 13px;
+}
+
+main section:nth-child(4) div a {
+    grid-area: r3c2;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+}
+
+main section:nth-child(4) div a:hover {
+    text-decoration: underline;
+}
+
+/* ******************************************************************************* */
+/* section 5 */
+
+main section:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+    height: 80vh;
+}
+
+main section:nth-child(5) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main section:nth-child(5) div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+main section:nth-child(5) > p {
+    width: 60vw;
+}
+
+main section:nth-child(5) div p {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* ******************************************************************************* */
+/* section 6 */
+
+main section:nth-child(6) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    gap: 15px;
+    grid-template-areas:
+        "r1c1 . r1c3"
+        "r2c1 r2c2 r2c3";
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+}
+
+main section:nth-child(6) h1 {
+    grid-area: r1c1;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(6) a {
+    grid-area: r1c3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+    color: #111;
+    cursor: pointer;
+}
+
+main section:nth-child(6) a:hover {
+    text-decoration: underline;
+}
+
+main section:nth-child(6) div:nth-child(3) {
+    grid-area: r2c1;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(6) div:nth-child(4) {
+    grid-area: r2c2;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(6) div:nth-child(5) {
+    grid-area: r2c3;
+    justify-self: start;
+    align-self: center;
+}
+
+main section:nth-child(6) div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+main section:nth-child(6) div img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+main section:nth-child(6) div img:hover {
+    filter: brightness(130%);
+}
+
+main section:nth-child(6) div p {
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main section:nth-child(6) div p span {
+    font-weight: normal;
+}
+
+/* ******************************************************************************* */
+/* footer */
+
+footer {
+    background-color: #fff;
+    padding: 0 var(--paddingRL);
+    margin-top: 100px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+        "r1c12 r1c12 . . ."
+        "r2c12345 r2c12345 r2c12345 r2c12345 r2c12345"
+        "r3c1 . . . ."
+        "r4c1 . . r4c45 r4c45";
+}
+
+footer div:nth-child(1) {
+    grid-area: r1c12;
+    justify-self: start;
+    align-self: start;
+}
+
+footer div:nth-child(1) p span i {
+    opacity: 0.5;
+    font-size: 25px;
+}
+
+footer div:nth-child(1) p {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+footer div:nth-child(1) input {
+    margin-top: 30px;
+    padding: 13px;
+    border-radius: 7px;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+
+footer div:nth-child(1) input[type="submit"] {
+    background-color: var(--first);
+    color: #fff;
+    cursor: pointer;
+}
+
+footer div:nth-child(3) {
+    grid-area: r2c12345;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+footer div:nth-child(3) aside ul {
+    list-style-type: none;
+}
+
+footer div:nth-child(3) aside p {
+    line-height: 30px;
+    opacity: 0.7;
+    padding-top: 5px;
+}
+
+footer div:nth-child(3) aside ul li {
+    padding: 5px 0;
+    cursor: default;
+}
+
+footer > ul {
+    grid-area: r3c1;
+    justify-self: start;
+    align-self: start;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > ul li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > ul li a {
+    color: #111;
+}
+
+footer p {
+    grid-area: r4c1;
+    justify-self: start;
+    align-self: center;
+}
+
+footer div:nth-child(5) {
+    grid-area: r4c45;
+    justify-self: end;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    padding-bottom: 100px;
+}
+
+footer div:nth-child(5) > a {
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer div:nth-child(5) > a:hover {
+    text-decoration: underline;
+}

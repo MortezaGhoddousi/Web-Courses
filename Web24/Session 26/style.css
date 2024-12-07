@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+article img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+button {
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+    margin-left: 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: #eee;
+    background-color: #111;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    border: 1px solid #111;
+    background-color: #eee;
+    color: #111;
+}
+
+div {
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+section form input {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #111;
+    padding: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 5px;
+    margin-left: 0;
+    outline: none;
+}
+
+section form input[type="submit"] {
+    width: 100px;
+    color: #eee;
+    background-color: #111;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+section form input[type="submit"]:hover {
+    border: 1px solid #111;
+    background-color: #eee;
+    color: #111;
+}

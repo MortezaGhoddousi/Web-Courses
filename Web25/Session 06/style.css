@@ -1,0 +1,79 @@
+/* p {
+    color: red;
+} */
+
+/* 
+selector {
+    property1: value1;
+    property2: value2;
+
+} 
+*/
+
+/* selection by tag name */
+
+/* p { */
+    /* color: orangered; */
+    /* color: rgb(125, 74, 250); */
+    /* color: #fe120f; */
+    /* color: red; */
+/* } */
+
+/* selection by class */
+
+.p1 {
+    color: blue;
+}
+
+/* selection by id */
+
+#p2 {
+    color: burlywood;
+}
+
+/* selection by position */
+
+body article .p1 {
+    font-size: 28px;
+}
+
+/* selection by children */
+
+article p:nth-child(4) {
+    font-size: 64px;
+}
+
+/* article #p2 {
+    color: green;
+} */
+
+/* h1.p1 {
+    font-size: 50px;
+} */
+
+/* selection by attribute */
+
+/* input[type="password"] {
+    border: 3px solid red;
+} */
+
+/* multiple selection */
+
+/* input[type="text"] {
+    border: 3px solid red;
+} */
+
+/* input[type="password"],
+input[type="text"],
+input[type="email"]
+{
+    border: 3px solid red;
+} */
+
+article .p1, #p2 {
+    text-decoration: underline;
+}
+
+form input:not(input[type="submit"]) {
+    border: 3px solid red;
+}

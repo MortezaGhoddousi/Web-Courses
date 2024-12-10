@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 60px;
+}
+
+article {
+    font-size: 40px;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    direction: ltr;
+}
+
+p {
+    font-size: 0.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    /* text-decoration: line-through; */
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+    text-align: left;
+    text-shadow: 5px -15px 3px red;
+    text-indent: 30px;
+    word-spacing: 15px;
+    letter-spacing: 10px;
+    line-height: 60px;
+
+    width: 300px;
+    height: 300px;
+
+    /* 
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 60px; 
+    */
+    padding: 30px 40px 50px 60px;
+
+    border: 7px solid red;
+    border-radius: 10px;
+    /* border-bottom: 3px solid red; */
+    /* 
+    margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: 60px; 
+    */
+    margin: 30px 40px 50px 60px;
+
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: normal;
+}

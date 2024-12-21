@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 50px;
+    /* background-color: aqua; */
+    background-image: url(./assets/images/businesspeople-meeting-office-working.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    cursor: pointer;
+}
+
+article:hover {
+    background-image: none;
+}
+
+div {
+    margin: 50px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid gray;
+    box-shadow: 0 0 1em gray;
+}
+
+a:hover {
+    color: gray;
+    /* text-decoration: underline; */
+    background-color: white;
+    box-shadow: none;
+}
+
+table {
+    border: 2px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table tr:nth-child(1) {
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+}
+
+form input {
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 5px;
+    outline: none;
+}
+
+form input::placeholder {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.6;
+    text-indent: 15px;
+}
+
+form input[type="submit"] {
+    color: white;
+    background-color: gray;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: white;
+    color: gray;
+}
+
+form input:not(input[type="submit"]) {
+    width: 400px;
+}
+
+/* form input:not(input[type="submit"]):hover {
+    border: 2px solid red;
+} */

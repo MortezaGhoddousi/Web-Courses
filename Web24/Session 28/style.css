@@ -1,0 +1,29 @@
+article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+section {
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.discount {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+article section div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(62, 99, 88);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+        "r1c1 r1c2"
+        "r2c1 r2c2";
+}
+
+header h2 {
+    grid-area: r1c1;
+    color: #eee;
+    font-size: 32px;
+}
+
+header nav {
+    grid-area: r1c2;
+    justify-self: end;
+    align-self: center;
+}
+
+header nav ul {
+    padding: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header nav ul li:hover {
+    border-bottom: 5px solid rgb(245, 190, 74);
+}
+
+header #third-child {
+    grid-area: r2c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 30px;
+}
+
+header #third-child h1 {
+    color: #eee;
+    font-size: 48px;
+}
+
+header #third-child p {
+    color: #aaa;
+    line-height: 32px;
+}
+
+header #third-child div button {
+    padding: 15px;
+    margin: 5px;
+    width: 90px;
+    border-radius: 35px;
+    outline: none;
+    cursor: pointer;
+}
+
+header #third-child div button:first-child {
+    background-color: rgb(245, 190, 74);
+    border: 1px solid rgb(245, 190, 74);
+    font-weight: bold;
+    font-size: 11px;
+}
+
+header #third-child div button:last-child {
+    border: 1px solid #bbb;
+    background-color: inherit;
+    color: #bbb;
+    font-weight: bold;
+}
+
+header #third-child div button:last-child:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+header img {
+    grid-area: r2c2;
+    width: 43vw;
+    justify-self: center;
+    align-self: center;
+}

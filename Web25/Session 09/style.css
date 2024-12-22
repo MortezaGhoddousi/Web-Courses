@@ -1,0 +1,122 @@
+/* p {
+    border: 1px solid black;
+    background-color: red;
+    padding: 5px; */
+/* display: inline; */
+/* } */
+
+/* b {
+    border: 1px dashed green;
+    background-color: yellow;
+    padding: 5px;
+    display: block;
+} */
+
+header {
+    /* border: 1px solid black;
+    background-color: red;
+    padding: 10px; */
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    /* border: 1px solid black;
+    background-color: green; */
+    padding: 10px;
+    grid-area: nav;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+article {
+    border: 1px solid black;
+    background-color: burlywood;
+    padding: 10px;
+    grid-area: article;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+section {
+    border: 1px solid black;
+    background-color: brown;
+    padding: 10px;
+
+    border-radius: 50%;
+    /* justify-self: center;
+    align-self: center; */
+}
+
+aside {
+    border: 1px solid black;
+    background-color: blue;
+    padding: 10px;
+    grid-area: aside;
+}
+
+footer {
+    /* border: 1px solid black;
+    background-color: yellow; */
+    padding: 10px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+footer ul li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "article aside"
+        "footer footer";
+    row-gap: 20px;
+    column-gap: 30px;
+}

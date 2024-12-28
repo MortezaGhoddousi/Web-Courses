@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* article { */
+/* margin: 100px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: green; */
+/* transform: rotate(-65deg); */
+/* transform: skew(50deg); */
+/* transform: scale(0.5); */
+/* transform: translate(50px, -70px); */
+/* transition: all 1s ease; */
+/* transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease; */
+/* } */
+
+/* p {
+    animation-name: MoveRight;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+} */
+
+/* article:hover {
+    transform: scale(2);
+    background-color: red;
+} */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+header h1 {
+    animation: MoveRight 1s ease 0s 1 normal forwards;
+    transition: 0.5s;
+    cursor: default;
+}
+
+header h1:hover {
+    font-size: 35px;
+}
+
+header p {
+    animation: MoveDown 1s ease 0s 1 normal forwards;
+}
+
+header nav li {
+    opacity: 0;
+}
+
+header nav li.active a {
+    color: orangered;
+    text-decoration: underline;
+}
+
+header nav li:nth-child(1) {
+    animation: MoveLeft 1s ease 0s 1 normal forwards;
+}
+
+header nav li:nth-child(2) {
+    animation: MoveLeft 1s ease 0.5s 1 normal forwards;
+}
+
+header nav li:nth-child(3) {
+    animation: MoveLeft 1s ease 1s 1 normal forwards;
+}
+
+header nav li:nth-child(4) {
+    animation: MoveLeft 1s ease 1.5s 1 normal forwards;
+}
+
+header nav li:nth-child(5) {
+    animation: MoveLeft 1s ease 2s 1 normal forwards;
+}
+
+header div {
+    display: none;
+    animation: MoveLeft 1s ease 0s 1 normal forwards;
+}
+
+article div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+article {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+@keyframes MoveRight {
+    0% {
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveLeft {
+    0% {
+        transform: translate(150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes MoveDown {
+    0% {
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    header nav {
+        display: none;
+    }
+
+    header div {
+        display: block;
+    }
+
+    header div i {
+        font-size: 34px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 250px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    article div img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+}

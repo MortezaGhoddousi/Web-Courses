@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+article.signup,
+article.signup form,
+article.login,
+article.login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    gap: 5px;
+}
+
+article.signup,
+article.login {
+    padding-top: 10vh;
+}
+
+article.signup h1,
+article.login h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+article.signup form,
+article.login form {
+    gap: 20px;
+    padding-top: 50px;
+}
+
+article.signup form input,
+article.login form input {
+    width: 40vw;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+article.signup form input[type="submit"],
+article.login form input[type="submit"] {
+    width: 20vw;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+article.signup form input::placeholder,
+article.signup form input[type="submit"],
+article.login form input::placeholder,
+article.login form input[type="submit"] {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+article.login a {
+    width: 20vw;
+    padding: 15px;
+    border: 1px solid;
+    opacity: 0.6;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+article.main h1 {
+    padding-top: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+article.main p {
+    padding-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+article.main input {
+    width: 20vw;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+label .error {
+    color: red;
+    padding: 10px 0;
+}
+
+article.signup input.error,
+article.login input.error {
+    border-bottom: 1px solid red;
+}
+
+article.signup input.error::placeholder,
+article.login input.error::placeholder {
+    color: red;
+}

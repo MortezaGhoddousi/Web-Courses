@@ -1,0 +1,133 @@
+/* p {
+    color: red;
+    font-size: 30px;
+}
+
+selector {
+    property01: value01;
+    property02: value02;
+    property03: value03;
+    property04: value04;
+    property05: value05;
+} */
+
+/* selectors  */
+
+/* selection by tag name */
+
+p {
+    color: red;
+}
+
+/* selection by id */
+
+#p1 {
+    color: blue;
+}
+
+/* selection by7 class name */
+
+.p2 {
+    color: green;
+}
+
+/* multiple selection */
+
+/* #p1 {
+    font-size: 30px;
+}
+
+.p2 {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 30px;
+} */
+
+#p1,
+.p2,
+h1 {
+    font-size: 30px;
+}
+
+/* selection by position */
+
+div .p2 {
+    color: brown;
+}
+
+/* selection by attribute */
+
+/* .text {
+    border: 2px solid red;
+} */
+
+input[name="username"] {
+    border: 2px solid red;
+}
+
+section > p {
+    color: aquamarine;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#fontFamily {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#italic {
+    font-style: italic;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+#overline {
+    text-decoration: overline;
+}
+
+#lineThrough {
+    text-decoration: line-through;
+}
+
+#uppercase {
+    text-transform: uppercase;
+}
+
+#lowercase {
+    text-transform: lowercase;
+}
+
+#capitalize {
+    text-transform: capitalize;
+}
+
+#letterSpacing {
+    letter-spacing: 10px;
+}
+
+#wordSpacing {
+    word-spacing: 10px;
+}
+
+#textAlign {
+    text-align: center;
+}
+
+#lineHeight {
+    line-height: 35px;
+}
+
+body {
+    direction: ltr;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    font-size: 56px;
+}

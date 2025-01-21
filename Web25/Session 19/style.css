@@ -1,0 +1,271 @@
+:root {
+    --paddingLeftRight: 6vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    background-color: #262626;
+    padding: 20px var(--paddingLeftRight) 0;
+    display: grid;
+}
+
+header img {
+    width: 100px;
+    align-self: center;
+}
+
+nav:not(article nav) {
+    padding: 20px var(--paddingLeftRight);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav:not(article nav) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+nav:not(article nav) ul a {
+    color: #eee;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav:not(article nav) ul li.active a {
+    color: rgb(13, 161, 255);
+}
+
+nav:not(article nav) input {
+    width: 15vw;
+    padding: 12px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+
+nav:not(article nav) input::placeholder {
+    color: #111;
+    opacity: 0.3;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav:not(article nav) i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7vw;
+    opacity: 0.5;
+}
+
+article section.carousel {
+    position: relative;
+}
+
+article section.carousel div {
+    height: 60vh;
+    background-image: url(./assets/images/billiard.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(50%);
+}
+
+article section.carousel h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: var(--paddingLeftRight);
+    color: #eee;
+    font-size: 74px;
+    text-transform: uppercase;
+    line-height: 65px;
+}
+
+article section.carousel h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-95%);
+    left: 30vw;
+    color: rgb(161, 227, 4);
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+
+article section.carousel span {
+    border: 1px solid rgb(209, 209, 209);
+    padding: 15px;
+    font-size: 28px;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-50%);
+    left: var(--paddingLeftRight);
+    color: #eee;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+article section.carousel button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+}
+
+article section.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+article section.boxes {
+    padding: 20px var(--paddingLeftRight);
+    background-color: rgb(102, 102, 102);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+
+article section.boxes div {
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 1fr;
+    justify-content: center;
+    align-items: start;
+    width: 20vw;
+    background-color: #eee;
+    border: 2px solid #eee;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+article section.boxes div:hover {
+    border: 2px solid #111;
+}
+
+article section.boxes div h2 {
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 5px;
+}
+
+article section.boxes div p {
+    opacity: 0.7;
+    font-size: 14px;
+    padding: 5px;
+}
+
+article section.boxes div img {
+    width: 20vw;
+    height: 100%;
+}
+
+article section.logos {
+    padding: 50px var(--paddingLeftRight);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+}
+
+article section.logos img {
+    width: 100px;
+}
+
+footer {
+    background-color: #181f25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px var(--paddingLeftRight);
+}
+
+footer img {
+    width: 40vw;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+footer > div h3 {
+    color: #eee;
+    border-bottom: 2px solid;
+    font-size: 28px;
+    padding: 10px 0;
+}
+
+footer > div h3::first-letter {
+    color: rgb(13, 161, 255);
+}
+
+footer > div a {
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer > div ul {
+    padding-top: 20px;
+}
+
+footer > div div.socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > div div.socials ul i {
+    font-size: 32px;
+}
+body > button {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+}

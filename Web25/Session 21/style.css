@@ -1,0 +1,451 @@
+:root {
+    --paddingLeftRight: 6vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+header {
+    background-color: #262626;
+    padding: 20px var(--paddingLeftRight) 0;
+    display: grid;
+}
+
+header img {
+    width: 100px;
+    align-self: center;
+}
+
+nav:not(article nav) {
+    padding: 20px var(--paddingLeftRight);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav aside {
+    position: relative;
+}
+
+nav:not(article nav) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+nav:not(article nav) ul a {
+    color: #eee;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav:not(article nav) ul li.active a {
+    color: rgb(13, 161, 255);
+}
+
+nav:not(article nav) input {
+    transition: 0.5s ease;
+    width: 15vw;
+    padding: 12px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+}
+
+nav:not(article nav) input::placeholder {
+    color: #111;
+    opacity: 0.3;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav:not(article nav) i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    opacity: 0.5;
+}
+
+article section.carousel {
+    height: 60vh;
+    transition: 0.3s ease;
+}
+
+article section.carousel {
+    position: relative;
+    height: 60vh;
+    background-image: url(./assets/images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(80%);
+}
+
+article section.carousel button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px 40px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+}
+
+article section.carousel i:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5vw;
+    font-size: 40px;
+    color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article section.carousel i:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5vw;
+    font-size: 40px;
+    color: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article section.carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+article section.tournament,
+article section.tournament div:first-child {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article section.tournament div:first-child {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+}
+
+article section.tournament div:first-child h2 {
+    align-self: start;
+    margin: var(--paddingLeftRight) 0 10px var(--paddingLeftRight);
+    color: #eee;
+    border-bottom: 1px solid rgb(13, 161, 255);
+}
+
+article section.tournament div:first-child nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    align-self: start;
+    width: 100vw;
+    padding: 20px var(--paddingLeftRight);
+    /* margin: 5px var(--paddingLeftRight); */
+    margin-bottom: 30px;
+}
+
+article section.tournament div:first-child nav ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+article section.tournament div:first-child nav ul li {
+    justify-self: center;
+    align-self: center;
+}
+
+article section.tournament div:first-child nav ul li a {
+    color: #eee;
+    opacity: 0.5;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+article section.tournament div:first-child nav ul li.active a {
+    color: #eee;
+    opacity: 1;
+}
+
+article section.tournament div:last-child {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px var(--paddingLeftRight);
+}
+
+article section.tournament div:last-child img {
+    width: 30px;
+    height: 20px;
+}
+
+article section.tournament div:last-child table a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(13, 161, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+article section.tournament div:last-child table i {
+    font-size: 16px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+article section.tournament div:last-child table {
+    border-collapse: collapse;
+    border: none;
+    outline: none;
+    height: fit-content;
+    font-size: 12px;
+}
+
+article
+    section.tournament
+    div:last-child
+    table:nth-child(2)
+    tr:nth-child(even)
+    td:first-child {
+    background-color: rgb(13, 161, 255);
+}
+
+article
+    section.tournament
+    div:last-child
+    table:nth-child(2)
+    tr:nth-child(odd)
+    td:first-child {
+    background-color: rgb(49, 197, 255);
+}
+
+article section.tournament div:last-child table tr:first-child {
+    background-color: #111;
+    color: #eee;
+    outline: none;
+    text-align: left;
+}
+
+article section.tournament div:last-child table tr:first-child th span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article section.tournament div:last-child table tr:first-child th {
+    padding: 15px;
+    font-size: 12px;
+}
+
+article
+    section.tournament
+    div:last-child
+    table
+    tr:not(article section.tournament div:last-child table tr:first-child) {
+    background-color: #fff;
+}
+
+article
+    section.tournament
+    div:last-child
+    table
+    tr:nth-child(even):not(
+        article section.tournament div:last-child table tr:first-child
+    ) {
+    background-color: #eee;
+}
+
+article
+    section.tournament
+    div:last-child
+    table
+    tr
+    td:not(article section.tournament div:last-child table tr:first-child td) {
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+article section.boxes {
+    padding: 20px var(--paddingLeftRight);
+    background-color: rgb(102, 102, 102);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+
+article section.boxes div {
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 1fr;
+    justify-content: center;
+    align-items: start;
+    width: 20vw;
+    background-color: #eee;
+    border: 2px solid #eee;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+article section.boxes div:hover {
+    border: 2px solid #111;
+}
+
+article section.boxes div h2 {
+    opacity: 0.7;
+    font-size: 20px;
+    padding: 5px;
+}
+
+article section.boxes div p {
+    opacity: 0.7;
+    font-size: 14px;
+    padding: 5px;
+}
+
+article section.boxes div img {
+    width: 20vw;
+    height: 100%;
+}
+
+article section.logos {
+    padding: 50px var(--paddingLeftRight);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 15px;
+}
+
+article section.logos img {
+    width: 100px;
+}
+
+footer {
+    background-color: #181f25;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px var(--paddingLeftRight);
+}
+
+footer img {
+    width: 40vw;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+}
+
+footer > div h3 {
+    color: #eee;
+    border-bottom: 2px solid;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+footer > div h3::first-letter {
+    color: rgb(13, 161, 255);
+}
+
+footer > div a {
+    color: #eee;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer > div ul {
+    padding-top: 20px;
+}
+
+footer > div div.socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > div div.socials ul i {
+    font-size: 32px;
+}
+body > button {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    color: #eee;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+article.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 30px var(--paddingLeftRight);
+}
+
+article.about h2 {
+    font-size: 36px;
+    font-weight: 300;
+    opacity: 0.8;
+    border-bottom: 1px solid;
+}
+
+article.about div img {
+    float: left;
+    padding: 10px;
+}
+
+article.about div p {
+    line-height: 26px;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: 13px;
+}

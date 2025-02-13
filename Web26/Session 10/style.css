@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "Poppins";
+}
+
+header {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+header ul li {
+    cursor: pointer;
+    padding: 11px 3px;
+}
+
+header ul li:nth-child(1),
+header ul li:nth-child(2) {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+header ul li:nth-child(1):hover,
+header ul li:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+header ul li:nth-child(3) {
+    font-size: 24px;
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li:nth-child(3):hover {
+    background-color: rgb(225 226 226);
+    border-radius: 50%;
+}
+
+header ul li:nth-child(4) {
+    background-color: rgb(11 87 208);
+    color: #fff;
+    border-radius: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header ul li:nth-child(4):hover {
+    box-shadow: 0 0 5px rgb(11 87 208);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20vh;
+}
+
+article div:nth-child(2) {
+    position: relative;
+}
+
+article div:nth-child(2) aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+article div:nth-child(2) img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+article div:nth-child(2) img:nth-child(2) {
+    right: 55px;
+}
+
+article div:nth-child(2) img:nth-child(3) {
+    right: 15px;
+}
+
+article div:nth-child(2) aside i {
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+article div:nth-child(2) input {
+    width: 50vw;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 5px gray;
+    outline: none;
+    padding-left: 45px;
+}
+
+article div:nth-child(3) button {
+    padding: 11px 13px;
+    background-color: rgb(242 242 242);
+    opacity: 0.8;
+    border: none;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(242 242 242);
+}
+
+article div:nth-child(3) button:hover {
+    border: 1px solid rgb(179, 178, 178);
+}
+
+article div:nth-child(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+article div:nth-child(4) aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 15px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+article div:nth-child(4) aside:hover {
+    background-color: rgb(209, 205, 205);
+}
+
+article div:nth-child(4) aside main {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+article div:nth-child(4) aside main i {
+    font-size: 18px;
+}
+
+article div:nth-child(4) img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: rgb(242 242 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    padding: 15px 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer ul li {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}

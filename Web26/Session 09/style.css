@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    padding: 50px;
+}
+
+article {
+    height: 300px;
+    background-color: red;
+    padding: 10px;
+    border: 2px solid black;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    gap: 5px;
+}
+
+section {
+    background-color: green;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+header {
+    background-color: rgba(8, 51, 8, 0.699);
+    padding: 10px 50px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 3fr; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    right: 50px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header p {
+    position: relative;
+    right: 15px;
+    top: 20px;
+}
+
+p {
+    padding-top: 30px;
+}
+
+p#first {
+    color: blue;
+    /* position: absolute;
+    top: 50px;
+    left: 200px; */
+
+    /* position: fixed;
+    top: 50px;
+    left: 200px; */
+
+    position: sticky;
+    top: 100px;
+}
+
+/* header p,
+header h1 {
+    justify-self: center;
+    align-self: center;
+}
+
+header nav {
+    align-self: center;
+
+    justify-self: end;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+} */

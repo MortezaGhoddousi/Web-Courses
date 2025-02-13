@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: header;
+}
+
+nav {
+    background-color: yellow;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: nav;
+}
+
+article {
+    background-color: blue;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "section1 section2"
+        "section1 section3";
+    gap: 5px;
+}
+
+section:nth-child(1) {
+    background-color: red;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: section1;
+}
+
+section:nth-child(2) {
+    background-color: red;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: section2;
+}
+
+section:nth-child(3) {
+    background-color: red;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: section3;
+}
+
+aside {
+    background-color: brown;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: aside;
+}
+
+footer {
+    background-color: palegreen;
+    padding: 5px;
+    border: 3px solid black;
+    grid-area: footer;
+}
+
+body {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr 1fr 4fr 1fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "article aside"
+        "footer footer";
+    gap: 20px;
+}

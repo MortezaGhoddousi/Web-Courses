@@ -1,0 +1,55 @@
+article {
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(100px, 50px); */
+    /* position: relative;
+    left: 100px;
+    top: 50px; */
+
+    /* transform: rotate(30deg); */
+    /* transform: scale(1.5); */
+    transition: all 1s;
+}
+
+article:hover {
+    /* transform: scale(1.1); */
+    /* transform: rotate(360deg); */
+    width: 400px;
+    background-color: red;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translate(0, -50px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+p {
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    opacity: 0;
+    animation-name: moveRight;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}

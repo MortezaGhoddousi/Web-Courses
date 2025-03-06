@@ -1,0 +1,109 @@
+/* h1 {
+    font-weight: normal;
+    font-family: "Courier New", Courier, monospace;
+}
+
+label {
+    color: green;
+} */
+
+/* css syntax  */
+/* selector {
+    property1: value1;
+    property2: value2;
+    property3: value3;  
+} */
+
+/* selection by tag name */
+
+label {
+    color: brown;
+}
+
+/* selection by id */
+
+#label2 {
+    color: green;
+}
+
+/* selection by class name */
+
+.label3 {
+    color: yellow;
+}
+
+/* selection by position */
+
+div h1 {
+    font-size: 50px;
+}
+
+div .p3h1 {
+    color: orange;
+}
+
+/* multiple selection */
+
+#p2,
+.p3h1,
+h2,
+div h1 {
+    font-family: sans-serif;
+}
+
+/* .p3h1 {
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+div h1 {
+    font-family: sans-serif;
+} */
+
+/* selection by family relation */
+
+div h1:nth-child(1) {
+    font-size: 82px;
+}
+
+/* selection by attribute */
+input[name="submit"] {
+    color: aqua;
+}
+
+/* select straight child */
+body > h1 {
+    color: blueviolet;
+}
+
+/* text styling  */
+
+body {
+    direction: ltr;
+}
+
+section p:nth-child(1) {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+    text-decoration: line-through;
+    text-align: left;
+    text-indent: 30px;
+    letter-spacing: 7px;
+}
+
+section p:nth-child(2) {
+    color: rgb(254, 112, 112);
+    word-spacing: 8px;
+}
+
+section p:nth-child(3) {
+    color: #333;
+    line-height: 40px;
+}

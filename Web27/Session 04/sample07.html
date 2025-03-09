@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./sample07.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>WEB 27</h1>
+            <img src="./images/logo.webp" alt="" />
+        </header>
+        <form>
+            <p>You are a ...</p>
+            <aside>
+                <input type="radio" name="gender" id="male" value="male" />
+                <label for="male">Male</label>
+            </aside>
+            <aside>
+                <input type="radio" name="gender" id="female" value="female" />
+                <label for="female">Female</label>
+            </aside>
+
+            <p>Who is interested in ...</p>
+            <aside>
+                <input type="checkbox" name="interested" id="web" value="web" />
+                <label for="web">Web Development</label>
+            </aside>
+            <aside>
+                <input
+                    type="checkbox"
+                    name="interested"
+                    id="photoshop"
+                    value="photoshop" />
+                <label for="photoshop">Photoshop</label>
+            </aside>
+            <aside>
+                <input
+                    type="checkbox"
+                    name="interested"
+                    id="madona"
+                    value="madona" />
+                <label for="madona">Singing Madona Song</label>
+            </aside>
+
+            <div class="contact">
+                <label for="">Contact Info</label>
+                <label for="username">
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Username" />
+                </label>
+                <label for="phone">
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Phone Number" />
+                </label>
+            </div>
+
+            <p>How would you like to be contacted?</p>
+            <input type="text" list="dropdown" />
+            <datalist id="dropdown">
+                <option value="email">By email</option>
+                <option value="phone">By phone number</option>
+                <option value="telegram">By telegram</option>
+            </datalist>
+
+            <input type="submit" value="Become a Member" />
+        </form>
+        <script src="./script.js"></script>
+    </body>
+</html>

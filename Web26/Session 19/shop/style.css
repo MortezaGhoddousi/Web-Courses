@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #f5bcba, #f4e7fb);
+    overflow-x: hidden;
+}
+
+header {
+    padding: 30px 80px;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+header ul,
+header ul li section {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header ul {
+    padding-left: 0px;
+}
+
+header ul li {
+    background-color: #fff;
+    border-radius: 15px;
+    padding-left: 0px;
+}
+
+header ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+article {
+    padding: 30px 80px;
+    background: inherit;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+article section {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+article section h3,
+article section h5 {
+    text-transform: capitalize;
+}
+
+article section img {
+    width: 20vw;
+    border-radius: 10px;
+}
+
+article section div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article section div p {
+    color: orangered;
+}
+
+article section div aside i {
+    background-color: #ddd;
+    color: #111;
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+article section div aside i:hover {
+    color: orangered;
+}
+
+footer {
+    padding: 30px 80px;
+    background-color: rgb(56, 55, 55);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer h3 {
+    font-size: 16px;
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer > ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+footer div ul li.title {
+    color: #999;
+    cursor: default;
+}
+
+footer div ul li {
+    padding: 10px 0;
+}
+
+footer div ul li:not(footer div ul li.title) {
+    cursor: pointer;
+}
+
+footer div ul li:not(footer div ul li.title):hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 12px;
+}

@@ -1,0 +1,118 @@
+/* p {
+    border: 2px solid black;
+    padding: 7px;
+    display: inline;
+} */
+
+b {
+    border: 2px solid red;
+    display: inline;
+}
+
+/* grid */
+
+article.grid {
+    border: 2px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "first second"
+        "first second"
+        "first third"
+        ". forth";
+}
+
+section {
+    border: 5px solid red;
+    padding: 5px;
+    margin: 10px;
+}
+
+article.grid section:nth-child(1) {
+    grid-area: first;
+}
+
+article.grid section:nth-child(2) {
+    grid-area: second;
+}
+
+article.grid section:nth-child(3) {
+    grid-area: third;
+}
+
+article.grid section:nth-child(4) {
+    grid-area: forth;
+}
+
+/* flex */
+
+article.flex {
+    height: 400px;
+    margin: 30px 0;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header#grid {
+    background-color: gray;
+    margin: 0;
+    padding: 50px;
+    color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+header#grid li,
+header#flex li {
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
+
+header#grid h1 {
+    justify-self: start;
+    align-self: center;
+}
+
+header#grid p {
+    justify-self: center;
+    align-self: center;
+}
+
+header#grid nav {
+    justify-self: end;
+    align-self: center;
+}
+
+#grid a,
+#flex a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header#grid a:hover,
+#flex a:hover {
+    color: #222;
+    text-decoration: underline;
+}
+
+header#flex {
+    background-color: gray;
+    margin: 0;
+    padding: 50px;
+    color: #fff;
+    border: 2px solid black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

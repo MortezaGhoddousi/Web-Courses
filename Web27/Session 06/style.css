@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+article {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* positioning */
+
+article p {
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+
+    /* relative */
+
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+p {
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* sticky */
+p#sticky {
+    color: blue;
+    position: sticky;
+    top: 10px;
+}
+
+/* fixed and absolute */
+p#fixed {
+    color: cadetblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: red;
+    margin: 0;
+    z-index: 99;
+}
+
+section {
+    border: 2px solid black;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    transition: all 1s;
+}
+
+span {
+    padding: 10px;
+    border: 2px solid black;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: moveRight;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+
+/* transform, transition, and animation */
+
+section:hover {
+    /* transform: translate(50px, 100px); */
+    /* transform: rotate(-360deg); */
+    /* transform: scale(0.9); */
+    /* transform: skew(10deg); */
+    /* background-color: red; */
+}
+
+@keyframes moveRight {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    100% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%, -100%);
+        background-color: blue;
+    }
+}
+
+h1 {
+    padding: 50px;
+    animation: fadeOut .5s linear 0s 1 normal forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translate(0, -50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,17 @@
+#light {
+    background-color: #fff;
+    color: #111;
+}
+
+#dark {
+    background-color: #111;
+    color: #fff;
+}
+
+img {
+    transition: 0.5s ease;
+}
+
+h1 {
+    transition: 0.5s ease;
+}

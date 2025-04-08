@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+
+    grid-template-areas:
+        "image image"
+        "prev next";
+
+    gap: 20px;
+}
+
+img {
+    grid-area: image;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+button:nth-child(2) {
+    grid-area: prev;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:nth-child(3) {
+    grid-area: next;
+    justify-self: center;
+    align-self: center;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+}

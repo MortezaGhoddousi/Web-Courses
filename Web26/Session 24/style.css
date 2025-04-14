@@ -1,0 +1,10 @@
+
+li {
+    color: black;
+  
+    cursor: pointer;
+}
+
+.active {
+    color: red;
+}

@@ -1,0 +1,142 @@
+.part1About {
+    background-color: rgb(89 171 110);
+    color: #fff;
+    width: 100vw;
+    padding: 100px 10vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.part1About div {
+    align-self: center;
+}
+
+.part1About div h1 {
+    font-size: 32px;
+}
+
+.part1About div p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.part2About,
+.part3About {
+    width: 100vw;
+    height: 50vh;
+    padding: 50px 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+        "headingAbout2 headingAbout2 headingAbout2 headingAbout2"
+        "contentAbout2 contentAbout2 contentAbout2 contentAbout2"
+        "firstAbout2 secondAbout2 thirdAbout2 forthAbout2";
+
+    column-gap: 45px;
+    row-gap: 35px;
+}
+
+.part2About h1,
+.part3About h1 {
+    grid-area: headingAbout2;
+    justify-self: center;
+    align-self: center;
+    font-size: 46px;
+}
+
+.part2About > p,
+.part3About > p {
+    grid-area: contentAbout2;
+    justify-self: center;
+    align-self: start;
+    width: 50%;
+    text-align: center;
+}
+
+.part2About div:nth-child(3),
+.part3About div:nth-child(3) {
+    grid-area: firstAbout2;
+    justify-self: center;
+    align-self: center;
+}
+
+.part2About div:nth-child(4),
+.part3About div:nth-child(4) {
+    grid-area: secondAbout2;
+    justify-self: center;
+    align-self: center;
+}
+
+.part2About div:nth-child(5),
+.part3About div:nth-child(5) {
+    grid-area: thirdAbout2;
+    justify-self: center;
+    align-self: center;
+}
+
+.part2About div:nth-child(6),
+.part3About div:nth-child(6) {
+    grid-area: forthAbout2;
+    justify-self: center;
+    align-self: center;
+}
+
+.part2About div {
+    margin-top: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s ease;
+}
+
+.part2About div:hover {
+    background-color: rgb(89 171 110);
+}
+
+.part2About div:hover i,
+.part2About div:hover p {
+    color: #fff;
+}
+
+.part2About div i {
+    color: rgb(89 171 110);
+    font-size: 76px;
+}
+
+.part2About div p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.part3About {
+    column-gap: 5px;
+    background-color: rgb(233 235 248);
+    margin-top: 70px;
+}
+
+.part3About div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part3About div img {
+    width: 40%;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.part3About div img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}

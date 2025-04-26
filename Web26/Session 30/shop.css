@@ -1,0 +1,176 @@
+.part1Shop {
+    padding: 50px 10vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "aside section"
+        ". btnsShop";
+    column-gap: 20px;
+}
+
+.part1Shop > aside h1 {
+    font-size: 33px;
+    margin-bottom: 15px;
+}
+
+.part1Shop > aside li {
+    font-size: 23px;
+    margin: 8px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.part1Shop > aside li i {
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 1px;
+    opacity: 1;
+}
+
+.part1Shop > div {
+    grid-area: btnsShop;
+    justify-self: end;
+}
+
+.part1Shop > section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.part1Shop > section div:nth-child(1) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part1Shop > section div:nth-child(1) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.part1Shop > section div:nth-child(1) ul li {
+    font-size: 24px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.part1Shop > section div:nth-child(1) ul li:hover {
+    color: rgb(89 171 110);
+}
+
+.part1Shop > section div:nth-child(1) select {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.shop section {
+    position: relative;
+    border: 1px solid gainsboro;
+    display: grid;
+    grid-template-rows: 1fr auto auto auto auto;
+    gap: 10px;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.shop section main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+    gap: 10px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: 0.3s ease;
+}
+
+.shop section main button {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(89 171 110);
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.shop section:hover img {
+    filter: brightness(80%);
+}
+
+.shop section span,
+.shop section a,
+.shop section aside {
+    padding: 0 20px;
+}
+
+.shop section a {
+    cursor: pointer;
+}
+
+.shop section aside,
+.shop section span:last-child {
+    justify-self: center;
+}
+
+.shop section span:last-child {
+    padding-bottom: 10px;
+}
+
+.shop section img {
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.part1Shop > div:last-child {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1px;
+}
+
+.part1Shop > div:last-child button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #111;
+    border: none;
+    box-shadow: 0 0 10px gainsboro;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.part1Shop > div:last-child button.active,
+.part1Shop > div:last-child button:hover {
+    background-color: rgb(89 171 110);
+    color: #fff;
+}

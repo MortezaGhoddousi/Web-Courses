@@ -1,0 +1,101 @@
+.part1Contact {
+    background-color: rgb(233 238 245);
+    width: 100vw;
+    padding: 70px 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.part1Contact h1 {
+    font-size: 48px;
+}
+
+.part1Contact p {
+    width: 50%;
+    text-align: center;
+}
+
+.part2contact {
+    width: 100vw;
+}
+
+.part2contact iframe {
+    width: 100%;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas:
+        "name email"
+        "subject subject"
+        "message message"
+        ". submit";
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+form label:nth-child(1) {
+    grid-area: name;
+}
+
+form label input:not(input[type="submit"]) {
+    border: 1px solid #999;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 15px;
+}
+
+form label textarea {
+    border: 1px solid #999;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 15px;
+    resize: none;
+    height: 80%;
+}
+
+form label input::placeholder,
+form label textarea::placeholder {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+form label:nth-child(2) {
+    grid-area: email;
+}
+
+form label:nth-child(3) {
+    grid-area: subject;
+}
+
+form label:nth-child(4) {
+    grid-area: message;
+    height: 100%;
+}
+
+form label:nth-child(5) {
+    grid-area: submit;
+    justify-self: end;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(89 171 110);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}

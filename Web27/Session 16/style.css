@@ -1,0 +1,278 @@
+:root {
+    --mainColor: rgb(51 102 153);
+    --secMainColor: rgb(51 85 119);
+    --bgColor: rgb(255 255 255);
+    --plr: 5vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: var(--bgColor);
+    transition: 0.3s ease;
+    font-family: Raleway, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.bg {
+    background-image: url(./img/infinite-loop-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    transform: scale(1);
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: transparent;
+    color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--plr);
+    transition: 0.3s ease;
+}
+
+header.scrolled {
+    background-color: var(--bgColor);
+    color: var(--mainColor);
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+header.scrolled nav ul a:not(header.scrolled nav ul li.active a) {
+    color: var(--mainColor);
+}
+
+header nav ul a {
+    color: var(--bgColor);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+header.scrolled nav ul li.active {
+    background: var(--mainColor);
+}
+
+header nav ul li {
+    background: transparent;
+    transition: 0.3s ease;
+    padding: 10px 20px;
+}
+
+header nav ul li:hover {
+    background: var(--mainColor);
+}
+
+header h1 {
+    font-size: 24px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 0;
+}
+
+header h1:hover {
+    color: var(--mainColor);
+}
+
+section {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+section.part1 {
+    background: transparent;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: var(--bgColor);
+}
+
+section.part1 h1 {
+    font-size: 48px;
+}
+
+section.part1 p {
+    width: 30%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+section.part1 button {
+    position: absolute;
+    bottom: 10vh;
+    transition: 0.3s ease;
+    padding: 1px 30px;
+    background-color: var(--secMainColor);
+    color: var(--bgColor);
+    font-size: 60px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section.part1 button:hover {
+    transform: scale(1.2);
+    background-color: var(--mainColor);
+}
+
+section.part2 {
+    background: var(--bgColor);
+    padding: 80px var(--plr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+        "firstPart2 firstPart2"
+        "secondtPart2 thirdPart2"
+        "forthPart2 fifthPart2";
+    gap: 50px;
+
+}
+
+section.part2 div:nth-child(1) {
+    grid-area: firstPart2;
+    justify-self: start;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+section.part2 .titlePart2 {
+    color: var(--mainColor);
+    font-size: 40px;
+    font-weight: normal;
+}
+
+section.part2 .contentPart2 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #777;
+}
+
+section.part2 .contentPart2 span {
+    color: var(--mainColor);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+section.part2 .contentPart2 span:hover {
+    color: rgb(221 68 0);
+}
+
+section.part2 div:nth-child(2) {
+    grid-area: secondtPart2;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+}
+
+section.part2 div:nth-child(3) {
+    grid-area: thirdPart2;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+}
+
+section.part2 div:nth-child(4) {
+    grid-area: forthPart2;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+}
+
+section.part2 div:nth-child(5) {
+    grid-area: fifthPart2;
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+}
+
+.containerPart2 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        "logoPart2 headingPart2"
+        ". contentPart2";
+    column-gap: 20px;
+}
+
+.containerPart2 i {
+    grid-area: logoPart2;
+    font-size: 66px;
+    color: var(--mainColor);
+}
+
+.containerPart2 h2 {
+    grid-area: headingPart2;
+    align-self: start;
+}
+
+.containerPart2 > p {
+    position: relative;
+    bottom: 80px;
+}
+
+#lastContentPart2 {
+    position: relative;
+    bottom: 60px;
+}
+
+.containerPart2 .contentPart2 {
+    height: 100%;
+    grid-area: contentPart2;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.containerPart2 .contentPart2 button {
+    padding: 10px 20px;
+    background-color: var(--secMainColor);
+    color: var(--bgColor);
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.containerPart2 .contentPart2 button:hover {
+    background-color: var(--mainColor);
+}

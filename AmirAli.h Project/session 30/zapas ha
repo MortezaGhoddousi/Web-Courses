@@ -1,0 +1,45 @@
+.h {
+    font-size: 28px;
+    text-transform: uppercase;
+    position: relative;
+    left: 55px;
+    top: 34px;
+    border: 2px solid;
+}
+.p {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: 290px;
+    top: 24px;
+}
+
+.ul {
+    font-size: 20px;
+    margin: 0px;
+    list-style-position: inside;
+    list-style-type: circle;
+    position: relative;
+    left: 1625px;
+    bottom: 55px;
+}
+header {
+    padding-bottom: -50px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 60%;
+    padding-top: -50px;
+}
+.li {
+    margin-bottom: 5px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+    color: red;
+}

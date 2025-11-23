@@ -1,0 +1,60 @@
+/* selector {
+    property1: value1;
+    property2: value2;
+    .
+    .
+    .
+    propertyn: valuen;
+} */
+
+/* types of selections */
+/* selection by tag name */
+
+p {
+    color: blue;
+}
+
+/* selection by id */
+
+#p1 {
+    color: red;
+}
+
+/* selection by class name */
+
+.p2 {
+    color: brown;
+}
+
+/* selection by position */
+
+div aside .p2 {
+    color: purple;
+}
+
+/* selection by attribute */
+
+input[name="email"] {
+    border: 3px solid brown;
+    padding: 7px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+h1[class="p2"] {
+    font-size: 62px;
+}
+
+/* selection by children */
+
+form input:nth-child(3) {
+    border: 3px solid brown;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 15px;
+    width: 2px;
+    height: 2px;
+    box-shadow: 0 0 5px brown;
+}
+
+

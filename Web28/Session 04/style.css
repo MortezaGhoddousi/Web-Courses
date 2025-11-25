@@ -1,0 +1,71 @@
+p {
+    /* color: red; */
+    /* color: rgb(255, 0, 0); */
+    color: #ad3838;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 30px;
+    text-shadow: 10px -40px 50px #ff0000;
+    line-height: 36px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    border: 2px solid black;
+}
+
+/* p span {
+    color: aquamarine;
+} */
+
+#second {
+    /* margin */
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+    margin: 10px 20px 30px 40px;
+    /* margin: 20px 40px 60px; */
+
+    /* border */
+    border: 5px solid blue;
+    /* border-top: 10px solid blue;
+    border-right: 20px dashed red;
+    border-bottom: 30px dotted brown;
+    border-left: 40px groove green; */
+
+    /* padding */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    /* content */
+    width: 600px;
+    height: 600px;
+
+    box-sizing: border-box;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    border-radius: 10px;
+    background-image: url(./1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first {
+    /* background-color: #ccc; */
+    background: linear-gradient(to right, #eee, #222);
+}
+
+p::first-line {
+    color: green;
+}
+
+

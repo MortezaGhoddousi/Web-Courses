@@ -1,0 +1,57 @@
+.second {
+    color: #ff0000;
+    background-color: #00ff00;
+    /* position: relative;
+    left: 50px;
+    top: 50px; */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    /* position: relative; */
+    position: sticky;
+    top: 100px;
+}
+
+/* .second p:nth-child(2) {
+    position: absolute;
+    top: 50px;
+    color: cadetblue;
+} */
+
+.first {
+    height: 500px;
+    width: 100%;
+    background-color: #eee;
+    border: 10px solid #ff0000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first p {
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #111;
+}
+
+.first p:nth-child(1) {
+    background-color: #00ff0f;
+}
+
+.first p:nth-child(2) {
+    background-color: #ff00ff;
+}
+
+.first p:nth-child(3) {
+    background-color: #ffff00;
+}
+
+.third {
+    background-color: #111;
+}

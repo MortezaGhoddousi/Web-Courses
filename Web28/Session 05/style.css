@@ -1,0 +1,124 @@
+div ul {
+    list-style-type: upper-roman;
+}
+
+div ul li {
+    display: inline;
+    padding: 10px 20px;
+    border-radius: 15px;
+    /* border: 2px solid #111; */
+    margin: 10px 0;
+    /* background-color: #111; */
+    color: #eee;
+    cursor: pointer;
+}
+
+div ul li:hover {
+    background-color: #777;
+    border: 2px solid #777;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 23px;
+}
+
+div ul li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+div table {
+    border: 2px solid #111;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+div table td {
+    border: 2px solid #111;
+    padding: 10px;
+}
+
+div table tr:nth-child(1) {
+    font-weight: bold;
+    background-color: #333;
+    color: #eee;
+}
+
+#form {
+    margin-top: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+form label {
+    width: 90%;
+    color: #333;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 22px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+form input label span {
+    justify-self: start;
+    align-self: flex-start;
+}
+
+form label input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 7px;
+    outline: none;
+}
+
+form label input::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+form label input[type="submit"] {
+    width: 150px;
+    border: 2px solid #333;
+    outline: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #333;
+    background-color: #333;
+    color: #eee;
+}
+
+form label input[type="submit"]:hover {
+    background-color: #eee;
+    color: #333;
+    box-shadow: none;
+}

@@ -1,0 +1,351 @@
+:root {
+    --bg: #090a0a;
+    --text: #dfe0e0;
+    --main: #366b5b;
+    --sectext: #4c4e4d;
+    --secbg: #2c2e2d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    width: 100%;
+    padding: 0 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--sectext);
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+header nav ul li.active a,
+header nav ul li:hover a {
+    color: var(--text);
+}
+
+header button {
+    padding: 20px 30px;
+    background-color: var(--secbg);
+    border-radius: 30px;
+    border: 1px solid var(--secbg);
+    color: var(--text);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header button:hover {
+    background-color: var(--sectext);
+}
+
+section.first {
+    width: 100%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50vh;
+    gap: 40px;
+}
+
+section.first div:first-child {
+    position: relative;
+}
+
+section.first div:first-child hr {
+    width: 10%;
+    border: none;
+    height: 1px;
+    background-color: var(--sectext);
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+
+section.first div:first-child p {
+    font-size: 42px;
+    position: absolute;
+    top: 0%;
+    left: 13%;
+}
+
+section.first div:first-child h1 {
+    font-size: 167px;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    z-index: 2;
+}
+
+section.first div:first-child i {
+    position: absolute;
+    color: var(--main);
+    font-size: 32px;
+    bottom: 5%;
+    left: 13%;
+    cursor: pointer;
+}
+
+section.first div:first-child img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+section.first div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1px;
+}
+
+section.first div:last-child img {
+    height: 50%;
+}
+
+section.first div:last-child hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--secbg);
+}
+
+section.first div:last-child p {
+    font-size: 24px;
+}
+
+section.first div:last-child ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+section.first div:last-child ul a {
+    text-decoration: none;
+    color: var(--sectext);
+    font-size: 18px;
+}
+
+section.first div img {
+    width: 100%;
+    height: 100%;
+}
+
+section.second,
+section.third {
+    padding: 150px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+section.second div:first-child,
+section.third div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+section.second div:first-child p,
+section.third div:first-child p {
+    color: var(--sectext);
+    font-size: 24px;
+}
+
+section.second div:first-child h2,
+section.third div:first-child h2 {
+    font-size: 82px;
+    position: relative;
+    bottom: 10px;
+}
+
+section.second div:first-child img {
+    width: 70%;
+}
+
+section.second div:last-child {
+    height: 70vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+section.second div:last-child::-webkit-scrollbar {
+    display: none;
+}
+
+section.second div:last-child p {
+    font-size: 24px;
+}
+
+section.third div:first-child ul {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+section.third div:first-child ul li {
+    height: 80px;
+    width: 70%;
+    padding: 10px 50px;
+    border: none;
+    border-bottom: 1px solid var(--secbg);
+    border-top: 1px solid var(--secbg);
+    display: grid;
+    grid-template-columns: 8% 80% 8%;
+    gap: 1%;
+    background-color: var(--bg);
+    transition: 0.3s;
+}
+
+section.third div:first-child ul li.active {
+    background-color: var(--main);
+    border-bottom: 1px solid var(--main);
+    border-top: 1px solid var(--main);
+}
+
+section.third
+    div:first-child
+    ul
+    li:hover:not(section.third div:first-child ul li.active) {
+    background-color: var(--secbg);
+}
+
+section.third div:first-child ul li p {
+    justify-self: flex-start;
+    align-self: center;
+    margin-right: 20px;
+    color: var(--text);
+}
+
+section.third div:first-child ul li h4 {
+    font-size: 26px;
+    text-align: left;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 20px;
+}
+
+section.third div:first-child ul li i {
+    justify-self: flex-start;
+    align-self: center;
+    font-size: 22px;
+    opacity: 0;
+    animation: none;
+}
+
+section.third div:first-child ul li.active i {
+    opacity: 1;
+}
+
+section.third
+    div:first-child
+    ul
+    li:hover
+    i:not(section.third div:first-child ul li.active i) {
+    animation: move-right 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes move-right {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+section.third div:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+section.third div:last-child aside {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3% 85%;
+    gap: 20px;
+}
+
+section.third div:last-child aside hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: var(--secbg);
+    justify-self: flex-start;
+    align-self: center;
+}
+
+section.third div:last-child aside h3 {
+    font-size: 24px;
+}

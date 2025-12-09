@@ -756,3 +756,633 @@ footer section:last-child ul li span:hover {
     font-size: 22px;
     cursor: pointer;
 }
+
+.Responsive-menu {
+    display: none;
+    font-size: 32px;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    body {
+        padding: 0 5vw;
+    }
+
+    header nav,
+    header button {
+        display: none;
+    }
+
+    header span.Responsive-menu {
+        display: block;
+    }
+
+    section.first {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 30vh;
+    }
+
+    section.first div:first-child {
+        position: relative;
+    }
+
+    section.first div:first-child hr {
+        display: none;
+    }
+
+    section.first div:first-child p {
+        font-size: 22px;
+        font-style: italic;
+        left: 0%;
+    }
+
+    section.first div:first-child h1 {
+        font-size: 127px;
+        left: 0%;
+    }
+
+    section.first div:first-child i {
+        display: none;
+    }
+
+    section.first div:first-child img {
+        height: 150%;
+    }
+
+    section.first div:last-child {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+        grid-template-areas:
+            "image content"
+            "image list";
+    }
+
+    section.first div:last-child img {
+        grid-area: image;
+        height: 100%;
+        z-index: 1;
+    }
+
+    section.first div:last-child hr {
+        display: none;
+    }
+
+    section.first div:last-child p {
+        font-size: 20px;
+        grid-area: content;
+        z-index: 2;
+    }
+
+    section.first div:last-child ul {
+        grid-area: list;
+        z-index: 2;
+        justify-self: start;
+        align-self: center;
+    }
+
+    section.second {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    section.second div:first-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 10fr;
+        grid-template-areas:
+            "content image"
+            "title image";
+    }
+
+    section.second div:first-child p {
+        grid-area: content;
+        font-size: 20px;
+    }
+
+    section.second div:first-child h2 {
+        grid-area: title;
+        font-size: 52px;
+    }
+
+    section.second div:first-child img {
+        width: 100%;
+        grid-area: image;
+    }
+
+    section.second div:last-child {
+        height: max-content;
+        overflow-y: auto;
+    }
+
+    section.second div:last-child::-webkit-scrollbar {
+        display: none;
+    }
+
+    section.second div:last-child p {
+        font-size: 24px;
+    }
+
+    section.third {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 80px;
+    }
+
+    section.third div:first-child p {
+        font-size: 20px;
+    }
+
+    section.third div:first-child ul {
+        margin-top: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0;
+        width: 100%;
+    }
+
+    section.third div:first-child ul li {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid var(--secbg);
+        grid-template-columns: 10% 90%;
+        gap: 0;
+    }
+
+    section.third div:first-child ul li h4 {
+        font-size: 20px;
+    }
+
+    section.third div:first-child ul li i {
+        display: none;
+    }
+
+    section.forth div:last-child {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section.fifth div:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    section.fifth div:nth-child(2) aside {
+        display: none;
+    }
+
+    section.fifth div:nth-child(2) aside:first-child {
+        display: block;
+        justify-self: center;
+        align-self: center;
+        padding-top: 15px;
+        border-top: 1px solid var(--secbg);
+        width: 100%;
+        display: grid;
+        grid-template-columns: calc(50% - 80px) 80px 50%;
+        grid-template-rows: 40px 40px 80%;
+        grid-template-areas:
+            ". image name"
+            ". image city"
+            "description description description";
+    }
+
+    section.fifth div:nth-child(2) aside p {
+        text-align: center;
+    }
+
+    section.fifth div:nth-child(4) {
+        padding: 30px 15px;
+        width: 90%;
+    }
+
+    section.fifth div:nth-child(4) h2 {
+        width: 80%;
+    }
+
+    section.fifth div:nth-child(4) aside {
+        width: 100%;
+        padding: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    section.fifth div:nth-child(4) aside input {
+        position: static;
+    }
+
+    section.fifth div:nth-child(4) aside input[type="email"] {
+        width: 100%;
+    }
+
+    section.fifth div:nth-child(4) aside input[type="submit"] {
+        width: 100%;
+    }
+
+    footer section:first-child {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "first ."
+            "second third"
+            "forth .";
+        gap: 40px;
+    }
+
+    footer section:first-child div:nth-child(1) {
+        grid-area: first;
+    }
+
+    footer section:first-child div:nth-child(2) {
+        grid-area: second;
+    }
+
+    footer section:first-child div:nth-child(3) {
+        grid-area: third;
+    }
+
+    footer section:first-child div:nth-child(4) {
+        grid-area: forth;
+    }
+
+    footer section:last-child {
+        padding-top: 20px;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 75px;
+        right: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .btn p {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        width: 100%;
+        padding: 0 40px;
+        position: relative;
+    }
+
+    nav,
+    header button,
+    hr,
+    section.first div:first-child i {
+        display: none;
+    }
+
+    .remove {
+        display: none !important;
+    }
+
+    .Responsive-menu {
+        display: block;
+        font-size: 38px;
+    }
+
+    section.second,
+    section.third {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    section.first div:first-child p {
+        font-size: 16px;
+        z-index: 5;
+    }
+
+    section.first div:first-child h1 {
+        font-size: 88px;
+        font-weight: normal;
+    }
+
+    section.first {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px;
+    }
+
+    section.first div:first-child {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    section.first div:first-child img {
+        width: 60%;
+        position: absolute;
+        bottom: 50%;
+        top: 40%;
+    }
+
+    section.first div:last-child img {
+        width: 60%;
+        height: 100%;
+        z-index: 9999;
+    }
+
+    section.first div:last-child p {
+        font-size: 15px;
+        padding-top: 30px;
+        line-height: 2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    section.first div:last-child ul {
+        font-size: 15px;
+        padding-top: 30px;
+        line-height: 2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    section.second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding-bottom: 0;
+    }
+
+    section.second div:first-child p,
+    section.third div:first-child p,
+    section.forth div:first-child p {
+        font-size: 16px;
+        padding: 30px 30px 0 10px;
+    }
+
+    section.third div:first-child h2 {
+        padding-bottom: 10px;
+    }
+
+    section.second div:first-child h2,
+    section.third div:first-child h2,
+    section.forth div:first-child h2 {
+        font-size: 50px;
+    }
+
+    section.second div:first-child img {
+        width: 100%;
+        padding: 50px 15px 60px 15px;
+    }
+
+    section.second div:last-child {
+        overflow-y: initial;
+        scrollbar-width: initial;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    section.second div:last-child p {
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 17px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+        line-height: 1.5;
+    }
+
+    section.third div:first-child ul {
+        margin-top: 25px;
+        margin-bottom: 30px;
+        border: 1px solid var(--secbg);
+    }
+
+    section.third div:last-child ul li:nth-child(odd) {
+        background-color: #131414;
+    }
+
+    section.third div:first-child ul li {
+        width: 100%;
+        height: 100%;
+        padding: 18px 0;
+    }
+
+    section.third div:first-child ul li p {
+        font-size: 14px;
+        opacity: 0.7;
+        margin-right: 0;
+        padding: 5px 0 0 20px;
+    }
+
+    section.third div:first-child ul li h4 {
+        font-size: 18px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        text-transform: capitalize;
+        margin-left: 0;
+    }
+
+    section.third div:last-child aside h3 {
+        font-size: 18px;
+        white-space: nowrap;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+
+    section.third div:last-child ul li {
+        padding: 10px 25px;
+        grid-template-rows: 55px 55px;
+    }
+
+    section.third div:last-child ul li h2 {
+        font-size: 22px;
+    }
+
+    section.third div:last-child ul li p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    section.forth div:first-child h2 {
+        padding-bottom: 30px;
+    }
+
+    section.forth div:last-child {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.fifth > h2 {
+        font-size: 32px;
+    }
+
+    section.fifth div:nth-child(2) {
+        grid-template-columns: 1fr;
+        padding-bottom: 200px;
+        border-bottom: none;
+    }
+
+    section.fifth div:nth-child(2) aside {
+        grid-template-columns: 43% 57%;
+        grid-template-rows: 40px 40px 80%;
+        padding-top: 30px;
+        justify-self: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    section.fifth div:nth-child(2) aside img {
+        width: 60px;
+        height: 60px;
+        justify-self: end;
+        align-self: center;
+        border: 5px solid var(--sectext);
+    }
+
+    section.fifth div:nth-child(2) aside h3 {
+        justify-self: start;
+        align-self: end;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    section.fifth div:nth-child(2) aside span {
+        justify-self: start;
+        align-self: start;
+        font-size: 13px;
+    }
+
+    section.fifth div:nth-child(2) aside p {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    section.fifth div:nth-child(3) {
+        bottom: 40%;
+        gap: 20px;
+    }
+
+    section.fifth div:nth-child(4) {
+        width: 90%;
+        padding: 30px;
+        border: none;
+    }
+
+    section.fifth div:nth-child(4) h2 {
+        font-size: 20px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    section.fifth div:nth-child(4) aside {
+        padding: 0px;
+        padding-top: 30px;
+    }
+
+    section.fifth div:nth-child(4) aside input {
+        position: initial;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: initial;
+    }
+
+    section.fifth div:nth-child(4) aside input[type="email"] {
+        margin-bottom: 3px;
+        background-color: #131414;
+    }
+
+    section.fifth div:nth-child(4) aside input[type="email"]::placeholder {
+        text-align: center;
+    }
+
+    section.fifth div:nth-child(4) aside input[type="submit"] {
+        width: 100%;
+    }
+
+    footer section:first-child {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        border-bottom: none;
+    }
+
+    footer section:first-child div:nth-child(1) h2 {
+        font-size: 32px;
+    }
+
+    footer section:first-child div:nth-child(1) ul {
+        gap: 5px;
+        padding-top: 10px;
+    }
+
+    footer section:first-child div > p {
+        font-size: 15px;
+    }
+
+    footer section:first-child div ul {
+        gap: 5px;
+    }
+
+    footer section:first-child div h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
+    }
+
+    footer section:first-child div p {
+        font-size: 18px;
+    }
+
+    footer section:last-child ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer section:last-child ul li {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    footer section:last-child ul li:nth-child(2) {
+        border: none;
+    }
+
+    .btn {
+        right: 50px;
+    }
+
+    .btn i {
+        border: 1px solid var(--text);
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .btn p {
+        display: none;
+    }
+
+    section.fifth div:nth-child(2) aside:not(:first-child) {
+        display: none;
+    }
+}

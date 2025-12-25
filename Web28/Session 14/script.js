@@ -156,7 +156,7 @@ console.log(Math_object.std(numbers));
 
 console.log(Math_object);
 
-var calculateMinMaxAvgVar = function (nums) {
+const calculateMinMaxAvgVar = function (nums) {
     var min = calMin(nums);
     var max = calMax(nums);
     var avg = calAvg(nums);
@@ -170,7 +170,7 @@ var calculateMinMaxAvgVar = function (nums) {
     };
 };
 
-var CalMinMaxAvgVar = (nums) => {
+const CalMinMaxAvgVar = (nums) => {
     var min = calMin(nums);
     var max = calMax(nums);
     var avg = calAvg(nums);

@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Web crash course</title>
+    </head>
+    <body>
+        <!-- table element -->
+        <table>
+            <!-- first row (table row (tr)) -->
+            <thead>
+                <tr>
+                    <!-- first header (table header (th)) -->
+                    <th>R</th>
+                    <!-- second header -->
+                    <th>Full Name</th>
+                    <!-- third header -->
+                    <th>Age</th>
+                    <!-- forth header -->
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <!-- second row -->
+            <tbody>
+                <tr>
+                    <!-- table data (td) -->
+                    <td>1</td>
+                    <td>Morteza</td>
+                    <td>31</td>
+                    <td>Teacher</td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                    <td>2</td>
+                    <td>Mahdi</td>
+                    <td>50</td>
+                    <td>Teacher</td>
+                </tr>
+                <!-- forth row -->
+                <tr>
+                    <td>3</td>
+                    <td>Sarah</td>
+                    <td>22</td>
+                    <td>Student</td>
+                </tr>
+                <!-- fifth row -->
+                <tr>
+                    <td>4</td>
+                    <td>Zahra</td>
+                    <td>33</td>
+                    <td>Student</td>
+                </tr>
+                <!-- sixth row -->
+                <tr>
+                    <td>5</td>
+                    <td>Aras</td>
+                    <td>17</td>
+                    <td>Student</td>
+                </tr>
+                <!-- seventh row -->
+                <tr>
+                    <td>6</td>
+                    <td>Mahdieh</td>
+                    <td>27</td>
+                    <td>Student</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- audio element -->
+        <!-- <audio
+            controls
+            loop
+            src="./audio/StockTune-Reflective Office Afternoon_1721307614.mp3"
+        ></audio> -->
+
+        <!-- video element -->
+        <!-- <video
+            controls
+            loop
+            src="./video/coverr-premium-man-strumming-his-guitar-6025-1080p-w.mp4"
+        ></video> -->
+
+        <!-- form element -->
+
+        <h1>Welcome to Register form</h1>
+
+        <form action="https://yourdomain:3001/api/user" method="post">
+            <label for="username">Enter your username: </label>
+            <input
+                type="text"
+                name="username"
+                placeholder="John Smith"
+                required
+                autofocus
+            />
+            <br />
+
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" placeholder="John" /> <br />
+
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" placeholder="Smith" />
+            <br />
+
+            <label for="email">Email: </label>
+            <input
+                type="email"
+                name="email"
+                placeholder="John_Smith@example.com"
+                required
+            />
+            <br />
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" name="phone" placeholder="+980000000" required />
+            <br />
+
+            <input type="submit" name="submit" value="Signup" />
+        </form>
+    </body>
+</html>

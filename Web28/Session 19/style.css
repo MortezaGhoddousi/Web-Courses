@@ -1,0 +1,167 @@
+@font-face {
+    font-family: yekan;
+    src: url(./fonts/Yekan.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: yekan;
+}
+
+body {
+    direction: rtl;
+    width: 100vw;
+}
+
+header {
+    padding: 15px 10vw;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    box-shadow: 0 0 5px gray;
+    z-index: 99;
+}
+
+header img {
+    width: 30px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: #555;
+    text-decoration: none;
+}
+
+header nav ul li.active a {
+    color: orangered;
+}
+
+header button {
+    position: absolute;
+    left: 10vw;
+    width: 120px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(to right, #704981, #a64c6a);
+    cursor: pointer;
+}
+
+.first {
+    width: 100%;
+    padding: 20px 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 750px;
+}
+
+.first > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.first > div:first-child p {
+    color: #555;
+}
+
+.first > div:first-child p:nth-child(3) {
+    width: 70%;
+}
+
+.first > div:first-child aside {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.first > div:first-child aside div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "title image"
+        "paragraph paragraph";
+    gap: 10px;
+    column-gap: 20px;
+}
+
+.first > div:first-child aside div h3 {
+    justify-self: start;
+    align-self: center;
+    grid-area: title;
+}
+
+.first > div:first-child aside div img {
+    justify-self: center;
+    align-self: center;
+    grid-area: image;
+    width: 35px;
+    height: 35px;
+}
+
+.first > div:first-child aside div p {
+    justify-self: start;
+    align-self: center;
+    grid-area: paragraph;
+    font-size: 13px;
+    color: #555;
+}
+
+.first > div:last-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: relative;
+    background-image: url(./images/1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first > div:last-child aside {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.first > div:last-child span {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.first > div:last-child span.active {
+    background-color: #fff;
+}

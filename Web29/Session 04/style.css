@@ -1,0 +1,61 @@
+/* syntax */
+
+/* selector {
+    property1: value1;
+    property2: value2;
+    property3: value3;
+} */
+
+/* selection by tag name */
+h2 {
+    color: green;
+    font-size: 28px;
+}
+
+/* selection by id */
+#header-job {
+    color: darkslategray;
+    font-size: 24px;
+}
+
+/* selection by class name */
+.summary-content {
+    font-size: 20px;
+}
+
+.item-list {
+    font-size: 16px;
+    color: darkslategray;
+}
+
+/* selection by position */
+
+header ul .item-list a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Properties */
+
+.summary-content {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, "Time New Roman", Helvetica, sans-serif;
+    text-align: justify;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-indent: 30px;
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    line-height: 52px;
+}
+
+.summary-content span {
+    color: rgb(233, 107, 3);
+    text-decoration: underline;
+}

@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: brown;
+    width: 800px;
+    height: 300px;
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "firstChild firstChild"
+        "secondChild ."
+        ". thirdChild";
+}
+
+.child-1 {
+    grid-area: firstChild;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.child-2 {
+    grid-area: secondChild;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: blue;
+}
+
+.child-3 {
+    grid-area: thirdChild;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/* header {
+    padding: 10px 30px;
+    width: 100vw;
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+header ul a {
+    color: #000;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+} */
+
+header {
+    width: 100vw;
+    background: #e01e3f;
+    background: linear-gradient(
+        90deg,
+        rgba(224, 30, 63, 1) 0%,
+        rgba(17, 17, 17, 1) 19%,
+        rgba(140, 27, 46, 1) 100%
+    );
+    color: #fff;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+header h1 {
+    justify-self: flex-start;
+    align-self: center;
+}
+
+header p {
+    justify-self: center;
+    align-self: center;
+}
+
+header nav {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    list-style-type: none;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+}
+
+section {
+    width: 50%;
+}
+
+section p {
+    margin-top: 30px;
+    background: #e01e3f;
+    /* display: inline; */
+}
+
+section p b {
+    background: green;
+    display: block;
+}

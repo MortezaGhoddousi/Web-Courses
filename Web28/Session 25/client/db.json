@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "content": "buy some milk"
+    },
+    {
+      "id": "3",
+      "content": "kicking some coding ass"
+    },
+    {
+      "id": 2.766032972146589,
+      "content": "install some packages using npm install"
+    }
+  ]
+}

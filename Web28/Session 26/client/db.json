@@ -1,0 +1,47 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "content": "buy some milk",
+      "email": "admin@admin.com"
+    },
+    {
+      "id": "3",
+      "content": "kicking some coding ass",
+      "email": "admin@admin.com"
+    },
+    {
+      "id": "2.766032972146589",
+      "content": "install some packages using npm install",
+      "email": "a.t@gmail.com"
+    },
+    {
+      "id": 5.617065107615184,
+      "content": "kick some coding ass",
+      "email": "admin@admin.com"
+    }
+  ],
+  "users": [
+    {
+      "id": 9.955315964785218,
+      "first_name": "Morteza",
+      "last_name": "Ghoddousi",
+      "password": "admin",
+      "email": "admin@admin.com"
+    },
+    {
+      "id": 6.55582876643264,
+      "first_name": "Ali",
+      "last_name": "Taghizadeh",
+      "password": "123",
+      "email": "a.t@gmail.com"
+    },
+    {
+      "id": 9.354694248367373,
+      "first_name": "AmirALi",
+      "last_name": "Davoudi",
+      "password": "321",
+      "email": "a.d@gmail.com"
+    }
+  ]
+}

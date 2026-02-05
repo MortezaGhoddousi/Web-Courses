@@ -1,9 +1,12 @@
 import { Fragment, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../axiosConfig";
+import { useAuth } from "../context/AuthContext";
 
-function Todos({ loggedIn }) {
+function Todos() {
     const [todos, setTodos] = useState([]);
+
+    const {loggedIn} = useAuth();
 
     const router = useNavigate();
     useEffect(() => {

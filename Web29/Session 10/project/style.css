@@ -1,0 +1,307 @@
+:root {
+    --padding: 15vw;
+    --mainColor: #ffc107;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    width: 100vw;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div:first-child {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+}
+
+header div:first-child video {
+    width: 100%;
+    filter: brightness(60%);
+}
+
+header div:first-child h1,
+header div:first-child p {
+    position: absolute;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+header div:first-child h1 {
+    font-size: 84px;
+    top: 45%;
+}
+
+header div:first-child p {
+    font-size: 24px;
+    top: 55%;
+}
+
+header div:first-child p span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header div:last-child {
+    width: 100%;
+    padding: 20px var(--padding);
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+    box-shadow: 0 0 65px #555;
+}
+
+header div:last-child h2 {
+    color: var(--mainColor);
+}
+
+header div:last-child nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header div:last-child nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header div:last-child nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+    transition: 0.2s;
+}
+
+header div:last-child nav ul li.active a,
+header div:last-child nav ul li:hover a {
+    color: #000;
+}
+
+header div:last-child nav ul li span {
+    width: 20px;
+    height: 20%;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+header div:last-child nav ul li.active span {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+header div:last-child nav ul li:hover span {
+    animation-name: moveUp;
+    animation-timing-function: ease;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+@keyframes moveUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#first-child {
+    width: 100%;
+    height: 70vh;
+    padding: 10px var(--padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+#first-child div:first-child {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 110px 70px;
+    grid-template-areas:
+        "title"
+        "firstParagraph"
+        "secondParagraph";
+    gap: 20px;
+}
+
+#first-child div:last-child {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 110px 70px;
+    grid-template-areas:
+        "."
+        "firstParagraph"
+        ".";
+    gap: 20px;
+}
+
+#first-child div h2 {
+    grid-area: title;
+    font-size: 46px;
+    color: #000;
+}
+
+#first-child div:first-child p:nth-child(2) {
+    grid-area: firstParagraph;
+}
+
+#first-child div:first-child p:nth-child(3) {
+    grid-area: secondParagraph;
+}
+
+#first-child div:last-child p {
+    grid-area: firstParagraph;
+}
+
+#first-child div p {
+    font-size: 19px;
+    line-height: 30px;
+    color: #666;
+    text-align: justify;
+}
+#first-child div p span {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#first-child div p span:hover {
+    color: var(--mainColor);
+}
+
+#second-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+}
+
+#second-child div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#second-child div img {
+    width: 100%;
+    height: 100%;
+}
+
+.blackbox {
+    background-color: #212529;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+.blackbox h2 {
+    font-size: 42px;
+}
+
+.blackbox p {
+    font-size: 19px;
+}
+
+.blackbox a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#second-child div:last-child {
+    position: relative;
+}
+
+#second-child div:last-child aside {
+    position: absolute;
+}
+
+#second-child div:last-child aside:nth-child(2) {
+    background-color: #198754;
+    width: 65%;
+    height: 20%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px;
+    color: #fff;
+}
+
+#second-child div:last-child aside:nth-child(2) h3 {
+    font-size: 32px;
+}
+
+#second-child div:last-child aside:nth-child(3) {
+    bottom: 10%;
+    transform: translateY(50%);
+    right: 5%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#second-child div:last-child aside:nth-child(3) button {
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#second-child div:last-child aside:nth-child(3) button i {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#third-child {
+    margin-top: 1000px;
+}

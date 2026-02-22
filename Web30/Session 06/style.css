@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 5px 10px 15px 20px;
+    margin: 5px 10px 15px 20px;
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 6px solid black;
+    border-left: 8px solid black;
+    width: 300px;
+    height: 100px;
+
+    /* background-color: #5577ff; */
+    background-image: url(./image1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    /* content */
+    width: 200px;
+    height: 80px;
+
+    /* padding */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+
+    /* border */
+    border-top: 2px solid black;
+    border-right: 4px solid black;
+    border-bottom: 6px solid black;
+    border-left: 8px solid black;
+
+    /* margin */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    border-radius: 50px;
+}
+ul {
+    padding: 15px;
+    margin: 15px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px;
+    margin: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family:
+        "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+h1 {
+    cursor: default;
+}
+
+h1:hover {
+    font-size: 66px;
+    color: red;
+}

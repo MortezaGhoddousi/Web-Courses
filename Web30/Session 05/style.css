@@ -1,0 +1,82 @@
+/* 
+css syntax
+selector {
+    property1: value1;
+    property2: value2;
+    property3: value3;
+} 
+*/
+
+/* selection by tag name */
+h1 {
+    color: blue;
+}
+
+/* selection by id */
+#h1 {
+    font-size: 72px;
+}
+
+/* selection by class name */
+.morteza {
+    color: red;
+}
+
+/* text formatting */
+
+#p1 {
+    font-size: 22px;
+}
+
+#p2 {
+    font-weight: bold;
+}
+
+#p3 {
+    font-style: italic;
+}
+
+#p4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#p5 {
+    text-align: center;
+}
+
+#p6 {
+    text-decoration: line-through;
+}
+
+#p7 {
+    text-decoration: overline;
+}
+
+#p8 {
+    text-decoration: underline;
+}
+
+#p9 {
+    text-transform: lowercase;
+}
+
+#p10 {
+    text-transform: uppercase;
+}
+
+#p11 {
+    text-transform: capitalize;
+}
+
+#p12 {
+    text-indent: 50px;
+}
+
+#p14 {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height: 36px;
+}
+
+
+

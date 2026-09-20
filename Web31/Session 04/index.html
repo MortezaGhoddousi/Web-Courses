@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Web course</title>
+    </head>
+    <body>
+        <!-- TABLE -->
+        <table border>
+            <!-- table head -->
+            <thead>
+                <!-- Table Row (tr) -->
+                <tr>
+                    <!-- Table Header (th) -->
+                    <th>R</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+
+            <!-- table body -->
+            <tbody align="center">
+                <tr>
+                    <!-- Table Data (td) -->
+                    <td>1</td>
+                    <td colspan="2">Morteza Ghoddousi</td>
+                    <td>Teacher</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Asma</td>
+                    <td>Moammer</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Delvin</td>
+                    <td>Mansouri</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Sarvnaz</td>
+                    <td>Zabihian</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Matin</td>
+                    <td>Mazloumian</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Pooria</td>
+                    <td>Ghorbani</td>
+                    <td>Student</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- FORM -->
+        <h1>Welcome to Register page</h1>
+        <form action="/signup" method="post">
+            <div>
+                <label for="firstname">First Name</label>
+                <input
+                    type="text"
+                    name="firstname"
+                    autofocus
+                    placeholder="John"
+                />
+            </div>
+
+            <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" placeholder="Smith" />
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" required />
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="john_smith@domain.com"
+                />
+            </div>
+
+            <div>
+                <label for="phone"></label>
+                <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" />
+                <span>Male</span>
+                <input type="radio" name="gender" value="female" />
+                <span>Female</span>
+                <input type="radio" name="gender" value="unknown" />
+                <span>Unknown</span>
+            </div>
+
+            <div>
+                <label for="skills">Skills</label>
+                <input type="checkbox" name="skills" value="html" />
+                <span>HTML</span>
+                <input type="checkbox" name="skills" value="css" />
+                <span>CSS</span>
+                <input type="checkbox" name="skills" value="js" />
+                <span>JS</span>
+                <input type="checkbox" name="skills" value="python" />
+                <span>Python</span>
+                <input type="checkbox" name="skills" value="node" />
+                <span>Node</span>
+                <input type="checkbox" name="skills" value="react" />
+                <span>React</span>
+                <input type="checkbox" name="skills" value="next" />
+                <span>Next</span>
+                <input type="checkbox" name="skills" value="nest" />
+                <span>Nest</span>
+                <input type="checkbox" name="skills" value="laravel" />
+                <span>Laravel</span>
+                <input type="checkbox" name="skills" value="django" />
+                <span>Django</span>
+                <input type="checkbox" name="skills" value="vue" />
+                <span>Vue</span>
+            </div>
+
+            <div>
+                <label for="english">English</label>
+                <input type="range" name="english" min="0" max="100" />
+            </div>
+
+            <div>
+                <label for="submit"></label>
+                <input type="submit" name="submit" value="Signup" />
+                <!-- <button type="submit" name="submit">Signup</button> -->
+            </div>
+
+            <audio controls loop autoplay>
+                <source
+                    src="./assets/audio/StockTune-Reflective Office Afternoon_1721307614.ogg"
+                />
+                <source
+                    src="./assets/audio/StockTune-Reflective Office Afternoon_1721307614.mp3"
+                />
+            </audio>
+
+            <video controls loop autoplay>
+                <source
+                    src="./assets/video/coverr-premium-man-strumming-his-guitar-6025-1080p-w.mp4"
+                />
+            </video>
+        </form>
+    </body>
+</html>

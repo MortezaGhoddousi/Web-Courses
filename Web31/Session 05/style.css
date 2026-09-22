@@ -1,0 +1,87 @@
+p {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* 
+selector {
+    property1: value1; 
+    property2: value2;
+    property3: value3;
+    .
+    .
+    .
+} 
+*/
+
+/* SELECTORS */
+
+/* 1. SELECTION BY TAG NAME */
+h1 {
+    color: brown;
+}
+
+/* 2. SELECTION BY ID */
+#morteza {
+    font-size: 52px;
+}
+
+/* 3. SELECTION BY CLASS NAME */
+.bold {
+    color: blue;
+}
+
+/* 4.SELECTION BY POSITION */
+div .bold {
+    font-size: 72px;
+}
+
+/* 5. MULTIPLE SELECTION */
+.bold,
+p {
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* 
+p {
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline;
+} 
+*/
+
+/* 6.SELECTION BY ATTRIBUTE */
+input[type="password"] {
+    border: 2px solid green;
+    border-radius: 9px;
+    padding: 10px 25px;
+    outline: none;
+}
+
+body > h3 {
+    color: green;
+}
+
+/* 7.NOT SELECTION */
+.bold:not(div h2) {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* 8. SELECTION BY SITUATION */
+ul li:nth-child(4) {
+    color: red;
+}
+
+ul li:first-child {
+    color: orangered;
+}
+
+ul li:last-child {
+    color: purple;
+}
+
+ul li:nth-child(odd) {
+    text-decoration: line-through;
+}

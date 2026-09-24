@@ -1,0 +1,137 @@
+/* TEXT FORMATTING */
+
+/* 
+html {
+    font-size: 18px;
+} 
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#p1 {
+    /* color: red; */
+    /* color: rgb(255, 0, 0); */
+    color: #ff0000;
+    /* font-size: 16px; */
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: capitalize;
+
+    /* BOX MODEL */
+
+    box-sizing: border-box;
+
+    /* CONTENT */
+    width: 50%;
+    height: 250px;
+    /* padding: 10px 20px 30px 40px; */
+
+    /* PADDING */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    /* padding: 20px 40px 60px; */
+
+    /* BORDER */
+    /* border: 7px solid #444; */
+    border-top: 1px solid black;
+    border-right: 2px dotted red;
+    border-bottom: 3px dashed blue;
+    border-left: 4px groove green;
+
+    border-radius: 15px;
+
+    /* MARGIN */
+    /* margin: 10px 20px 30px 40px;  */
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    /* BACKGROUND */
+    /* background: #ffaa44; */
+    /* background: linear-gradient(to right, #ffaa44, #ff0000); */
+    background-image: url(./assets/images/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#p2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 36px;
+    text-shadow: 5px -15px 5px #ffaa44;
+    box-shadow: 5px -15px 25px #0000ff;
+    cursor: default;
+}
+
+#p3 {
+    text-indent: 25px;
+    text-align: justify;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h1:hover {
+    font-weight: bold;
+}
+
+ul {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+table {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+
+thead tr,
+tr td:first-child {
+    background: #555;
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+a {
+    padding: 15px;
+    margin: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: orangered;
+}

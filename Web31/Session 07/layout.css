@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* POSITIONING */
+
+p {
+    padding: 10px 25px;
+    text-align: justify;
+}
+
+#second {
+    color: #ff0000;
+    background: #fff;
+    height: 70px;
+    border: 1px solid #000;
+
+    /* RELATIVE */
+    /* 
+    position: relative;
+    left: 25px;
+    top: -10px; 
+    */
+
+    /* FIXED */
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+
+    /* ABSOLUTE */
+    /* 
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    */
+
+    /* STICKY */
+    /* position: sticky;
+    top: 10px; */
+
+    z-index: 2;
+}
+
+#third {
+    position: sticky;
+    top: 0px;
+    color: #0000ff;
+    border: 1px solid #000;
+    z-index: 3;
+    background-color: #fff;
+    width: 100vw;
+}
+
+div {
+    position: relative;
+    width: 500px;
+    padding: 25px;
+    border: 1px solid #000;
+    margin: 30px;
+}
+
+div p {
+    border: 1px solid #555;
+}
+
+div p:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    z-index: 3;
+}
+
+/* LAYOUT */
+article {
+    margin: 150px 50px;
+    border: 1px solid #000;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "first first second"
+        "third third third"
+        ". forth .";
+    gap: 15px;
+
+    height: 350px;
+}
+
+section {
+    border: 2px solid #000;
+    padding: 10px;
+}
+
+article section:nth-child(1) {
+    grid-area: first;
+}
+
+article section:nth-child(2) {
+    grid-area: second;
+}
+
+article section:nth-child(3) {
+    grid-area: third;
+}
+
+article section:nth-child(4) {
+    grid-area: forth;
+    width: 100px;
+    height: 40px;
+    justify-self: center;
+    align-self: center;
+}

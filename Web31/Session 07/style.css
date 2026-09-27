@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 25px 5vw;
+    background: #eee;
+    background-image: url(./pngtree-contemporary-authentic-3d-renderings-of-web-login-page-templates-image_3904126.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+h1 {
+    color: #228833;
+    text-transform: uppercase;
+}
+
+form {
+    padding: 40px 15px;
+    width: 50%;
+    border: 2px solid #228833;
+    border-radius: 9px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+div,
+label {
+    width: 100%;
+}
+
+label {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    width: 50%;
+    background: transparent;
+
+    padding: 5px 15px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #228833;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+    color: #228833;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+input[type="submit"] {
+    width: 100px;
+    cursor: pointer;
+    background: #228833;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 9px #228833;
+    border: 1px solid #228833;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: transparent;
+    color: #228833;
+    box-shadow: none;
+}

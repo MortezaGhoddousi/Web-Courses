@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FLEX LAYOUT */
+article {
+    position: relative;
+
+    padding: 10px;
+    margin: 150px;
+    border: 1px solid #000;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+section {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+header {
+    width: 100%;
+    background: #555;
+    color: #fff;
+    padding: 10px 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "name nav job";
+}
+
+header div {
+    cursor: pointer;
+    display: none;
+    grid-area: menu;
+    /* opacity: 0; */
+}
+
+header div span {
+    display: block;
+    width: 30px;
+    height: 2.5px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 4px;
+}
+
+header h1 {
+    grid-area: name;
+    /* justify-self: flex-start; */
+    align-self: center;
+}
+
+header p {
+    grid-area: job;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+header nav {
+    grid-area: nav;
+    justify-self: center;
+    align-self: center;
+}
+
+header ul {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header ul a:hover {
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+/* TRANSFORM */
+article section:nth-child(2) {
+    background: #f00;
+    color: #fff;
+    border: 1px solid #f00;
+    transition: 0.5s;
+
+    /* transform: translate(15px, -20px); */
+}
+
+article section:nth-child(2):hover {
+    /* transform: scale(0.8); */
+    transform: rotate(360deg);
+    /* transform: skew(30deg); */
+}
+
+/* ANIMATION */
+
+article section:nth-child(4) {
+    width: 100px;
+    height: 30px;
+    background: #0f0;
+    color: #fff;
+    border: 1px solid #0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-name: moving_box;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    /* animation-timing-function: ease; */
+    /* animation-timing-function: ease-in; */
+    /* animation-timing-function: ease-out; */
+    animation-timing-function: ease-in-out;
+
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moving_box {
+    0% {
+        background: #0f0;
+        color: #fff;
+        top: 0;
+        left: 0;
+    }
+    25% {
+        background: rgb(251, 255, 0);
+        color: #fff;
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50% {
+        background: rgb(255, 166, 0);
+        color: #fff;
+        top: calc(100% - 30px);
+        left: calc(100% - 100px);
+    }
+    75% {
+        background: rgb(255, 64, 0);
+        color: #fff;
+        top: calc(100% - 30px);
+        left: 0;
+    }
+    100% {
+        background: rgb(0, 0, 255);
+        color: #fff;
+        top: 0;
+        left: 0;
+    }
+}
+
+article section:first-child {
+    animation: fading_right 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fading_right {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fading_left {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fading_down {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    animation: fading_right 1s ease 0s 1 normal forwards;
+}
+
+header p {
+    animation: fading_left 1s ease 0s 1 normal forwards;
+}
+
+header nav li {
+    opacity: 0;
+}
+
+header nav li:nth-child(1) {
+    animation: fading_down 1s ease 0s 1 normal forwards;
+}
+
+header nav li:nth-child(2) {
+    animation: fading_down 1s ease 0.25s 1 normal forwards;
+}
+
+header nav li:nth-child(3) {
+    animation: fading_down 1s ease 0.5s 1 normal forwards;
+}
+
+header nav li:nth-child(4) {
+    animation: fading_down 1s ease 1s 1 normal forwards;
+}
+
+@media (max-width: 720px) {
+    header {
+        grid-template-areas: "name job menu";
+    }
+
+    header div {
+        display: block;
+        justify-self: flex-end;
+        align-self: center;
+        animation: fading_left 1s ease 0s 1 normal forwards;
+    }
+
+    header p {
+        animation: fading_down 1s ease 0s 1 normal forwards;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}

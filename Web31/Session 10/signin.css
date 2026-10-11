@@ -1,0 +1,226 @@
+/* General settings */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e3932;
+}
+
+/* White header */
+header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* =======================HEADER======================= */
+header {
+    width: 100%;
+    padding: 0 55px;
+    height: 117px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 7px #aaa;
+}
+
+header section:first-child,
+header section:last-child,
+header section:last-child div:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 55px;
+}
+
+header section:first-child div {
+    width: 51px;
+    height: 51px;
+}
+
+/* Starbucks logo */
+.logo img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+/* Green background */
+.main-content {
+    min-height: calc(100vh - 90px);
+    background-color: #006241;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px 20px;
+}
+
+/* White login card */
+.login-card {
+    width: 100%;
+    max-width: 720px;
+    background-color: #fdfcf7;
+
+    padding: 48px 120px 40px;
+
+    border-radius: 32px;
+}
+
+/* Welcome back */
+.login-card h1 {
+    margin: 0 0 36px;
+
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    color: #20212c;
+}
+
+/* Input labels */
+.field-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* Email and password fields */
+form > input[type="email"],
+form > input[type="password"] {
+    display: block;
+    width: 100%;
+    height: 60px;
+
+    padding: 0 18px;
+    margin: 0 0 8px;
+
+    border: 1px solid #d00e17;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    color: #242536;
+
+    font-family: inherit;
+    font-size: 18px;
+}
+
+/* Placeholder text */
+form > input::placeholder {
+    color: #d00e17;
+    opacity: 1;
+}
+
+/* Error messages */
+.error-message {
+    display: block;
+    margin: 0 0 24px 8px;
+
+    color: #d00e17;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Links */
+a {
+    color: #00754a;
+    text-decoration: none;
+}
+
+/* Remember me + forgot password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    margin: 28px 0 48px;
+    font-size: 16px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.remember input {
+    width: 22px;
+    height: 22px;
+    accent-color: #00754a;
+}
+
+.remember a,
+.forgot,
+.join a {
+    font-weight: bold;
+}
+
+.forgot {
+    white-space: nowrap;
+}
+
+/* Sign-in button */
+button {
+    display: block;
+    width: auto;
+    min-width: 125px;
+
+    padding: 17px 28px;
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #00754a;
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Join now */
+.join {
+    margin: 30px 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+    .login-card {
+        max-width: 520px;
+        padding: 36px 24px;
+    }
+
+    .login-card h1 {
+        font-size: 32px;
+    }
+
+    .options {
+        flex-wrap: wrap;
+        margin-bottom: 36px;
+    }
+
+    .remember {
+        white-space: normal;
+    }
+
+    .forgot {
+        white-space: normal;
+    }
+}

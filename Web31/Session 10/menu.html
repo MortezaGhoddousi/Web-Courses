@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./menu.css">
-    <script src="./script.js"></script>
-
-</head>
-<body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./menu.css" />
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
             <section>
                 <div>
                     <svg
@@ -73,200 +72,430 @@
                 </div>
             </section>
         </header>
-    <article>
-        <section1> 
-            <div class="menu_div">
-                <ul>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">featured</a></li>
-                    <li><a href="#">previous</a></li>
-                    <li><a href="#">favorites</a></li> 
-                </ul>
-             </div>
-         </section1>
-         
-         <!-- <aside> -->
-            <div class="menu_categories">
-                <h1>menu</h1>
+        <article>
+            <!-- Menu Top Navigation -->
+            <div class="menu-top-bar">
+                <nav class="menu-top-nav" aria-label="Menu navigation">
+                    <a href="#" class="top-nav-link active">Menu</a>
+
+                    <a href="#" class="top-nav-link">Featured</a>
+
+                    <a href="#" class="top-nav-link">Previous</a>
+
+                    <a href="#" class="top-nav-link">Favorites</a>
+                </nav>
             </div>
-            <nav class="categories">
-                <a href="#">The latest</a>
-                <a href="#">protein</a>
-                <a href="#">coffee and espresso</a>
-                <a href="#">tea</a>
-                <a href="#">refreshers</a>
-                <a href="#">frappuccino</a>
-                <a href="#">other drinks</a>
-                <a href="#">food</a>
-                <a href="#">at home coffee</a>
-            </nav>
-         </aside> 
-         <main class="menu-content">
-          
-            <!-- thelates -->
-            <section1 class="menu-category">
-                <h2>the latest</h2>
-                <div class="category-line"></div>
-                    <nav class="menu-items">
-                        <nav2 class="menu-item">
-                            <img src="" alt="">
-                            <h3>trending</h3>
-                        </nav2>
-                        <nav3 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>Pumpkin Picks</h3>
-                        </nav3>
+            <div class="menu-layout">
+                <!-- Left Menu Sidebar -->
+                <aside class="menu-sidebar">
+                    <h2 class="sidebar-title">Menu</h2>
+
+                    <nav class="sidebar-nav" aria-label="Menu categories">
+                        <!-- The Latest -->
+
+                        <section class="menu-category">
+                            <h3>The Latest</h3>
+                            <ul>
+                                <li><a href="#trending">Trending</a></li>
+                                <li>
+                                    <a href="#pumpkin-picks">Pumpkin Picks</a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Protein -->
+                        <section class="menu-category">
+                            <h3>Protein</h3>
+                            <ul>
+                                <li>
+                                    <a href="#protein-beverages"
+                                        >Protein Beverages</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Coffee & Espresso -->
+                        <section class="menu-category">
+                            <h3>Coffee &amp; Espresso</h3>
+                            <ul>
+                                <li>
+                                    <a href="#hot-coffee-espresso"
+                                        >Hot Coffee &amp; Espresso</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#cold-coffee-espresso"
+                                        >Cold Coffee &amp; Espresso</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Tea -->
+                        <section class="menu-category">
+                            <h3>Tea</h3>
+                            <ul>
+                                <li><a href="#chai">Chai</a></li>
+                                <li><a href="#matcha">Matcha</a></li>
+                                <li><a href="#hot-tea">Hot Tea</a></li>
+                                <li><a href="#iced-tea">Iced Tea</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- Refreshment -->
+                        <section class="menu-category">
+                            <h3>Refreshment</h3>
+                            <ul>
+                                <li><a href="#refreshers">Refreshers</a></li>
+                                <li>
+                                    <a href="#energy-refreshers"
+                                        >Energy Refreshers</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Frappuccino -->
+                        <section class="menu-category">
+                            <h3>Frappuccino® Blended Beverage</h3>
+                            <ul>
+                                <li>
+                                    <a href="#coffee-frappuccino"
+                                        >Coffee Frappuccino®</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#creme-frappuccino"
+                                        >Crème Frappuccino®</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Other Sips -->
+                        <section class="menu-category">
+                            <h3>Other Sips</h3>
+                            <ul>
+                                <li>
+                                    <a href="#hot-chocolate-lemonade"
+                                        >Hot Chocolate, Lemonade &amp; More</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#bottled-beverages"
+                                        >Bottled Beverages</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
+
+                        <!-- Food -->
+                        <section class="menu-category">
+                            <h3>Food</h3>
+                            <ul>
+                                <li><a href="#breakfast">Breakfast</a></li>
+                                <li><a href="#bakery">Bakery</a></li>
+                                <li><a href="#treats">Treats</a></li>
+                                <li><a href="#lunch">Lunch</a></li>
+                                <li><a href="#snacks">Snacks</a></li>
+                            </ul>
+                        </section>
+
+                        <!-- At Home Coffee -->
+                        <section class="menu-category">
+                            <h3>At Home Coffee</h3>
+                            <ul>
+                                <li><a href="#whole-bean">Whole Bean</a></li>
+                                <li>
+                                    <a href="#starbucks-via"
+                                        >Starbucks VIA® Instant</a
+                                    >
+                                </li>
+                            </ul>
+                        </section>
                     </nav>
-                        
-            </section1>
+                </aside>
 
-            <!-- protein-->
-            <section2 class="menu-category">
-                <h2>protein</h2>
-                <div class="category-line"></div>
-                <nav class="menu-items">
-                        <nav1 class="menu-item">
-                            <img src="" alt="">
-                            <h3>Protein Beverages</h3>
-                        </nav1>
-                    </nav>        
-            </section2>
+                <!-- Main Menu Content -->
+                <main class="menu-content">
+                    <h1 class="main-title">Menu</h1>
 
-            <!-- coffee and espresso -->
-            <section3 class="menu-category">
-                <h2>coffee and espresso</h2>
-                <div class="category-line"></div>
-                <nav class="menu-items">
-                        <nav1 class="menu-item">
-                            <img src="" alt="">
-                            <h3>hot coffe and espresso</h3>
-                        </nav1>
-                        <nav2 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>cold coffe and espresso</h3>
-                        </nav2>
-                    </nav>
+                    <!-- The Latest -->
+                    <section class="product-section" id="trending">
+                        <h2>The Latest</h2>
 
-            </section3>
-             
-            <!-- tea -->
-            <section4 class="menu-category">
-                <h2>tea</h2>
-                <div class="category-line"></div>
-                 <nav class="menu-items">
+                        <div class="product-grid">
+                            <a href="#trending" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/trending.jpg"
+                                        alt="Trending"
+                                    />
+                                </div>
+                                <h3>Trending</h3>
+                            </a>
 
-                        <nav1 class="menu-item">
-                            <img src="" alt="">
-                            <h3>chai</h3>
-                        </nav1>
+                            <a href="#pumpkin-picks" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/pumpkin-picks.jpg"
+                                        alt="Pumpkin Picks"
+                                    />
+                                </div>
+                                <h3>Pumpkin Picks</h3>
+                            </a>
+                        </div>
+                    </section>
 
-                        <nav2 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>matcha</h3>
-                        </nav2>
+                    <!-- Protein -->
+                    <section class="product-section" id="protein-beverages">
+                        <h2>Protein</h2>
 
-                         <nav3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>hot tea</h3>
-                         </nav3>
+                        <div class="product-grid">
+                            <a href="#protein-beverages" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/protein-beverages.jpg"
+                                        alt="Protein Beverages"
+                                    />
+                                </div>
+                                <h3>Protein Beverages</h3>
+                            </a>
+                        </div>
+                    </section>
 
-                         <nav4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>iced tea</h3>
-                         </nav4>
-                    </nav>
+                    <!-- Coffee & Espresso -->
+                    <section class="product-section" id="coffee-espresso">
+                        <h2>Coffee &amp; Espresso</h2>
 
-            </section4>
+                        <div class="product-grid">
+                            <a href="#hot-coffee-espresso" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/hot-coffee.jpg"
+                                        alt="Hot Coffee and Espresso"
+                                    />
+                                </div>
+                                <h3>Hot Coffee &amp; Espresso</h3>
+                            </a>
 
-            <!-- refreshers -->
-            <section5 class="menu-category">
-                <h2>refreshers</h2>
-                <div class="category-line"></div>
-                <nav class="menu-items">
-                        <div3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>refreshers</h3>
-                        </div3>
-                        <div4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>energi drinks</h3>
-                        </div4>
-                    </nav>
-            </section5>
+                            <a
+                                href="#cold-coffee-espresso"
+                                class="product-card"
+                            >
+                                <div class="product-image">
+                                    <img
+                                        src="images/cold-coffee.jpg"
+                                        alt="Cold Coffee and Espresso"
+                                    />
+                                </div>
+                                <h3>Cold Coffee &amp; Espresso</h3>
+                            </a>
+                        </div>
+                    </section>
 
-            <!-- frappuccino -->
-            <section6 class="menu-category">
-                <h2>frappuccino</h2>
-                <div class="category-line"></div>
-                <div2 class="menu-items">
-                        <div3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>coffee frappuccino</h3>
-                        </div3>
-                        <div4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>crim frappuccino</h3>
-                        </div4>
-                </div2>
-            </section6>
+                    <!-- Tea -->
+                    <section class="product-section" id="tea">
+                        <h2>Tea</h2>
 
-            <!-- other sips -->
-            <section7 class="menu-category">
-                <h2>other sips</h2>
-                <div class="category-line"></div>
-                <div2 class="menu-items">
-                        <div3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>Hot Chocolate, Lemonade & More</h3>
-                        </div3>
-                        <div4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>bottled beverage</h3>
-                        </div4>
-                </div2>
-            </section7>
+                        <div class="product-grid">
+                            <a href="#chai" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/chai.jpg" alt="Chai" />
+                                </div>
+                                <h3>Chai</h3>
+                            </a>
 
-            <!-- food -->
-            <section8 class="menu-category">
-                <h2>food</h2>
-                <div class="category-line"></div>
-                <div2 class="menu-items">
-                        <div3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>break fast </h3>
-                        </div3>
-                        <div4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>bakery</h3>
-                        </div4>
-                </div2>
+                            <a href="#matcha" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/matcha.jpg" alt="Matcha" />
+                                </div>
+                                <h3>Matcha</h3>
+                            </a>
 
-               
-            </section8>
+                            <a href="#hot-tea" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/hot-tea.jpg"
+                                        alt="Hot Tea"
+                                    />
+                                </div>
+                                <h3>Hot Tea</h3>
+                            </a>
 
-            <!-- at home coffee -->
-            <section9 class="menu-category">
-                <h2>at home coffee</h2>
-                <div class="category-line"></div>
-                <div2 class="menu-items">
-                        <div3 class="menu-item">
-                            <img src="" alt="">
-                            <h3>shopping bag</h3>
-                        </div3>
-                        <div4 class="menu-item-picks">
-                            <img src="" alt="">
-                            <h3>whole bean</h3>
-                        </div4>
-                </div2>
-            </section9>
+                            <a href="#iced-tea" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/iced-tea.jpg"
+                                        alt="Iced Tea"
+                                    />
+                                </div>
+                                <h3>Iced Tea</h3>
+                            </a>
+                        </div>
+                    </section>
 
+                    <!-- Refreshment -->
+                    <section class="product-section" id="refreshment">
+                        <h2>Refreshment</h2>
 
+                        <div class="product-grid">
+                            <a href="#refreshers" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/refreshers.jpg"
+                                        alt="Refreshers"
+                                    />
+                                </div>
+                                <h3>Refreshers</h3>
+                            </a>
 
-         </main>
-       
-    </article>
+                            <a href="#energy-refreshers" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/energy-refreshers.jpg"
+                                        alt="Energy Refreshers"
+                                    />
+                                </div>
+                                <h3>Energy Refreshers</h3>
+                            </a>
+                        </div>
+                    </section>
 
-    <footer>
+                    <!-- Frappuccino -->
+                    <section class="product-section" id="frappuccino">
+                        <h2>Frappuccino® Blended Beverage</h2>
+
+                        <div class="product-grid">
+                            <a href="#coffee-frappuccino" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/coffee-frappuccino.jpg"
+                                        alt="Coffee Frappuccino"
+                                    />
+                                </div>
+                                <h3>Coffee Frappuccino®</h3>
+                            </a>
+
+                            <a href="#creme-frappuccino" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/creme-frappuccino.jpg"
+                                        alt="Crème Frappuccino"
+                                    />
+                                </div>
+                                <h3>Crème Frappuccino®</h3>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Other Sips -->
+                    <section class="product-section" id="other-sips">
+                        <h2>Other Sips</h2>
+
+                        <div class="product-grid">
+                            <a
+                                href="#hot-chocolate-lemonade"
+                                class="product-card"
+                            >
+                                <div class="product-image">
+                                    <img
+                                        src="images/hot-chocolate.jpg"
+                                        alt="Hot Chocolate, Lemonade and More"
+                                    />
+                                </div>
+                                <h3>Hot Chocolate, Lemonade &amp; More</h3>
+                            </a>
+
+                            <a href="#bottled-beverages" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/bottled-beverages.jpg"
+                                        alt="Bottled Beverages"
+                                    />
+                                </div>
+                                <h3>Bottled Beverages</h3>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Food -->
+                    <section class="product-section" id="food">
+                        <h2>Food</h2>
+
+                        <div class="product-grid">
+                            <a href="#breakfast" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/breakfast.jpg"
+                                        alt="Breakfast"
+                                    />
+                                </div>
+                                <h3>Breakfast</h3>
+                            </a>
+
+                            <a href="#bakery" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/bakery.jpg" alt="Bakery" />
+                                </div>
+                                <h3>Bakery</h3>
+                            </a>
+
+                            <a href="#treats" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/treats.jpg" alt="Treats" />
+                                </div>
+                                <h3>Treats</h3>
+                            </a>
+
+                            <a href="#lunch" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/lunch.jpg" alt="Lunch" />
+                                </div>
+                                <h3>Lunch</h3>
+                            </a>
+
+                            <a href="#snacks" class="product-card">
+                                <div class="product-image">
+                                    <img src="images/snacks.jpg" alt="Snacks" />
+                                </div>
+                                <h3>Snacks</h3>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- At Home Coffee -->
+                    <section class="product-section" id="at-home-coffee">
+                        <h2>At Home Coffee</h2>
+
+                        <div class="product-grid">
+                            <a href="#whole-bean" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/whole-bean.jpg"
+                                        alt="Whole Bean"
+                                    />
+                                </div>
+                                <h3>Whole Bean</h3>
+                            </a>
+
+                            <a href="#starbucks-via" class="product-card">
+                                <div class="product-image">
+                                    <img
+                                        src="images/starbucks-via.jpg"
+                                        alt="Starbucks VIA Instant"
+                                    />
+                                </div>
+                                <h3>Starbucks VIA® Instant</h3>
+                            </a>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </article>
+
+        <footer>
             <section>
                 <ul>
                     <li>About Us</li>
@@ -333,5 +562,5 @@
                 <p>© 2026 Starbucks Coffee Company. All rights reserved.</p>
             </section>
         </footer>
-</body>
+    </body>
 </html>

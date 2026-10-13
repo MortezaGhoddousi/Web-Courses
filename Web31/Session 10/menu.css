@@ -125,6 +125,10 @@ header section:last-child div:last-child button:last-child:hover {
    2. Menu Top Bar
 ======================================== */
 
+article {
+    width: 100%;
+}
+
 .menu-top-bar {
     position: sticky;
     top: 0;

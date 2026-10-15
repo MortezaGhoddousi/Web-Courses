@@ -74,7 +74,7 @@ console.log("end of the script");
 // WHILE LOOP
 
 // while (condition1:boolean) {
-//     body1
+//     body
 // }
 
 var i = 0;  // initial step

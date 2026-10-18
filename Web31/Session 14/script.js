@@ -137,7 +137,7 @@ console.log(info[5][1]);
 nums = [14, 13, 19, 7, 17, 14, 5, 16, 17, 19, 21, 20, 14, 11, 1, 26, 2, 7];
 var minimum = nums[0];
 var maximum = nums[0];
-var s = 0;
+var s = nums[0];
 
 for (i = 1; i < nums.length; i++) {
     s += nums[i];

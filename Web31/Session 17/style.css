@@ -1,0 +1,16 @@
+#p1 {
+    color: red;
+}
+
+.change_color {
+    transition: 0.8s;
+    color: green;
+}
+
+#change_font_size {
+    font-size: 28px;
+}
+
+img {
+    width: 500px;
+}

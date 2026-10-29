@@ -1,0 +1,1177 @@
+/* =========================================
+   CHANEL — FRAGRANCE GIFT SELECTION
+   Main stylesheet
+========================================= */
+
+/* ---------- 1. RESET & GLOBAL ---------- */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --text-gray: #686868;
+    --border-color: #dedede;
+
+    --header-height: 112px;
+    --page-padding: 5.5%;
+    --section-gap: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 12px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+button,
+input {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+    font-size: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    background: #dedede;
+    color: #000;
+}
+
+main {
+    background: #fff;
+}
+
+/* ---------- 3. HEADER ---------- */
+header {
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: 0.5s;
+}
+
+header section:nth-child(1),
+header section:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header section:nth-child(1) {
+    opacity: 0;
+    background: #fff;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    z-index: 100;
+}
+
+header section:nth-child(3) {
+    top: 125px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+header section:nth-child(1) ul,
+header section:nth-child(3) ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header section:nth-child(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px var(--page-padding);
+    z-index: 102;
+    transition: 0.5s;
+}
+
+header section:nth-child(2) h1 {
+    font-size: 46px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+header section:nth-child(2) ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    z-index: 102;
+}
+
+/* ---------- 3. TOP NAVIGATION ---------- */
+
+.top-navigation {
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 43px;
+    padding: 8px 20px 12px;
+    background: #fff;
+}
+
+.top-navigation a {
+    font-size: 9px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    transition: opacity 0.2s ease;
+}
+
+.top-navigation a:hover {
+    opacity: 0.5;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* ---------- 4. MAIN CONTENT OFFSET ---------- */
+
+/*
+   Header stays fixed while the page scrolls underneath.
+   The main content starts below the header.
+*/
+
+/* main {
+    padding-top: var(--header-height);
+} */
+
+/* ---------- 5. HERO BANNER ---------- */
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.hero-link {
+    display: block;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    aspect-ratio: 2.05 / 1;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.hero-link:hover .hero-image {
+    transform: scale(1.01);
+}
+
+/* ---------- 6. CATEGORY NAVIGATION ---------- */
+
+.category-navigation,
+.category-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 34px;
+    padding: 26px 20px;
+    background: #fff;
+}
+
+.category-navigation ul li.active span {
+    height: 1px;
+    width: 100%;
+    background: #000;
+    display: block;
+}
+
+.category-navigation ul li span {
+    height: 1px;
+    width: 0;
+    background: #000;
+    display: block;
+    transition: 0.5s;
+}
+
+.category-navigation a {
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+}
+
+.category-navigation a:hover {
+    opacity: 0.5;
+}
+
+/* ---------- 7. MAIN PAGE TITLE ---------- */
+
+.page-title {
+    padding: 105px 20px 85px;
+    text-align: center;
+    background: #fff;
+}
+
+.page-title h1 {
+    font-size: clamp(27px, 3vw, 42px);
+    font-weight: 400;
+    line-height: 1.22;
+    letter-spacing: 1.8px;
+}
+
+/* ---------- 8. FEATURED PRODUCTS ---------- */
+
+.featured-products {
+    width: 89%;
+    max-width: 1500px;
+    margin: 0 auto 125px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+.featured-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.product-label {
+    min-height: 23px;
+    font-size: 9px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.featured-card h2 {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+    line-height: 1.5;
+    min-height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.featured-card > a:not(.shop-link) {
+    display: block;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+.featured-card > a:not(.shop-link) img {
+    width: 100%;
+    aspect-ratio: 0.92 / 1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featured-card > a:not(.shop-link):hover img {
+    transform: scale(1.025);
+}
+
+.featured-description {
+    max-width: 360px;
+    margin: 25px auto 20px;
+    font-size: 12px;
+    line-height: 1.9;
+    color: #333;
+}
+
+.shop-link {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.shop-link:hover {
+    background: transparent;
+    color: inherit;
+    opacity: 0.6;
+}
+
+/* ---------- 9. PRODUCT COLLECTION LAYOUT ---------- */
+
+/*
+   Editorial tiles are larger than the individual product cards.
+   Grid placement creates the asymmetric luxury editorial layout.
+*/
+
+.product-collection {
+    width: 100%;
+    padding: 0 var(--page-padding);
+    margin: 0 auto var(--section-gap);
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 65px 25px;
+    align-items: start;
+}
+
+/* ---------- 10. LARGE EDITORIAL TILES ---------- */
+
+.editorial-tile {
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.editorial-tile > a {
+    display: block;
+    overflow: hidden;
+}
+
+.editorial-tile > a img {
+    width: 100%;
+    aspect-ratio: 0.78 / 1;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.editorial-tile > a:hover img {
+    transform: scale(1.025);
+}
+
+.tile-caption {
+    padding: 20px 10px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.tile-caption p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.tile-caption h2 {
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* Large tiles span two columns */
+
+.paris-tile,
+.n5-tile,
+.bleu-tile {
+    grid-column: span 2;
+}
+
+.paris-tile > a img {
+    aspect-ratio: 1.18 / 1;
+}
+
+.n5-tile > a img {
+    aspect-ratio: 1.18 / 1;
+}
+
+.bleu-tile > a img {
+    aspect-ratio: 1.18 / 1;
+}
+
+/* ---------- 11. INDIVIDUAL PRODUCT CARDS ---------- */
+
+.product-card {
+    min-width: 0;
+    text-align: center;
+}
+
+.product-card > a {
+    display: block;
+    overflow: hidden;
+    background: #f7f7f7;
+    margin-bottom: 19px;
+}
+
+.product-card > a img {
+    width: 100%;
+    aspect-ratio: 0.82 / 1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card > a:hover img {
+    transform: scale(1.035);
+}
+
+.product-card h3 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-size: 10px;
+    letter-spacing: 0.15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.product-card .price {
+    color: #111;
+    margin-top: 9px;
+    font-size: 11px;
+}
+
+/* ---------- 12. BLEU COLLECTION ---------- */
+
+.bleu-collection {
+    width: 100%;
+    padding: 0 var(--page-padding);
+    margin: 20px auto var(--section-gap);
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 65px 25px;
+    align-items: start;
+}
+
+.bleu-collection .bleu-tile {
+    grid-column: span 2;
+    grid-row: span 2;
+    min-width: 0;
+}
+
+.bleu-collection .bleu-tile > a img {
+    width: 100%;
+    aspect-ratio: 1.18 / 1;
+    object-fit: cover;
+}
+
+.bleu-collection .product-card {
+    grid-column: span 1;
+    grid-row: span 1;
+    min-width: 0;
+}
+
+/* ---------- 13. FOUR-COLUMN PRODUCT GRID ---------- */
+
+.product-grid-four {
+    width: 89%;
+    max-width: 1500px;
+    margin: 0 auto var(--section-gap);
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 65px 25px;
+    align-items: start;
+}
+
+/* ---------- 14. HOLIDAY SELECTION ---------- */
+
+.holiday-selection {
+    padding: 75px var(--page-padding) 100px;
+    text-align: center;
+    background: white;
+}
+
+.holiday-selection > h2 {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    margin-bottom: 48px;
+}
+
+.holiday-categories {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    width: 78%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.holiday-category {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.holiday-category img {
+    width: 100%;
+    aspect-ratio: 0.9 / 1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.holiday-category:hover img {
+    transform: scale(1.03);
+}
+
+.holiday-category span {
+    display: block;
+    padding-top: 18px;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+/* ---------- 15. WHITE FOOTER ---------- */
+
+/*
+   The white footer sits above the black footer.
+   The black area is revealed as the user scrolls down.
+*/
+
+.site-footer {
+    position: relative;
+    background: #000;
+}
+
+.white-footer {
+    position: relative;
+    z-index: 2;
+    background: #fff;
+
+    padding: 55px var(--page-padding) 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 55px;
+
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 100vh;
+}
+
+.footer-column h3 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+.footer-column p {
+    max-width: 300px;
+    color: #555;
+    font-size: 11px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.footer-column > a {
+    display: inline-block;
+    font-size: 11px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Newsletter form */
+
+.newsletter form {
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+    margin-top: 22px;
+}
+
+.newsletter input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 11px;
+    color: #000;
+}
+
+.newsletter input::placeholder {
+    color: #777;
+}
+
+.newsletter form button {
+    padding: 12px;
+    font-size: 13px;
+}
+
+#newsletterMessage {
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+/* ---------- 16. BLACK FOOTER ---------- */
+
+.black-footer {
+    /* position: relative; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    /* z-index: 1; */
+    min-height: 90vh;
+    width: 100%;
+
+    background: #000;
+    color: #fff;
+
+    padding: 50px var(--page-padding) 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.footer-logo {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 60px;
+
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 33px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    line-height: 1;
+}
+
+.black-footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px;
+    /* max-width: 1500px; */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.black-footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.black-footer-column h3 {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-bottom: 10px;
+}
+
+.black-footer-column a {
+    color: #dedede;
+    font-size: 10px;
+    line-height: 1.6;
+    transition: color 0.2s ease;
+}
+
+.black-footer-column a:hover {
+    color: #999;
+}
+
+/* ---------- 17. FOOTER BOTTOM ---------- */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #393939;
+    padding-top: 22px;
+    margin-top: 55px;
+}
+
+.footer-bottom p {
+    color: #ccc;
+    font-size: 10px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.social-links a {
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.6;
+}
+
+/* ---------- 18. BUTTONS & FOCUS ---------- */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid #777;
+    outline-offset: 4px;
+}
+
+button,
+a {
+    transition-property: opacity, color, background-color;
+    transition-duration: 0.2s;
+}
+
+/* ---------- 19. TABLET RESPONSIVE ---------- */
+
+@media (max-width: 1024px) {
+    :root {
+        --header-height: 105px;
+        --page-padding: 4%;
+        --section-gap: 75px;
+    }
+
+    .header-top {
+        padding: 0 22px;
+    }
+
+    .top-navigation {
+        gap: 22px;
+    }
+
+    .top-navigation a {
+        font-size: 8px;
+    }
+
+    .featured-products {
+        width: 92%;
+        gap: 18px;
+    }
+
+    .product-collection,
+    .product-grid-four {
+        gap: 45px 18px;
+    }
+
+    .product-collection {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .product-grid-four {
+        width: 92%;
+    }
+
+    .black-footer-content {
+        gap: 25px;
+    }
+}
+
+/* ---------- 20. MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 700px) {
+    :root {
+        --header-height: 62px;
+        --page-padding: 18px;
+        --section-gap: 55px;
+    }
+
+    body {
+        font-size: 11px;
+    }
+
+    /* Mobile header */
+
+    .header-top {
+        height: 62px;
+        padding: 0 13px;
+    }
+
+    .logo {
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .menu-button {
+        font-size: 17px;
+        padding: 7px;
+    }
+
+    .header-icons {
+        gap: 10px;
+    }
+
+    .header-icons button {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .header-icons button:nth-child(2),
+    .header-icons button:nth-child(3) {
+        display: none;
+    }
+
+    .top-navigation {
+        display: none;
+    }
+
+    /* Mobile menu */
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 12px 22px 22px;
+        border-top: 1px solid #eee;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .mobile-menu.is-open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu a {
+        padding: 13px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 12px;
+    }
+
+    /* Hero */
+
+    .hero-image {
+        aspect-ratio: 0.85 / 1;
+        object-position: center;
+    }
+
+    .category-navigation {
+        gap: 16px;
+        padding: 18px 12px;
+    }
+
+    .category-navigation a {
+        font-size: 9px;
+    }
+
+    /* Title */
+
+    .page-title {
+        padding: 65px 15px 50px;
+    }
+
+    .page-title h1 {
+        font-size: 29px;
+        letter-spacing: 1px;
+    }
+
+    /* Featured cards */
+
+    .featured-products {
+        width: 100%;
+        padding: 0 18px;
+        grid-template-columns: 1fr;
+        gap: 55px;
+        margin-bottom: 70px;
+    }
+
+    .featured-card h2 {
+        font-size: 14px;
+        min-height: 0;
+        margin-bottom: 15px;
+    }
+
+    .featured-card > a:not(.shop-link) img {
+        aspect-ratio: 1 / 1;
+    }
+
+    .featured-description {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    /* Product collections */
+
+    .product-collection {
+        padding: 0 14px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 38px 12px;
+        margin-bottom: 60px;
+    }
+
+    .paris-tile,
+    .n5-tile,
+    .bleu-tile {
+        grid-column: span 2;
+    }
+
+    .paris-tile > a img,
+    .n5-tile > a img,
+    .bleu-tile > a img {
+        aspect-ratio: 0.95 / 1;
+    }
+
+    .editorial-tile > a img {
+        aspect-ratio: 0.85 / 1;
+    }
+
+    .tile-caption {
+        padding-top: 16px;
+    }
+
+    .tile-caption h2 {
+        font-size: 16px;
+    }
+
+    .tile-caption p {
+        font-size: 9px;
+    }
+
+    /* Product cards */
+
+    .product-card > a {
+        margin-bottom: 12px;
+    }
+
+    .product-card > a img {
+        aspect-ratio: 0.8 / 1;
+    }
+
+    .product-card h3 {
+        font-size: 10px;
+    }
+
+    .product-card p {
+        font-size: 9px;
+    }
+
+    /* Four-column grids become two columns */
+
+    .product-grid-four {
+        width: auto;
+        margin: 0 14px 60px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 38px 12px;
+    }
+
+    /* Holiday section */
+
+    .holiday-selection {
+        padding: 55px 14px 60px;
+    }
+
+    .holiday-selection > h2 {
+        font-size: 19px;
+        margin-bottom: 28px;
+    }
+
+    .holiday-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 12px;
+    }
+
+    .holiday-category span {
+        font-size: 10px;
+        padding-top: 12px;
+    }
+
+    /* White footer */
+
+    .white-footer {
+        padding: 40px 20px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 12px;
+    }
+
+    .footer-column p {
+        font-size: 11px;
+    }
+
+    /* Black footer */
+
+    .black-footer {
+        padding: 40px 20px 20px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .black-footer-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 20px;
+    }
+
+    .black-footer-column {
+        gap: 10px;
+    }
+
+    .black-footer-column h3 {
+        font-size: 9px;
+        line-height: 1.8;
+    }
+
+    .black-footer-column a {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+    }
+
+    .social-links {
+        gap: 16px;
+    }
+}
+
+/* ---------- 21. SMALL MOBILE ---------- */
+
+@media (max-width: 380px) {
+    .header-top {
+        padding: 0 8px;
+    }
+
+    .logo {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
+
+    .header-icons {
+        gap: 6px;
+    }
+
+    .page-title h1 {
+        font-size: 26px;
+    }
+
+    .product-card h3 {
+        font-size: 9px;
+    }
+
+    .black-footer-content {
+        gap: 30px 12px;
+    }
+}
+
+/* ---------- 22. REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+/* Large image + four small product cards */
+
+.product-collection {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+.product-collection .editorial-tile {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.product-collection .editorial-tile > a img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 0.82 / 1;
+    object-fit: cover;
+}
+
+.product-collection .product-card {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.product-collection .product-card > a img {
+    width: 100%;
+    aspect-ratio: 0.78 / 1;
+    object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .product-collection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 12px;
+    }
+
+    .product-collection .editorial-tile {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .product-collection .product-card {
+        grid-column: span 1;
+    }
+}

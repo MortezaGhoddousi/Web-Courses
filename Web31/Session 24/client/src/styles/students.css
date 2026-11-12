@@ -1,0 +1,135 @@
+.students {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    background: #ffffff;
+    border: 1px solid #e8edf4;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.students:hover {
+    transform: translateY(-4px);
+    border-color: #c7d2fe;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.09);
+}
+
+/* Profile image */
+.students img {
+    width: 75px;
+    height: 75px;
+    min-width: 75px;
+
+    object-fit: cover;
+    border-radius: 16px;
+
+    background: #f1f5f9;
+    border: 3px solid #f1f5f9;
+
+    transition: all 0.3s ease;
+}
+
+.students:hover img {
+    border-color: #c7d2fe;
+    transform: scale(1.04);
+}
+
+/* Student information */
+.students div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Name */
+.students div:first-child {
+    color: #172033;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* Age and Role */
+.students div:nth-child(2),
+.students div:nth-child(3) {
+    font-size: 13px;
+}
+
+/* Delete button */
+.students button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    margin-left: auto;
+
+    background: #fff1f2;
+    color: #e11d48;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.students button:hover {
+    background: #e11d48;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+
+.students button:active {
+    transform: scale(0.9);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .students {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .students img {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+        border-radius: 12px;
+    }
+
+    .students div:first-child {
+        font-size: 14px;
+    }
+
+    .students div {
+        font-size: 12px;
+    }
+
+    .students button {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+    }
+}

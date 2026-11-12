@@ -1,0 +1,94 @@
+/* Main container */
+.add-student {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 28px;
+
+    background: #ffffff;
+    border: 1px solid #e9edf3;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form layout */
+.add-student form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Labels */
+.add-student label {
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Inputs */
+.add-student input {
+    width: 100%;
+    padding: 13px 15px;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+
+    color: #1e293b;
+    font-size: 14px;
+
+    transition: all 0.2s ease;
+}
+
+.add-student input::placeholder {
+    color: #94a3b8;
+}
+
+.add-student input:hover {
+    border-color: #cbd5e1;
+}
+
+.add-student input:focus {
+    background: #ffffff;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+/* Submit button */
+.add-student button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 13px;
+
+    background: #4f46e5;
+    border: none;
+    border-radius: 10px;
+
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.add-student button:hover {
+    background: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(79, 70, 229, 0.2);
+}
+
+.add-student button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .add-student {
+        padding: 20px;
+        margin: 20px auto;
+    }
+}
